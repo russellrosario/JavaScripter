@@ -1,4 +1,4 @@
-# MERN stack diagrams and cheatsheets
+# Learn MERN stack hacks
 
 ![MERN LOGOS](mern.jpg)
 
@@ -6,7 +6,7 @@
 
 ## 🤔 Why?
 
-I started a bootcamp at the University of Miami and wanted to have an organized repository of diagrams, references, and cheatsheets to help guide me along the process of becoming a full stack developer. The bootcamp focused on the MERN stack (MongoDB, Express, React, Node) so the materials organized in this repo will be primarily focused on this stack.
+I started a bootcamp at the University of Miami and wanted to have an organized repository of diagrams, references, and cheatsheets to reference whenever I forgot how something worked. The bootcamp focused on the MERN stack (MongoDB, Express, React, Node) so the materials organized in this repository will be primarily focused on this stack.
 
 ## 🙌🏼 Want to Contribute?
 
@@ -18,80 +18,42 @@ You are more than welcome to contribute and help improve this project. Just subm
 
 
 <details>
-<summary>📃 Javascript</summary>
-
-* [Design Patterns](javascript/design_patterns.md)
+<summary> 📃 Javascript</summary>
 
 * [Functional Programming](javascript/functional_programming.md)
-
 * [Regular Expressions](javascript/regular_expressions.md)
-
 * [Cheatsheets](javascript/cheatsheets.md)
-
 </details>
 
-
-
 <details>
-<summary>📦 Backend</summary>
+<summary> 📦 Backend</summary>
 
 * [Node](backend/node.md)
-
 * [Express](backend/express.md)
-
 * [MongoDB](backend/mongodb.md)
-
-* [Mongoose](backend/mongoose.md)
-
-* [Redis](backend/redis.md)
-
   </details>
 
-
-
 <details>
-<summary>🌐 Frontend</summary>
+<summary> 🌐 Frontend</summary>
 
 * [React](frontend/react.md)
-
-* [Redux](frontend/redux.md)
-
 * [HTML](frontend/html.md)
-
 * [CSS](frontend/css.md)
-
-* [Bootstrap](frontend/bootstrap.md)
-
-* [jQuery](frontend/jquery.md)
-
-  </details>
-
-
-
+</details>
 
 <details>
-<summary>🔧 Development Tools</summary>
+<summary> 🔧 Development Tools</summary>
 
-* [Visual Studio Code](development/vscode.md)
-
-* [Debugging Tools](development/debugging.md)
-
-* [Github, Heroku](development/github.md)
-
-* [Testing (Jest, Headless Browsing)](development/testing.md)
-
+* [Debugging](development/debugging.md)
+* [Source Control](development/source_control.md)
+* [Testing](development/testing.md)
   </details>
 
-
-
 <details>
-<summary>💪 More advanced</summary>
+<summary> 💪 More advanced</summary>
 
-* [Performance tips](advanced/performance.md)
-
+* [Javascript Performance](advanced/performance.md)
 * [CS Algorithms](advanced/algorithms.md)
-
-* [GraphQL](advanced/graphql.md)
-
+* [Design Patterns](advanced/design_patterns.md)
   </details>
 
