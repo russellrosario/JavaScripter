@@ -18,7 +18,7 @@ You are more than welcome to contribute and help improve this project. Just subm
 
 
 <details>
-<summary>📃Javascript</summary>
+<summary>📃 Javascript</summary>
 
 * [Design Patterns](javascript/design_patterns.md)
 
@@ -33,7 +33,7 @@ You are more than welcome to contribute and help improve this project. Just subm
 
 
 <details>
-<summary>📦Backend</summary>
+<summary>📦 Backend</summary>
 
 * [Node](backend/node.md)
 
@@ -50,7 +50,7 @@ You are more than welcome to contribute and help improve this project. Just subm
 
 
 <details>
-<summary>🌐Frontend</summary>
+<summary>🌐 Frontend</summary>
 
 * [React](frontend/react.md)
 
@@ -70,7 +70,7 @@ You are more than welcome to contribute and help improve this project. Just subm
 
 
 <details>
-<summary>🔧Development Tools</summary>
+<summary>🔧 Development Tools</summary>
 
 * [Visual Studio Code](development/vscode.md)
 
@@ -85,15 +85,13 @@ You are more than welcome to contribute and help improve this project. Just subm
 
 
 <details>
-<summary>💪More advanced</summary>
+<summary>💪 More advanced</summary>
 
 * [Performance tips](advanced/performance.md)
 
 * [CS Algorithms](advanced/algorithms.md)
 
 * [GraphQL](advanced/graphql.md)
-
-* [Docker](advanced/docker.md)
 
   </details>
 
