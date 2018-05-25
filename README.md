@@ -8,12 +8,17 @@
 
 I started a bootcamp at the University of Miami and wanted to have an organized repository of diagrams, references, and cheatsheets to help guide me along the process of becoming a full stack developer. The bootcamp focused on the MERN stack (MongoDB, Express, React, Node) so the materials organized in this repo will be primarily focused on this stack.
 
+## 🙌🏼 Want to Contribute?
+
+You are more than welcome to contribute and help improve this project. Just submit changes via pull request and I will review them before merging.
+
+
 ## 📚 Table of Contents
 
-### 📃 Javascript
+
 
 <details>
-<summary>Expand</summary>
+<summary>📃Javascript</summary>
 
 * [Design Patterns](javascript/design_patterns.md)
 
@@ -25,10 +30,10 @@ I started a bootcamp at the University of Miami and wanted to have an organized 
 
 </details>
 
-### 📦 Backend
+
 
 <details>
-<summary>Expand</summary>
+<summary>📦Backend</summary>
 
 * [Node](backend/node.md)
 
@@ -42,10 +47,10 @@ I started a bootcamp at the University of Miami and wanted to have an organized 
 
   </details>
 
-### 🌐 Frontend
+
 
 <details>
-<summary>Expand</summary>
+<summary>🌐Frontend</summary>
 
 * [React](frontend/react.md)
 
@@ -62,10 +67,10 @@ I started a bootcamp at the University of Miami and wanted to have an organized 
   </details>
 
 
-### 🔧 Development Tools
+
 
 <details>
-<summary>Expand</summary>
+<summary>🔧Development Tools</summary>
 
 * [Visual Studio Code](development/vscode.md)
 
@@ -77,10 +82,10 @@ I started a bootcamp at the University of Miami and wanted to have an organized 
 
   </details>
 
-  ### 💪 More advanced
+
 
 <details>
-<summary>Expand</summary>
+<summary>💪More advanced</summary>
 
 * [Performance tips](advanced/performance.md)
 
@@ -92,6 +97,3 @@ I started a bootcamp at the University of Miami and wanted to have an organized 
 
   </details>
 
-## 🙌🏼 Want to Contribute?
-
-You are more than welcome to contribute and help improve this project. Just submit changes via pull request and I will review them before merging.
