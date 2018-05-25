@@ -20,40 +20,40 @@ You are more than welcome to contribute and help improve this project. Just subm
 <details>
 <summary> 📃 Javascript</summary>
 
-* [Functional Programming](blob/master/javascript/functional_programming.md)
-* [Regular Expressions](blob/master/javascript/regular_expressions.md)
-* [Cheatsheets](blob/master/javascript/cheatsheets.md)
+* [Functional Programming](javascript/functional_programming.md)
+* [Regular Expressions](javascript/regular_expressions.md)
+* [Cheatsheets](javascript/cheatsheets.md)
 </details>
 
 <details>
 <summary> 📦 Backend</summary>
 
-* [Node](blob/master/backend/node.md)
-* [Express](blob/master/backend/express.md)
-* [MongoDB](blob/master/backend/mongodb.md)
+* [Node](backend/node.md)
+* [Express](backend/express.md)
+* [MongoDB](backend/mongodb.md)
   </details>
 
 <details>
 <summary> 🌐 Frontend</summary>
 
-* [React](blob/master/frontend/react.md)
-* [HTML](blob/master/frontend/html.md)
-* [CSS](blob/master/frontend/css.md)
+* [React](frontend/react.md)
+* [HTML](frontend/html.md)
+* [CSS](frontend/css.md)
 </details>
 
 <details>
 <summary> 🔧 Development Tools</summary>
 
-* [Debugging](blob/master/development/debugging.md)
-* [Source Control](blob/master/development/source_control.md)
-* [Testing](blob/master/development/testing.md)
+* [Debugging](development/debugging.md)
+* [Source Control](development/source_control.md)
+* [Testing](development/testing.md)
   </details>
 
 <details>
 <summary> 💪 More advanced</summary>
 
-* [Javascript Performance](blob/master/advanced/performance.md)
-* [CS Algorithms](blob/master/advanced/algorithms.md)
-* [Design Patterns](blob/master/advanced/design_patterns.md)
+* [Javascript Performance](advanced/performance.md)
+* [CS Algorithms](advanced/algorithms.md)
+* [Design Patterns](advanced/design_patterns.md)
   </details>
 
