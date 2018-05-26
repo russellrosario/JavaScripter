@@ -1,14 +1,6 @@
-/**
- * DOM API
- *
- * The DOM represents a document as a tree. The tree is made up of parent-child relationships, a parent can have one or many children nodes.
- * The idea of DOM is that every node is an object. We can get a node and change its properties
- *
- * @Reference:
- * http://javascript.info/tutorial/dom
- * http://www.quirksmode.org/dom/
- * http://domenlightenment.com/
- */
+# DOM API
+
+![DOM](dom.png)
 
 // BASIC ELEMENT SELECTORS
 document.getElementById("IDName"); // Selects the first element with the ID passed. It is invalid to use multiple IDs in HTML, however if duplicated, it selects the first one.

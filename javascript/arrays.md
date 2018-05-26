@@ -1,5 +1,7 @@
 # Array and Object methods
 
+![Arrays](array.png)
+
 * [Empty an array](#user-content-empty-an-array)
 * [Clone an array](#user-content-clone-an-array)
 * [Get last item](#user-content-get-last-item)

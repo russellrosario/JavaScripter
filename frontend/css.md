@@ -1,4 +1,6 @@
-# CSS Refresher Notes
+# CSS Notes
+
+![CSS](css.png)
 
 This is a quick refresher of CSS concepts compiled from various articles online. Contributions are always welcome :)
 

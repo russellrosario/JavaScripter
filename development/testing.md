@@ -1,10 +1,8 @@
-# Testing
+# Testing with Jest
 
 <div align="center" markdown="1">
 
 <img src="https://d3vv6lp55qjaqc.cloudfront.net/items/2D2K45312x0M1q2C0a3P/jest-logo.svg" width="200">
-
-<h1>Jest cheat sheet</h1>
 
 </div>
 

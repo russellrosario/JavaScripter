@@ -1,4 +1,6 @@
-# JavaScript-RegExp-Cheat-Sheet version 1.0.0
+# JavaScript Regular Expressions
+
+![Regex](regex.jpg)
 
 This document describes the regular expression features available in JavaScript up to ES2018. Some ES2018 features have not been released.
 
