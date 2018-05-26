@@ -37,7 +37,7 @@ You are more than welcome to contribute and help improve this project. Just subm
 <details>
 <summary> 🌐 Frontend</summary>
 
-* [React and Redux](frontend/react_redux.pdf)
+* [React and Redux](frontend/react_and_redux.pdf)
 * [HTML](frontend/html.md)
 * [CSS](frontend/css.md)
 </details>
@@ -47,6 +47,6 @@ You are more than welcome to contribute and help improve this project. Just subm
 
 * [Command Line](development/command_line.md)
 * [Design Patterns](development/design_patterns.pdf)
-* [Git](development/git.pdf)
+* [Git](development/git_cheat.pdf)
 * [Testing](development/testing.md)
   </details>
