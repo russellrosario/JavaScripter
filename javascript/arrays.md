@@ -29,10 +29,10 @@
 * [One item meets a condition](#user-content-one-item-meets-a-condition)
 * [Find index of an item](#user-content-find-index-of-an-item)
 * [Detect an array](#user-content-detect-an-array)
-* [Spread array rest parameters](#user-content-spread-array-rest-parameters)
+* [Spread array into function parameters](#user-content-spread-array-into-function-parameters)
 * [Clone an object(s) (shallow)](#user-content-clone-a-objects-shallow)
 * [Loop over object's key value pairs](#user-content-loop-over-objects-key-value-pairs)
-* [Fix object states](#user-content-fix-object-states)
+* [Modify object states](#user-content-modify-object-states)
 
 
 ## Empty an array
@@ -83,36 +83,6 @@ var meals = ['breakfast', 'lunch', 'dinner'];
 meals.pop();
 ```
 
-## Add new item(s) to beginning
-```javascript
-var meals = ['lunch', 'dinner'];
-
-meals.unshift('breakfast');
-```
-
-## Add new item(s) to end
-```javascript
-var meals = ['breakfast', 'lunch', 'dinner'];
-
-meals.push('supper');
-```
-
-## Overwrite item at a specific index
-```javascript
-var meals = ['breakfast', 'lunch', 'dinner'];
-
-meals[1] = 'brunch';
-// OR
-meals.splice(1, 1, 'brunch');
-```
-
-## Add new item(s) at a specific index
-```javascript
-var meals = ['breakfast', 'lunch', 'dinner'];
-
-meals.splice(1, 0, 'brunch', 'more brunch');
-```
-
 ## Remove single item at a specific index
 ```javascript
 var meals = ['breakfast', 'lunch', 'dinner'];
@@ -127,11 +97,71 @@ var meals = ['breakfast', 'lunch', 'dinner'];
 meals.splice(1, 2);
 ```
 
+## Add new item(s) to beginning
+```javascript
+var meals = ['lunch', 'dinner'];
+
+meals.unshift('breakfast');
+```
+
+## Add new item(s) to end
+```javascript
+var meals = ['breakfast', 'lunch', 'dinner'];
+
+meals.push('supper');
+```
+
+## Add new item(s) at a specific index
+```javascript
+var meals = ['breakfast', 'lunch', 'dinner'];
+
+meals.splice(1, 0, 'brunch', 'more brunch');
+```
+
+## Overwrite item at a specific index
+```javascript
+var meals = ['breakfast', 'lunch', 'dinner'];
+
+meals[1] = 'brunch';
+// OR
+meals.splice(1, 1, 'brunch');
+```
+
 ## Reverse an array
 ```javascript
 var meals = ['breakfast', 'lunch', 'dinner'];
 
 meals.reverse();
+```
+
+## Sort in numerical order
+```javascript
+var numbers = [1438,2605,794,3947,6241,11745,2585];
+
+numbers.sort(function(a, b) {
+    return a - b;
+});
+```
+
+## Sort in alphabetical order
+```javascript
+var meals = ['dinner', 'supper', 'breakfast', 'lunch'];
+
+meals.sort();
+```
+
+## Shuffle array
+```javascript
+function randomiseArray(arr) {
+    var buffer = [], start;
+
+    for(var i = arr.length; i >= arr.length && i > 0;i--) {
+        start = Math.floor(Math.random() * arr.length);
+        buffer.push(arr.splice(start, 1)[0])
+    };
+
+    return buffer;
+}
 ```
 
 ## Join array items into a string
@@ -146,22 +176,6 @@ meals.join(' AND ');
 var string = "breakfast AND lunch AND dinner"
 
 var meals = string.split(' AND ');
-```
-
-## Sort in alphabetical order
-```javascript
-var meals = ['dinner', 'supper', 'breakfast', 'lunch'];
-
-meals.sort();
-```
-
-## Sort in numerical order
-```javascript
-var numbers = [1438,2605,794,3947,6241,11745,2585];
-
-numbers.sort(function(a, b) {
-    return a - b;
-});
 ```
 
 ## Join two arrays together
@@ -202,20 +216,20 @@ meals.map(function(item, i) {
 // ["breakfast like a king", "lunch like a prince", "dinner like a pauper"]
 ```
 
-## Return true if every item meets a condition
+## Filter an array
 ```javascript
 var meals = ['breakfast', 'lunch', 'dinner', 'supper'];
 
-meals.every(function(item){ return item.length > 0 });
+meals.filter(function(item) {
+  return item !== 'breakfast';
+});
 ```
 
-## Return true if at least one item matches a condition
+## Reduce an array
 ```javascript
-var meals = ['breakfast', 'lunch', 'dinner', 'supper'];
+var numbers = [30, 41, 466, 44];
 
-meals.some(function(item){ return item === 'lunch';});
-// OR
-meals.includes('lunch')
+var sum = numbers.reduce((total, amount) => total + amount);
 ```
 
 ## Execute a function once per array item
@@ -227,19 +241,20 @@ meals.forEach(function(currentValue, index, arr){  console.log(index, currentVal
 for (item in meals) { console.log(meals[item])}
 ```
 
-## Filter an array
+## Every item meets a condition
 ```javascript
 var meals = ['breakfast', 'lunch', 'dinner', 'supper'];
 
-meals.filter(function(item) {
-  return item !== 'breakfast';
-});
+meals.every(function(item){ return item.length > 0 });
 ```
-## Detect an array
-```javascript
-var meals = ['breakfast', 'lunch', 'dinner'];
 
-Array.isArray(meals)
+## One item meets a condition
+```javascript
+var meals = ['breakfast', 'lunch', 'dinner', 'supper'];
+
+meals.some(function(item){ return item === 'lunch';});
+// OR
+meals.includes('lunch')
 ```
 
 ## Find index of an item
@@ -248,24 +263,11 @@ var meals = ['breakfast', 'elevenses', 'brunch'];
 meals.indexOf('brunch');
 ```
 
-## Shuffle array
+## Detect an array
 ```javascript
-function randomiseArray(arr) {
-    var buffer = [], start;
+var meals = ['breakfast', 'lunch', 'dinner'];
 
-    for(var i = arr.length; i >= arr.length && i > 0;i--) {
-        start = Math.floor(Math.random() * arr.length);
-        buffer.push(arr.splice(start, 1)[0])
-    };
-
-    return buffer;
-}
-```
-## Reduce an array
-```javascript
-var numbers = [30, 41, 466, 44];
-
-var sum = numbers.reduce((total, amount) => total + amount);
+Array.isArray(meals)
 ```
 
 ## Spread array into function parameters
