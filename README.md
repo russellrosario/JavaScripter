@@ -21,8 +21,9 @@ You are more than welcome to contribute and help improve this project. Just subm
 <summary> 📃 Javascript</summary>
 
 * [Array and Object methods](javascript/arrays.md)
-* [Regular Expressions](javascript/regular_expressions.md)
-* [Cheatsheets](javascript/cheatsheets.md)
+* [DOM API](javascript/DOM.md)
+* [Regular Expressions](javascript/regex.jpg)
+* [Operators](javascript/operators.md)
 </details>
 
 <details>
@@ -30,30 +31,24 @@ You are more than welcome to contribute and help improve this project. Just subm
 
 * [Node](backend/node.md)
 * [Express](backend/express.md)
-* [MongoDB](backend/mongodb.md)
+* [MongoDB](backend/mongodb.pdf)
   </details>
 
 <details>
 <summary> 🌐 Frontend</summary>
 
 * [React](frontend/react.md)
+* [React (part2)](frontend/react.pdf)
+* [Redux](frontend/redux.pdf)
 * [HTML](frontend/html.md)
 * [CSS](frontend/css.md)
 </details>
 
 <details>
-<summary> 🔧 Development Tools</summary>
+<summary> 🔧 Development </summary>
 
-* [Debugging](development/debugging.md)
-* [Source Control](development/source_control.md)
+* [Command Line](development/command_line.md)
+* [Design Patterns](development/design_patterns.pdf)
+* [Git](development/git.pdf)
 * [Testing](development/testing.md)
   </details>
-
-<details>
-<summary> 💪 More advanced</summary>
-
-* [Javascript Performance](advanced/performance.md)
-* [CS Algorithms](advanced/algorithms.md)
-* [Design Patterns](advanced/design_patterns.md)
-  </details>
-
