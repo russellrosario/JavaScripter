@@ -37,9 +37,7 @@ You are more than welcome to contribute and help improve this project. Just subm
 <details>
 <summary> 🌐 Frontend</summary>
 
-* [React](frontend/react.md)
-* [React (part2)](frontend/react.pdf)
-* [Redux](frontend/redux.pdf)
+* [React and Redux](frontend/react_redux.pdf)
 * [HTML](frontend/html.md)
 * [CSS](frontend/css.md)
 </details>

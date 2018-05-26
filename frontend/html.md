@@ -2,13 +2,9 @@
 
 ![HTML](html.png)
 
-<!-- * *******************************************************************************************
- * HTML5 Cheat sheet by Hackr.io
- * Source: https://websitesetup.org/wp-content/uploads/2014/02/HTML-CHEAT-SHEET-768x8555.png
- * ******************************************************************************************* * -->
 
 
-<!-- Document Summary -->
+## Document Summary
 
 
 <html></html>                                     <!-- Indicates that the page is written in html -->
@@ -17,7 +13,7 @@
 <body></body>                                     <!-- Content that the user will see  -->
 
 
-<!-- Document Information -->
+## Document Information
 
 
 <base/>                                           <!-- Usefull for specifying relative links in a document -->
@@ -27,7 +23,7 @@
 <link/>                                           <!-- Used to create relationships with external pages and stylesheets -->
 
 
-<!-- Document Structure -->
+## Document Structure
 
 
 <h1></h1> ... <h6></h6>                           <!-- All six levels of heading with 1 being the most promiment and 6 being the least prominent  -->
@@ -38,7 +34,7 @@
 <hr>                                              <!-- Creates a sectional break into HTML  -->
 
 
-<!-- Text Formatting -->
+## Text Formatting
 
 
 <strong></strong> and <b></b>                     <!-- Makes text contained in the tag as bold -->
@@ -51,7 +47,7 @@
 <code></code>                                     <!-- Used to display inline code snippets -->
 
 
-<!-- Links Formatting -->
+## Links Formatting
 
 
 <a href="url"></a>                                <!-- Used to link to external or internal pages of a wbesite -->
@@ -61,13 +57,13 @@
 <a href="tel://####-####-##"></a>                 <!-- Used to display phone numbers and make them as clickable -->
 
 
-<!-- Image Formatting -->
+## Image Formatting
 
 
 <img src="url" alt="text">                        <!-- Used to display images in a webpage wehre src="url" contains the link to the image source and alt="" contains an alternative text to display wehn the image is not displayed -->
 
 
-<!-- List Formatting -->
+## List Formatting
 
 
 <ol></ol>                                         <!-- Used to create ordered lists with numbers in the items -->
@@ -78,7 +74,7 @@
 <dd></dd>                                         <!-- The descrpition of the defined term -->
 
 
-<!-- Forms Formatting and Attributes -->
+## Forms Formatting and Attributes
 
 
 <form action="url"></form>                        <!-- Form element creates a form and action="" specifies where the data is to be sent to when the visitor submits the form -->
@@ -193,3 +189,8 @@ width=""                                          <!-- Describes the width of th
 &#64; &Uuml; @ symbol - @
 &#149; &ouml; Small bullet - .
 &#153; &ucirc; Trademark Symbol - ™
+
+<!-- * *******************************************************************************************
+ * HTML5 Cheat sheet by Hackr.io
+ * Source: https://websitesetup.org/wp-content/uploads/2014/02/HTML-CHEAT-SHEET-768x8555.png
+ * ******************************************************************************************* * -->
