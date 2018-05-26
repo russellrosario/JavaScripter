@@ -193,9 +193,7 @@ var allTheMeals = [...dayTimeMeals, ...nightTimeMeals]
 var animals = ['fish', 'bird', 'gorilla', 'dog']
 var mammals = ['horse','gorilla','human','dog']
 
-animals.filter(function(n) {
-    return mammals.indexOf(n) !== -1;
-});
+animals.filter((animal) => mammals.indexOf(animal) !== -1)
 ```
 
 ## Remove duplicates from array
@@ -208,21 +206,15 @@ numbers = [...new Set(numbers)]
 ## Map items to a new array
 ```javascript
 var meals = ['breakfast', 'lunch', 'dinner'];
-var type = ['king', 'prince', 'pauper'];
 
-meals.map(function(item, i) {
-  return item + ' like a ' + type[i];
-});
-// ["breakfast like a king", "lunch like a prince", "dinner like a pauper"]
+meals.map((meal, index) => console.log(`I like ${meal} - ${index}`))
 ```
 
 ## Filter an array
 ```javascript
-var meals = ['breakfast', 'lunch', 'dinner', 'supper'];
+var meals = ['breakfast', 'lunch', 'dinner', 'supper']
 
-meals.filter(function(item) {
-  return item !== 'breakfast';
-});
+meals.filter((meal) => meal !== 'breakfast')
 ```
 
 ## Reduce an array
@@ -234,9 +226,9 @@ var sum = numbers.reduce((total, amount) => total + amount);
 
 ## Execute a function once per array item
 ```javascript
-var meals = ['breakfast', 'lunch', 'dinner', 'supper'];
+var meals = ['breakfast', 'lunch', 'dinner', 'supper']
 
-meals.forEach(function(currentValue, index, arr){  console.log(index, currentValue, arr)})
+meals.forEach((currentValue, index, arr) => console.log(`${currentValue} = ${arr[index]}`))
 // OR
 for (item in meals) { console.log(meals[item])}
 ```
@@ -245,14 +237,14 @@ for (item in meals) { console.log(meals[item])}
 ```javascript
 var meals = ['breakfast', 'lunch', 'dinner', 'supper'];
 
-meals.every(function(item){ return item.length > 0 });
+meals.every((meal) => meal.length > 2 )
 ```
 
 ## One item meets a condition
 ```javascript
 var meals = ['breakfast', 'lunch', 'dinner', 'supper'];
 
-meals.some(function(item){ return item === 'lunch';});
+meals.some((meal) => meal === 'lunch')
 // OR
 meals.includes('lunch')
 ```
