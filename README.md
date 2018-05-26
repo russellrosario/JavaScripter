@@ -22,7 +22,7 @@ You are more than welcome to contribute and help improve this project. Just subm
 
 * [Array and Object methods](javascript/arrays.md)
 * [DOM API](javascript/DOM.md)
-* [Regular Expressions](javascript/regex.jpg)
+* [Regular Expressions](javascript/regex.md)
 * [Operators](javascript/operators.md)
 </details>
 

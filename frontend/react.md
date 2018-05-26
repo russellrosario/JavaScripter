@@ -1,7 +1,8 @@
 # React
 
 ![React1](react.gif)
-![React2](react.jpg)
+
+![React2](react.png)
 
 
 
