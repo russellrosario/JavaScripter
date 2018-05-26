@@ -20,7 +20,7 @@ You are more than welcome to contribute and help improve this project. Just subm
 <details>
 <summary> 📃 Javascript</summary>
 
-* [Functional Programming](javascript/functional_programming.md)
+* [Array and Object methods](javascript/arrays.md)
 * [Regular Expressions](javascript/regular_expressions.md)
 * [Cheatsheets](javascript/cheatsheets.md)
 </details>
@@ -54,7 +54,6 @@ You are more than welcome to contribute and help improve this project. Just subm
 
 * [Javascript Performance](advanced/performance.md)
 * [CS Algorithms](advanced/algorithms.md)
-* [Design Patterns](advanced/design_patterns.md)
 * [Design Patterns](advanced/design_patterns.md)
   </details>
 

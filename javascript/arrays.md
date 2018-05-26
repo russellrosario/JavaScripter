@@ -30,7 +30,7 @@
 * [Find index of an item](#user-content-find-index-of-an-item)
 * [Detect an array](#user-content-detect-an-array)
 * [Spread array into function parameters](#user-content-spread-array-into-function-parameters)
-* [Clone an object(s) (shallow)](#user-content-clone-a-objects-shallow)
+* [Clone an object](#user-content-clone-an-object)
 * [Loop over object's key value pairs](#user-content-loop-over-objects-key-value-pairs)
 * [Modify object states](#user-content-modify-object-states)
 
@@ -269,30 +269,32 @@ let numbers = [9, 4, 7, 1];
 Math.min(...numbers); // 1
 ```
 
-## Clone a object(s) (shallow)
+## Clone an object
 ```javascript
-const obja = {a: 1, b: 2};
-const objb = {a: 3, d: 4};
-const copy = {
-    ...obja,
-    ...objb
-  }
+var myObj = {a: 1, b: {c: 2, d: 3}}
+
+var myObj2 = JSON.parse(JSON.stringify(myObj))
 ```
 
 ## Loop over object's key value pairs
 ```javascript
-var myObject = {a: 1, b: 2, c: 3};
-for (var prop in myObject) {
-  console.log(prop + myObject[prop])
+var myObj = {a: 1, b: 2, c: 3}
+for (var prop in myObj) {
+  console.log(prop + myObj[prop])
 }
 ```
 
 ## Modify object states
 ```javascript
-Object.freeze(object) // prevent mutation and deletion
-Object.seal(object) // allow mutation, but no additions or deletions to state
-```
+Object.freeze(obj) // prevent mutation and deletion
+Object.seal(obj) // allow mutation, but no additions or deletions to state
+Object.isFrozen(obj)                                 // Determines if an object was frozen.
+Object.isSealed(obj)
+Object.keys(obj)
+Object.keys(obj)
+obj.hasOwnProperty(prop)
 
+```
 
 
 
