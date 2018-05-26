@@ -21,6 +21,7 @@ You are more than welcome to contribute and help improve this project. Just subm
 <summary> 📃 Javascript</summary>
 
 * [Array and Object methods](javascript/arrays.md)
+* [Interview Questions](javascript/interview_questions.md)
 * [DOM API](javascript/DOM.md)
 * [Regular Expressions](javascript/regex.md)
 * [Operators](javascript/operators.md)
