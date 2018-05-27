@@ -49,5 +49,5 @@ You are more than welcome to contribute and help improve this project. Just subm
 * [Command Line](development/command_line.md)
 * [Design Patterns](development/design_patterns.pdf)
 * [Git](development/git.pdf)
-* [Testing](development/testing.md)
+* [Testing with Jest](development/testing.md)
   </details>

@@ -1,6 +1,6 @@
 # Array and Object methods
 
-![Arrays](array.png)
+![Arrays](arrayobject.jpg)
 
 * [Empty an array](#user-content-empty-an-array)
 * [Clone an array](#user-content-clone-an-array)
