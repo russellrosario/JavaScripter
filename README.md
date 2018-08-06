@@ -1,53 +1,19 @@
-# Learn MERN stack hacks
+# Full Stack JavaScript Cheat Sheets
 
-![MERN LOGOS](mern.jpg)
-
-> ❤️ **If you like this repository, please star, fork and contribute.** ❤️
-
-## 🤔 Why?
-
-I started a bootcamp at the University of Miami and wanted to have an organized repository of diagrams, references, and cheatsheets to reference whenever I forgot how something worked. The bootcamp focused on the MERN stack (MongoDB, Express, React, Node) so the materials organized in this repository will be primarily focused on this stack.
-
-## 🙌🏼 Want to Contribute?
-
-You are more than welcome to contribute and help improve this project. Just submit changes via pull request and I will review them before merging.
-
-
-## 📚 Table of Contents
-
-
-
-<details>
-<summary> 📃 Javascript</summary>
-
-* [Array and Object methods](javascript/arrays.md)
-* [Interview Questions](javascript/interview_questions.md)
-* [DOM API](javascript/DOM.md)
-* [Regular Expressions](javascript/regex.md)
-* [Operators](javascript/operators.md)
-</details>
-
-<details>
-<summary> 📦 Backend</summary>
-
-* [Node](backend/node.md)
-* [Express](backend/express.md)
-* [MongoDB](backend/mongodb.pdf)
-  </details>
-
-<details>
-<summary> 🌐 Frontend</summary>
-
-* [React and Redux](frontend/react_and_redux.pdf)
-* [HTML](frontend/html.md)
-* [CSS](frontend/css.md)
-</details>
-
-<details>
-<summary> 🔧 Development </summary>
-
-* [Command Line](development/command_line.md)
-* [Design Patterns](development/design_patterns.pdf)
-* [Git](development/git.pdf)
-* [Testing with Jest](development/testing.md)
-  </details>
+* [Command Line](files/command_line.md)
+* [HTML](files/html.md)
+* [CSS](files/css.md)
+* [DOM API](files/DOM.md)
+* [Git](files/git.pdf)
+* [Markdown](files/markdown.md)
+* [Operator Precedence & Equality](files/operators.md)
+* [Array and Object methods](files/arrays.md)
+* [Regular Expressions](files/regex.md)
+* [Node](files/node.md)
+* [Express](files/express.md)
+* [MongoDB](files/mongodb.pdf)
+* [React and Redux](files/react_and_redux.pdf)
+* [Design Patterns](files/design_patterns.pdf)
+* [Testing with Jest](files/testing.md)
+* [Docker](files/docker.md)
+* [Interview Questions](files/interview_questions.md)
