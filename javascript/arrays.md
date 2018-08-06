@@ -293,7 +293,6 @@ Object.seal(obj) // allow mutation, but no additions or deletions to state
 Object.isFrozen(obj)                                 // Determines if an object was frozen.
 Object.isSealed(obj)
 Object.keys(obj)
-Object.keys(obj)
 obj.hasOwnProperty(prop)
 
 ```
