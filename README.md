@@ -5,7 +5,7 @@
 * [CSS](files/css.md)
 * [DOM API](files/DOM.md)
 * [Git](files/git.pdf)
-* [Markdown](files/markdown.md)
+* [Markdown](files/markdown-cheatsheet-online.pdf)
 * [Operator Precedence & Equality](files/operators.md)
 * [Array and Object methods](files/arrays.md)
 * [Regular Expressions](files/regex.md)
