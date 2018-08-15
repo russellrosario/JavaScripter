@@ -17,5 +17,5 @@
 * [React and Redux](files/react_and_redux.pdf)
 * [Design Patterns](files/design_patterns.pdf)
 * [Testing with Jest](files/testing.md)
-* [Docker](files/docker.md)
+* [Docker](files/docker-quick-ref.pdf)
 * [Interview Questions](files/interview_questions.md)
