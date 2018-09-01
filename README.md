@@ -1,4 +1,4 @@
-# Full Stack JavaScript Cheat Sheets
+# Full Stack JavaScript Cheatsheets
 
 * [Command Line](files/command_line.md)
 * [HTML](files/html.md)
