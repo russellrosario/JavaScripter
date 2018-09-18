@@ -1,10 +1,10 @@
 # ALGORITHMIC COMPLEXITY
 * O(1): A function that executes with similar time regardless of size of inputs
 * O(log n): Find a result within a sorted context
-* O(n): 1 FOR loop
-* O(n log n): Sorting algorithm
-* O(n^2): 2 FOR loops
-* O(2^n): Fibonacci calculation executes two recursive functions
+* O(n): 1 FOR loop performing an operation on every element of an array
+* O(n log n): Sorting algorithm that works recursively
+* O(n^2): 2 FOR loops (2 dimensional array)
+* O(2^n): Fibonacci calculation executes two additional recursive functions until the base case
 * O(n!): Brute force password cracking based on password length
 
 # DATA STRUCTURES
