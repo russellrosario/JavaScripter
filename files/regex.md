@@ -2,9 +2,55 @@
 
 ![Regex](regex.jpg)
 
-This document describes the regular expression features available in JavaScript up to ES2018. Some ES2018 features have not been released.
+## Most common regex functions
+str.test(reg)
+```
+var str = "The best things in life are free";
+var reg = new RegExp("e");
+var res = reg.test(str);
+```
 
-The current version of this document is very far from done. This is just an initial commit describing some of the basic features of constructing simple regular expressions in JavaScript. This document will only be shared from version 1.0 onwards.
+str.match(reg)
+```
+var paragraph = 'The quick brown fox jumped over the lazy dog. It barked.';
+var reg = /[A-Z]/g;
+var found = paragraph.match(reg);
+console.log(found); // expected output: Array ["T", "I"]
+```
+
+reg.exec(str)
+```
+var str = "The best things in life are free";
+var reg = new RegExp("e");
+var res = reg.exec(str);
+```
+
+str.replace(str1,str2)
+```
+var p = 'The quick brown fox jumped over the lazy dog. If the dog reacted, was it really lazy?';
+var reg = /dog/gi;
+console.log(p.replace(reg, 'ferret')); // expected output: "The quick brown fox jumped over the lazy ferret. If the ferret reacted, was it really lazy?"
+```
+
+str.search(reg)
+```
+let str = "A drop of ink may make a million think";
+alert( str.search( /a/i ) ); // 0 (the first position)
+```
+
+str.includes('')
+```
+var sentence = 'The quick brown fox jumped over the lazy dog.';
+var word = 'fox';
+console.log('The word "' + word + (sentence.includes(word)? '" is' : '" is not') + ' in the sentence'); // expected output: "The word "fox" is in the sentence"
+```
+
+str.split('')
+```
+var str = 'The quick brown fox jumped over the lazy dog.';
+var words = str.split(' ');
+console.log(words[3]); // expected output: "fox"
+```
 
 ## Basic definitions
 
