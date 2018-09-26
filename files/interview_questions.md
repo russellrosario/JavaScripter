@@ -48,11 +48,11 @@
 * Hoisting
   * JavaScript's default behavior of moving variable declarations to the top allowing its use before it has been declared
 * Project design
-  * Start with a mockup
-  * List all the features to be implemented (UML)
-  * Determine technologies to use (frontend, backend, DevOps)
-  * Address obstacles (time, cost, knowledge)
-  * How to scale?
+  1. Start with a mockup
+  2. List all the features to be implemented (UML)
+  3. Determine technologies to use (frontend, backend, DevOps)
+  4. Address obstacles (time, cost, knowledge)
+  5. Future considerations (scaling, TDD)
 * Memoization
   * An optimization technique used primarily to speed up computer programs by storing the results of expensive function calls and returning the cached result when the same inputs occur again
 
