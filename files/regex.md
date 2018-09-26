@@ -1,5 +1,3 @@
-# JavaScript Regular Expressions
-
 ![Regex](regex.jpg)
 
 ## Most common regex functions
@@ -497,15 +495,3 @@ Attempts to match each branch of the alternation until the *first* match is foun
 Possessive alternation does not exist in JavaScript. However, there are workarounds.
 
 Assuming we don't have any other capture groups in front of the expression, use `(?=(a|b))\1` instead of the generic PCRE pattern `(?>a|b)`
-
-## Recommended RegExp library
-
-[XRegExp](https://github.com/slevithan/xregexp)
-- Extended formatting
-- Named captures
-- Possessive loops
-- etc.
-
-## Articles
-
-Check out [my articles](http://www.zsoltnagy.eu/category/regular-expressions/) on regular expressions.
