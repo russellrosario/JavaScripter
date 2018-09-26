@@ -1,17 +1,5 @@
-# DATA STRUCTURES
-* Queue (FIFO) & Stack (LIFO)
-* Hash tables
-  * A hash table uses a hash function to compute an index into an array of buckets or slots, from which the desired value can be found.
-* Linked lists
-  * A linear collection of nodes where each node contains data and a reference link to the next node in the sequence
-  * ![Linked lists](https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Singly-linked-list.svg/408px-Singly-linked-list.svg.png)
-* Trees
-  * <img src="https://www.w3schools.com/js/pic_htmltree.gif" alt="Tree" width="400"/>
-* Binary trees
-  * <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Binary_search_tree.svg/300px-Binary_search_tree.svg.png" alt="Binary Tree" width="200"/>
-
-# OTHER COMMON QUESTIONS
-* ALGORITHMIC COMPLEXITY
+# MOST COMMON QUESTIONS
+* Algorithmic Complexity (Examples)
   * O(1): A function that executes with similar time regardless of size of inputs
   * O(log n): Find a result within a sorted context
   * O(n): 1 FOR loop performing an operation on every element of an array
@@ -55,52 +43,14 @@
 * Memoization
   * An optimization technique used primarily to speed up computer programs by storing the results of expensive function calls and returning the cached result when the same inputs occur again
 
-# COMMON REGEX FUNCTIONS
-str.test(reg)
-```
-var str = "The best things in life are free";
-var reg = new RegExp("e");
-var res = reg.test(str);
-```
-
-str.match(reg)
-```
-var paragraph = 'The quick brown fox jumped over the lazy dog. It barked.';
-var reg = /[A-Z]/g;
-var found = paragraph.match(reg);
-console.log(found); // expected output: Array ["T", "I"]
-```
-
-reg.exec(str)
-```
-var str = "The best things in life are free";
-var reg = new RegExp("e");
-var res = reg.exec(str);
-```
-
-str.replace(str1,str2)
-```
-var p = 'The quick brown fox jumped over the lazy dog. If the dog reacted, was it really lazy?';
-var reg = /dog/gi;
-console.log(p.replace(reg, 'ferret')); // expected output: "The quick brown fox jumped over the lazy ferret. If the ferret reacted, was it really lazy?"
-```
-
-str.search(reg)
-```
-let str = "A drop of ink may make a million think";
-alert( str.search( /a/i ) ); // 0 (the first position)
-```
-
-str.includes('')
-```
-var sentence = 'The quick brown fox jumped over the lazy dog.';
-var word = 'fox';
-console.log('The word "' + word + (sentence.includes(word)? '" is' : '" is not') + ' in the sentence'); // expected output: "The word "fox" is in the sentence"
-```
-
-str.split('')
-```
-var str = 'The quick brown fox jumped over the lazy dog.';
-var words = str.split(' ');
-console.log(words[3]); // expected output: "fox"
-```
+# DATA STRUCTURES
+* Queue (FIFO) & Stack (LIFO)
+* Hash tables
+  * A hash table uses a hash function to compute an index into an array of buckets or slots, from which the desired value can be found.
+* Linked lists
+  * A linear collection of nodes where each node contains data and a reference link to the next node in the sequence
+  * ![Linked lists](https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Singly-linked-list.svg/408px-Singly-linked-list.svg.png)
+* Trees
+  * <img src="https://www.w3schools.com/js/pic_htmltree.gif" alt="Tree" width="400"/>
+* Binary trees
+  * <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Binary_search_tree.svg/300px-Binary_search_tree.svg.png" alt="Binary Tree" width="200"/>
