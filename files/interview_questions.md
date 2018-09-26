@@ -1,12 +1,3 @@
-# ALGORITHMIC COMPLEXITY
-* O(1): A function that executes with similar time regardless of size of inputs
-* O(log n): Find a result within a sorted context
-* O(n): 1 FOR loop performing an operation on every element of an array
-* O(n log n): Sorting algorithm that works recursively
-* O(n^2): 2 FOR loops (2 dimensional array)
-* O(2^n): Fibonacci calculation executes two additional recursive functions until the base case
-* O(n!): Brute force password cracking based on password length
-
 # DATA STRUCTURES
 * Queue (FIFO) & Stack (LIFO)
 * Hash tables
@@ -20,6 +11,14 @@
   * <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/da/Binary_search_tree.svg/300px-Binary_search_tree.svg.png" alt="Binary Tree" width="200"/>
 
 # OTHER COMMON QUESTIONS
+* ALGORITHMIC COMPLEXITY
+  * O(1): A function that executes with similar time regardless of size of inputs
+  * O(log n): Find a result within a sorted context
+  * O(n): 1 FOR loop performing an operation on every element of an array
+  * O(n log n): Sorting algorithm that works recursively
+  * O(n^2): 2 FOR loops (2 dimensional array)
+  * O(2^n): Fibonacci calculation executes two additional recursive functions until the base case
+  * O(n!): Brute force password cracking based on password length
 * Scope & Closures
   * A scope in JavaScript defines what variables you have access to. There are two kinds of scope – global scope and local scope.
   * Whenever you create a function within another function, you have created a closure. The inner function is the closure. This closure is usually returned so you can use the outer function's variables at a later time.
