@@ -1,4 +1,4 @@
-## [https://www.javascripter.co/]
+## https://www.javascripter.co/
 
 ### Clone and development instructions (requires Hugo)
 ```
