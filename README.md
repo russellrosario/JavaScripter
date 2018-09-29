@@ -1,20 +1,8 @@
-# Full Stack JavaScript Cheatsheets
 
-- [Command Line](files/command_line.md)
-- [HTML](files/html.md)
-- [CSS](files/css.md)
-- [Bootstrap](files/Bootstrap.pdf)
-- [jQuery](files/jQuery.pdf)
-- [Git](files/git.pdf)
-- [Markdown](files/markdown-cheatsheet-online.pdf)
-- [Array and Object methods](files/arrays.md)
-- [Regular Expressions](files/regex.md)
-- [Node](files/node.md)
-- [MongoDB](files/mongodb.pdf)
-- [Mongoose ODM](files/mongoose.md)
-- [SQL](files/SQL.png)
-- [React](files/react.pdf)
-- [Redux](files/redux.pdf)
-- [Design Patterns](files/design_patterns.pdf)
-- [Testing with Jest](files/testing.md)
-- [Interview Questions](files/interview_questions.md)
+
+## Clone instructions (requires Hugo)
+```
+git clone --recurse-submodules https://github.com/rosariorussell/cheatsheets-netlify.git
+cd cheatsheets-netlify
+hugo server
+```
