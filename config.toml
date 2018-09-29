@@ -1,0 +1,37 @@
+baseURL = ""
+languageCode = "en-us"
+title = "Full Stack JavaScript Cheatsheets"
+theme = "kube"
+description = "TopCofounders is a professional networking site for finding the very best cofounders"
+Paginate = 4
+[Params]
+  RSSLink = "/index.xml"
+  author = "newpixcom" # add your company name
+  github = "rosariorussell" # add your github profile name
+  twitter = "" # add your twitter profile
+  email = "myemail@myaddress.xxx"
+
+[[menu.main]]
+    name = "Cheatsheets"
+    weight = -100
+    url = "/cheatsheets/"
+[[menu.main]]
+    name = "Diagrams"
+    weight = -100
+    url = "/diagrams/"
+[[menu.main]]
+    name = "Interview ?'s"
+    weight = -100
+    url = "/interview/"
+[[menu.main]]
+    name = "Videos"
+    weight = -100
+    url = "/videos/"
+[[menu.main]]
+    name = "Resources"
+    weight = -100
+    url = "/resources/"
+[[menu.main]]
+    name = "Tools"
+    weight = -100
+    url = "/tools/"
