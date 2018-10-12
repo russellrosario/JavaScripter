@@ -1,10 +1,18 @@
 +++
-description = "Add some motion, shaking, pulsing, sliding and more"
+description = "The node system and event loop"
 title = "Node"
 date = "2017-04-10T16:43:08+01:00"
 draft = false
 weight = 200
-bref="Although it is quite easy to overuse animation effects, Kube makes it pretty easy to create meaningful, smooth and overall nice looking animation. Feel free to click every button below to see what it does, and then only use those effects that are essential to your project"
+bref="Node.js is an open-source, cross-platform JavaScript run-time environment that executes JavaScript code outside of a browser"
 toc = true
 script = 'animation'
 +++
+
+<h3 class="section-head" id="h-nodejs"><a href="#h-nodejs">Node.js</a></h3>
+
+<img alt="Image" src="/img/diagrams/node/nodeJS.jpg" width="800">
+
+<h3 class="section-head" id="h-node_event_loop.png"><a href="#h-node_event_loop.png">Node Event Loop</a></h3>
+
+<img alt="Image" src="/img/diagrams/node/node_event_loop.png" width="800">
