@@ -2,7 +2,7 @@ baseURL = ""
 languageCode = "en-us"
 title = "Full Stack JavaScript Cheatsheets"
 theme = "kube"
-description = "Full Stack JavaScript Cheatsheets is the go-to resource for junior JavaScript developers"
+description = "Full Stack JavaScript Cheatsheets is the go-to resource for junior JavaScript developers!"
 Paginate = 4
 [Params]
   RSSLink = "/index.xml"
