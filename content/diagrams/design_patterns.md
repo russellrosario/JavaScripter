@@ -9,7 +9,7 @@ toc = false
 script = 'animation'
 +++
 
-<a href="https://github.com/kamranahmedse/design-patterns-for-humans">Link to full explanations</a>
+<a href="https://www.javascripter.co/cheatsheets/design_patterns">Link to full explanations</a>
 
 
 <img alt="Image" src="/img/diagrams/design_patterns/designpatterns1.jpg" width="800">

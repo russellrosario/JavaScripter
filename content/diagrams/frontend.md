@@ -1,5 +1,5 @@
 +++
-description = "React, Redux, Angular"
+description = "React with Redux and Angular"
 title = "Frontend frameworks"
 date = "2017-04-10T16:43:08+01:00"
 draft = false

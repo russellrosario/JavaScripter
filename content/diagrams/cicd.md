@@ -1,6 +1,6 @@
 +++
-description = "Continuous software development"
-title = "Continuous Integration & Development"
+description = "Continuous Integration & Development"
+title = "Continuous software development"
 date = "2017-04-10T16:43:08+01:00"
 draft = false
 weight = 200
@@ -8,6 +8,10 @@ bref="Continuous software development is an umbrella term that describes several
 toc = true
 script = 'animation'
 +++
+
+<h3 class="section-head" id="h-agile"><a href="#h-agile">Agile development</a></h3>
+
+<img alt="Image" src="/img/diagrams/cicd/agile.jpg" width="800">
 
 <h3 class="section-head" id="h-cicd"><a href="#h-cicd">CI vs CD vs CD</a></h3>
 

@@ -9,9 +9,9 @@ toc = true
 script = 'animation'
 +++
 
-<h3 class="section-head" id="h-agile"><a href="#h-agile">Agile development</a></h3>
+<h3 class="section-head" id="h-tcpip"><a href="#h-tcpip">TCP/IP</a></h3>
 
-<img alt="Image" src="/img/diagrams/dev_ops/agile.jpg" width="800">
+<img alt="Image" src="/img/diagrams/dev_ops/TCP_IP.png" width="800">
 
 <h3 class="section-head" id="h-serverless"><a href="#h-serverless">Serverless with AWS</a></h3>
 
@@ -21,6 +21,14 @@ script = 'animation'
 
 <img alt="Image" src="/img/diagrams/dev_ops/docker.png" width="800">
 
-<h3 class="section-head" id="h-tcpip"><a href="#h-tcpip">TCP/IP</a></h3>
+<h3 class="section-head" id="h-scaled-deployment"><a href="#h-scaled-deployment">AWS scaled deployment</a></h3>
 
-<img alt="Image" src="/img/diagrams/dev_ops/TCP_IP.png" width="800">
+<img alt="Image" src="/img/diagrams/dev_ops/AWS_scaled_deployment.png" width="800">
+
+<h3 class="section-head" id="h-aws-vpc"><a href="#h-aws-vpc">VPC within AWS</a></h3>
+
+<img alt="Image" src="/img/diagrams/dev_ops/AWS_VPC.png" width="800">
+
+<h3 class="section-head" id="h-cloudformation"><a href="#h-cloudformation">Infrastructure as code</a></h3>
+
+<img alt="Image" src="/img/diagrams/dev_ops/cloudformation.jpg" width="800">
