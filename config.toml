@@ -2,7 +2,7 @@ baseURL = ""
 languageCode = "en-us"
 title = "Full Stack JavaScript Cheatsheets"
 theme = "kube"
-description = "TopCofounders is a professional networking site for finding the very best cofounders"
+description = "Full Stack JavaScript Cheatsheets is the go-to resource for junior JavaScript developers"
 Paginate = 4
 [Params]
   RSSLink = "/index.xml"
@@ -19,10 +19,6 @@ Paginate = 4
     name = "Diagrams"
     weight = -100
     url = "/diagrams/"
-[[menu.main]]
-    name = "Videos"
-    weight = -100
-    url = "/videos/"
 [[menu.main]]
     name = "Resources"
     weight = -100

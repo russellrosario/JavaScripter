@@ -1,17 +1,14 @@
 +++
-description = "Array and Object methods"
+description = "Array methods"
 title = "Arrays"
 date = "2017-04-10T16:43:08+01:00"
 draft = false
 weight = 200
 bref="In computer programming, an array is a set of data elements stored under the same name. Arrays can be created to hold any type of data, and each element can be individually assigned and read. There can be arrays of numbers, characters, sentences, boolean values, and so on"
-toc = true
+toc = false
 script = 'animation'
 +++
 
-# Array and Object methods
-
-![Arrays](arrayobject.jpg)
 
 * [Empty an array](#user-content-empty-an-array)
 * [Clone an array](#user-content-clone-an-array)
