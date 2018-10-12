@@ -4,7 +4,7 @@ title = "Markdown"
 date = "2017-04-10T16:43:08+01:00"
 draft = false
 weight = 200
-bref="Although it is quite easy to overuse animation effects, Kube makes it pretty easy to create meaningful, smooth and overall nice looking animation. Feel free to click every button below to see what it does, and then only use those effects that are essential to your project"
+bref="Markdown is a lightweight markup language with plain text formatting syntax. It is designed so that it can be converted to HTML and many other formats using a tool by the same name"
 toc = true
 script = 'animation'
 +++

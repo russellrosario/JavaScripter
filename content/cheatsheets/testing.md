@@ -1,452 +1,1079 @@
 +++
-description = "Example tests within Jest Framework"
-title = "Testing"
+description = "Test driven development"
+title = "TDD"
 date = "2017-04-10T16:43:08+01:00"
 draft = false
 weight = 200
-bref="Although it is quite easy to overuse animation effects, Kube makes it pretty easy to create meaningful, smooth and overall nice looking animation. Feel free to click every button below to see what it does, and then only use those effects that are essential to your project"
-toc = true
+bref="Test-driven development (TDD) is a software development process that relies on the repetition of a very short development cycle: requirements are turned into very specific test cases, then the software is improved to pass the new tests, only"
+toc = false
 script = 'animation'
 +++
 
-# Testing (Jest Framework)
+# A guide to unit testing in JavaScript
 
-<div align="center" markdown="1">
+### Table of contents
 
-<img src="https://d3vv6lp55qjaqc.cloudfront.net/items/2D2K45312x0M1q2C0a3P/jest-logo.svg" width="200">
+1. General principles
+  + [Unit tests](#unit-tests)
+  + [Design principles](#design-principles)
+2. Guidelines
+  + [Whenever possible, use TDD](#whenever-possible-use-tdd)
+  + [Structure your tests properly](#structure-your-tests-properly)
+  + [Name your tests properly](#name-your-tests-properly)
+  + [Don't comment out tests](#dont-comment-out-tests)
+  + [Avoid logic in your tests](#avoid-logic-in-your-tests)
+  + [Don't write unnecessary expectations](#dont-write-unnecessary-expectations)
+  + [Properly setup the actions that apply to all the tests involved](#properly-setup-the-actions-that-apply-to-all-the-tests-involved)
+  + [Consider using factory functions in the tests](#consider-using-factory-functions-in-the-tests)
+  + [Know your testing framework API](#know-your-testing-framework-api)
+  + [Don't test multiple concerns in the same test](#dont-test-multiple-concerns-in-the-same-test)
+  + [Cover the general case and the edge cases](#cover-the-general-case-and-the-edge-cases)
+  + [When applying TDD, always start by writing the simplest failing test](#when-applying-tdd-always-start-by-writing-the-simplest-failing-test)
+  + [When applying TDD, always make small steps in each test-first cycle](#when-applying-tdd-always-make-small-steps-in-each-test-first-cycle)
+  + [Test the behaviour, not the internal implementation](#test-the-behaviour-not-the-internal-implementation)
+  + [Don't mock everything](#dont-mock-everything)
+  + [Create new tests for every defect](#create-new-tests-for-every-defect)
+  + [Don't write unit tests for complex user interactions](#dont-write-unit-tests-for-complex-user-interactions)
+  + [Test simple user actions](#test-simple-user-actions)
+  + [Review test code first](#review-test-code-first)
+  + [Practice code katas, learn with pair programming](#practice-code-katas-learn-with-pair-programming)
+3. [References](#references)
 
-</div>
+## General principles
 
-_I recommend [Mrm](https://github.com/sapegin/mrm-tasks/tree/master/packages/mrm-task-jest) and [jest-codemods](https://github.com/skovhus/jest-codemods) for single-command Jest installation and easy migration from other frameworks._
+### Unit tests
 
-<!-- To reformat run: npx prettier --print-width 100 --single-quote --no-semi --prose-wrap never --write Readme.md -->
+**Unit = Unit of work**
 
-<!-- To update run: npx markdown-toc --maxdepth 3 -i Readme.md -->
+This could involve **multiple methods and classes** invoked by some public API that can:
 
-<!-- toc -->
++ Return a value or throw an exception
++ Change the state of the system
++ Make 3rd party calls
 
-- [Test structure](#test-structure)
-- [Matchers](#matchers)
-  - [Aliases](#aliases)
-  - [Promise matchers (Jest 20+)](#promise-matchers-jest-20)
-- [Async tests](#async-tests)
-  - [async/await](#asyncawait)
-  - [Promises](#promises)
-  - [done() callback](#done-callback)
-- [Mocks](#mocks)
-  - [Mock functions](#mock-functions)
-  - [Mock modules using `jest.mock` method](#mock-modules-using-jestmock-method)
-  - [Mock modules using a mock file](#mock-modules-using-a-mock-file)
-  - [Mock object methods](#mock-object-methods)
-  - [Mock getters and setters (Jest 22.1.0+)](#mock-getters-and-setters-jest-2210)
-  - [Mock getters and setters](#mock-getters-and-setters)
-  - [Clearing and restoring mocks](#clearing-and-restoring-mocks)
-  - [Accessing the original module when using mocks](#accessing-the-original-module-when-using-mocks)
-- [Data-driven tests (Jest 23+)](#data-driven-tests-jest-23)
-- [Skipping tests](#skipping-tests)
-- [Testing modules with side effects](#testing-modules-with-side-effects)
-- [Usage with Babel and TypeScript](#usage-with-babel-and-typescript)
-- [Resources](#resources)
-- [You may also like](#you-may-also-like)
-- [Contributing](#contributing)
-- [Author and license](#author-and-license)
+A unit test should test the behaviour of a unit of work: for a given input, it expects an end result that can be any of the above.
 
-<!-- tocstop -->
+**Unit tests are isolated and independent of each other**
 
-## Test structure
++ Any given behaviour should be specified in **one and only one test**
++ The execution/order of execution of one test **cannot affect the others**
+
+The code is designed to support this independence (see "Design principles" below).
+
+**Unit tests are lightweight tests**
+
++ Repeatable
++ Fast
++ Consistent
++ Easy to write and read
+
+**Unit tests are code too**
+
+They must meet the same level of quality as the code being tested. They can be refactored as well to make them more maintainable and/or readable.
+
+• [Back to ToC](#user-content-table-of-contents) •
+
+### Design principles
+
+The key to good unit testing is to write **testable code**. Applying simple design principles can help, in particular:
+
++ Use a **good naming** convention and **comment** your code (the "why?" not the "how"), keep in mind that comments are not a substitute for bad naming or bad design
++ **DRY**: Don't Repeat Yourself, avoid code duplication
++ **Single responsibility**: each object/function must focus on a single task
++ Keep a **single level of abstraction** in the same component (for example, do not mix business logic with lower-level technical details in the same method)
++ **Minimize dependencies** between components: encapsulate, interchange less information between components
++ **Support configurability** rather than hard-coding, this prevents having to replicate the exact same environment when testing (e.g.: markup)
++ Apply adequate **design patterns**, especially **dependency injection** that allows separating an object's creation responsibility from business logic
++ Avoid global mutable state
+
+• [Back to ToC](#user-content-table-of-contents) •
+
+## Guidelines
+
+The goal of these guidelines is to make your tests:
+
++ **Readable**
++ **Maintainable**
++ **Trustworthy**
+
+These are the 3 pillars of good unit testing.
+
+All the following examples assume the usage of the [Jasmine](http://jasmine.github.io) framework.
+
+• [Back to ToC](#user-content-table-of-contents) •
+
+---------------------------------------
+
+### Whenever possible, use TDD
+
+TDD is a _design process_, not a testing process. TDD is a robust way of designing software components ("units") interactively so that their behaviour is specified through unit tests.
+
+How? Why?
+
+#### Test-first cycle
+
+1. Write a simple failing test
+2. Make the test pass by writing the minimum amount of code
+3. Refactor the code by applying design principles/patterns
+
+During phase 2, don't bother with quality.
+
+#### Consequences of the test-first cycle
+
++ Writing a test first makes the code design more testable
++ Writing just the amount of code needed to implement the required functionality makes the resulting codebase minimal, thus more maintainable
++ The codebase can be enhanced using refactoring mechanisms, the tests give you confidence that the new code is not modifying the existing functionalities
++ Cleaning the code in each cycle makes the codebase more maintainable, it is much cheaper to change the code frequently and in small increments
++ Fast feedback for the developers, you know that you don't break anything and that you are evolving the system in a good direction
++ Generates confidence to add features, fix bugs, or explore new designs
+
+Note that code written without a test-first approach is often very hard to test!
+
+• [Back to ToC](#user-content-table-of-contents) •
+
+### Structure your tests properly
+
+Don't hesitate to nest your suites to structure logically your tests in subsets.
+
+**:(**
 
 ```js
-describe("makePoniesPink", () => {
-  beforeAll(() => {
-    /* Runs before all tests */
+describe('A set of functionalities', () => {
+  it('a set of functionalities should do something nice', () => {
   });
-  afterAll(() => {
-    /* Runs after all tests */
-  });
-  beforeEach(() => {
-    /* Runs before each test */
-  });
-  afterEach(() => {
-    /* Runs after each test */
+
+  it('a subset of functionalities should do something great', () => {
   });
 
-  test("make each pony pink", () => {
-    const actual = fn(["Alice", "Bob", "Eve"]);
-    expect(actual).toEqual(["Pink Alice", "Pink Bob", "Pink Eve"]);
+  it('a subset of functionalities should do something awesome', () => {
   });
-});
-```
 
-## Matchers
-
-```js
-expect.assertions(28); // Exactly 28 assertions are called during a test
-expect.hasAssertions(); // At least one assertion is called during a test
-
-expect(42).toBe(42); // ===
-expect(42).not.toBe(3); // !==
-expect([1, 2]).toEqual([1, 2]); // Deep equality
-expect("").toBeFalsy(); // false, 0, '', null, undefined, NaN
-expect("foo").toBeTruthy(); // Not false, 0, '', null, undefined, NaN
-expect(null).toBeNull(); // === null
-expect(undefined).toBeUndefined(); // === undefined
-expect(7).toBeDefined(); // !== undefined
-
-expect("long string").toMatch("str");
-expect("coffee").toMatch(/ff/);
-expect("pizza").not.toMatch("coffee");
-expect(["pizza", "coffee"]).toEqual([
-  expect.stringContaining("zz"),
-  expect.stringMatching(/ff/)
-]);
-
-expect(new A()).toBeInstanceOf(A);
-expect(() => {}).toEqual(expect.any(Function));
-expect("pizza").toEqual(expect.anything());
-
-expect({ a: 1 }).toHaveProperty("a");
-expect({ a: 1 }).toHaveProperty("a", 1);
-expect({ a: { b: 1 } }).toHaveProperty("a.b");
-expect({ a: 1, b: 2 }).toMatchObject({ a: 1 });
-expect({ a: 1, b: 2 }).toMatchObject({
-  a: expect.any(Number),
-  b: expect.any(Number)
-});
-expect([{ a: 1 }, { b: 2 }]).toEqual([
-  expect.objectContaining({ a: expect.any(Number) }),
-  expect.anything()
-]);
-
-expect(2).toBeGreaterThan(1);
-expect(1).toBeGreaterThanOrEqual(1);
-expect(1).toBeLessThan(2);
-expect(1).toBeLessThanOrEqual(1);
-expect(0.2 + 0.1).toBeCloseTo(0.3, 5);
-
-expect(["Alice", "Bob", "Eve"]).toHaveLength(3);
-expect(["Alice", "Bob", "Eve"]).toContain("Alice");
-expect([{ a: 1 }, { a: 2 }]).toContainEqual({ a: 1 });
-expect(["Alice", "Bob", "Eve"]).toEqual(
-  expect.arrayContaining(["Alice", "Bob"])
-);
-
-// const fn = () => { throw new Error('Out of cheese!') }
-expect(fn).toThrow();
-expect(fn).toThrow("Out of cheese");
-expect(fn).toThrowErrorMatchingSnapshot();
-
-expect(node).toMatchSnapshot();
-// Jest 23+
-expect(user).toMatchSnapshot({
-  date: expect.any(Date)
-});
-
-// const fn = jest.fn()
-// const fn = jest.fn().mockName('Unicorn') -- named mock, Jest 22+
-expect(fn).toBeCalled(); // Function was called
-expect(fn).not.toBeCalled(); // Function was *not* called
-expect(fn).toHaveBeenCalledTimes(1); // Function was called only once
-expect(fn).toBeCalledWith("first arg", "second arg"); // Any of calls was with these arguments
-expect(fn).toHaveBeenLastCalledWith("first arg", "secon arg"); // Last call was with these arguments
-expect(fn.mock.calls).toEqual([
-  ["first", "call", "args"],
-  ["second", "call", "args"]
-]); // Multiple calls
-expect(fn.mock.calls[0][0](1)).toBe(2); // fn.mock.calls[0][0] — the first argument of the first call
-```
-
-[Matchers docs](https://facebook.github.io/jest/docs/expect.html)
-
-### Aliases
-
-- `toBeCalled` → `toHaveBeenCalled`
-- `toBeCalledWith` → `toHaveBeenCalledWith`
-- `lastCalledWith` → `toHaveBeenLastCalledWith`
-- `toThrowError` → `toThrow`
-
-### Promise matchers (Jest 20+)
-
-```js
-test("resolve to lemon", () => {
-  expect.assertions(1);
-  // Make sure to add a return statement
-  return expect(Promise.resolve("lemon")).resolves.toBe("lemon");
-  // return expect(Promise.reject('octopus')).rejects.toBeDefined();
-});
-```
-
-Or with async/await:
-
-```js
-test("resolve to lemon", async () => {
-  expect.assertions(2);
-  await expect(Promise.resolve("lemon")).resolves.toBe("lemon");
-  await expect(Promise.resolve("lemon")).resolves.not.toBe("octopus");
-});
-```
-
-[resolves docs](https://facebook.github.io/jest/docs/en/expect.html#resolves)
-
-## Async tests
-
-See [more examples](https://facebook.github.io/jest/docs/en/tutorial-async.html) in Jest docs.
-
-### async/await
-
-```js
-test("async test", async () => {
-  expect.assertions(1);
-  const result = await runAsyncOperation();
-  expect(result).toBe(true);
-});
-```
-
-### Promises
-
-_Return_ a Promise from your test:
-
-```js
-test("async test", () => {
-  expect.assertions(1);
-  return runAsyncOperation().then(result => {
-    expect(result).toBe(true);
+  it('another subset of functionalities should also do something great', () => {
   });
 });
 ```
 
-### done() callback
-
-Wrap your assertions in try/catch block, otherwise Jest will ignore failures:
+**:)**
 
 ```js
-test("async test", done => {
-  expect.assertions(1);
-  runAsyncOperation();
-  setTimeout(() => {
-    try {
-      const result = getAsyncOperationResult();
-      expect(result).toBe(true);
-      done();
-    } catch (err) {
-      done.fail(err);
-    }
+describe('A set of functionalities', () => {
+  it('should do something nice', () => {
+  });
+
+  describe('A subset of functionalities', () => {
+    it('should do something great', () => {
+    });
+
+    it('should do something awesome', () => {
+    });
+  });
+
+  describe('Another subset of functionalities', () => {
+    it('should also do something great', () => {
+    });
   });
 });
 ```
 
-## Mocks
+• [Back to ToC](#user-content-table-of-contents) •
 
-### Mock functions
+### Name your tests properly
 
-```js
-test("call the callback", () => {
-  const callback = jest.fn();
-  fn(callback);
-  expect(callback).toBeCalled();
-  expect(callback.mock.calls[0][1].baz).toBe("pizza"); // Second argument of the first call
-});
-```
+Tests names should be concise, explicit, descriptive and in correct English. Read the output of the spec runner and verify that it is understandable! Keep in mind that someone else will read it too. Tests can be the live documentation of the code.
 
-You can also use snapshots:
+**:(**
 
 ```js
-test("call the callback", () => {
-  const callback = jest.fn().mockName("Unicorn"); // mockName is available in Jest 22+
-  fn(callback);
-  expect(callback).toMatchSnapshot();
-  // ->
-  // [MockFunction Unicorn] {
-  //   "calls": Array [
+describe('myGallery', () => {
+  it('init set correct property when called (thumb size, thumbs count)', () => {
+  });
+
   // ...
 });
 ```
 
-And pass an implementation to `jest.fn` function:
+**:)**
 
 ```js
-const callback = jest.fn(() => true);
-```
+describe('The Gallery instance', () => {
+  it('should properly calculate the thumb size when initialized', () => {
+  });
 
-[Mock functions docs](https://facebook.github.io/jest/docs/mock-function-api.html)
+  it('should properly calculate the thumbs count when initialized', () => {
+  });
 
-### Mock modules using `jest.mock` method
-
-```js
-jest.mock("lodash/memoize", () => a => a); // The original lodash/memoize should exist
-jest.mock("lodash/memoize", () => a => a, { virtual: true }); // The original lodash/memoize isn’t required
-```
-
-[jest.mock docs](https://facebook.github.io/jest/docs/jest-object.html#jestmockmodulename-factory-options)
-
-> Note: When using `babel-jest`, calls to `jest.mock` will automatically be hoisted to the top of the code block. Use `jest.doMock` if you want to explicitly avoid this behavior.
-
-### Mock modules using a mock file
-
-1.  Create a file like `__mocks__/lodash/memoize.js`:
-
-    ```js
-    module.exports = a => a;
-    ```
-
-2.  Add to your test:
-
-    ```js
-    jest.mock("lodash/memoize");
-    ```
-
-> Note: When using `babel-jest`, calls to `jest.mock` will automatically be hoisted to the top of the code block. Use `jest.doMock` if you want to explicitly avoid this behavior.
-
-[Manual mocks docs](https://facebook.github.io/jest/docs/manual-mocks.html)
-
-### Mock object methods
-
-```js
-const spy = jest
-  .spyOn(ajax, "request")
-  .mockImplementation(() => Promise.resolve({ success: true }));
-expect(spy).toHaveBeenCalled();
-spy.mockRestore();
-```
-
-### Mock getters and setters (Jest 22.1.0+)
-
-```js
-const location = {};
-const getTitle = jest
-  .spyOn(location, "title", "get")
-  .mockImplementation(() => "pizza");
-const setTitle = jest
-  .spyOn(location, "title", "set")
-  .mockImplementation(() => {});
-```
-
-### Mock getters and setters
-
-```js
-const getTitle = jest.fn(() => "pizza");
-const setTitle = jest.fn();
-const location = {};
-Object.defineProperty(location, "title", {
-  get: getTitle,
-  set: setTitle
+  // ...
 });
 ```
 
-### Clearing and restoring mocks
-
-```
-fn.mockClear() // Clear number of calls
-fn.mockRestore() // Remove the mock and restore the initial implementation
-```
-
-> Note: `mockRestore` works only with mocks created by `jest.spyOn`.
-
-### Accessing the original module when using mocks
+In order to help you write test names properly, you can use the **"unit of work - scenario/context - expected behaviour"** pattern:
 
 ```js
-jest.mock("fs");
-const fs = require("fs"); // Mocked module
-const fs = require.requireActual("fs"); // Original module
+describe('[unit of work]', () => {
+  it('should [expected behaviour] when [scenario/context]', () => {
+  });
+});
 ```
 
-## Data-driven tests (Jest 23+)
-
-Run the same test with different data:
+Or whenever you have many tests that follow the same scenario or are related to the same context:
 
 ```js
-test.each([[1, 1, 2], [1, 2, 3], [2, 1, 3]])(
-  ".add(%s, %s)",
-  (a, b, expected) => {
-    expect(a + b).toBe(expected);
+describe('[unit of work]', () => {
+  describe('when [scenario/context]', () => {
+    it('should [expected behaviour]', () => {
+    });
+  });
+});
+```
+
+For example:
+
+**:) :)**
+
+```js
+describe('The Gallery instance', () => {
+  describe('when initialized', () => {
+    it('should properly calculate the thumb size', () => {
+    });
+
+    it('should properly calculate the thumbs count', () => {
+    });
+  });
+
+  // ...
+});
+```
+
+• [Back to ToC](#user-content-table-of-contents) •
+
+### Don't comment out tests
+
+Never. Ever. Tests have a reason to be or not.
+
+Don't comment them out because they are too slow, too complex or produce false negatives. Instead, make them fast, simple and trustworthy. If not, remove them completely.
+
+• [Back to ToC](#user-content-table-of-contents) •
+
+### Avoid logic in your tests
+
+Always use simple statements. Loops and conditionals must not be used. If they are, you add a possible entry point for bugs in the test itself:
+
++ Conditionals: you don't know which path the test will take
++ Loops: you could be sharing state between tests
+
+**:(**
+
+```js
+it('should properly sanitize strings', () => {
+  let result;
+  const testValues = {
+    'Avion'         : 'Avi' + String.fromCharCode(243) + 'n',
+    'The-space'     : 'The space',
+    'Weird-chars-'  : 'Weird chars!!',
+    'file-name.zip' : 'file name.zip',
+    'my-name.zip'   : 'my.name.zip'
+  };
+
+  for (result in testValues) {
+    expect( sanitizeString(testValues[result]) ).toEqual(result);
   }
-);
-```
-
-Or the same using template literals:
-
-```js
-test.each`
-  a    | b    | expected
-  ${1} | ${1} | ${2}
-  ${1} | ${2} | ${3}
-  ${2} | ${1} | ${3}
-`("returns $expected when $a is added $b", ({ a, b, expected }) => {
-  expect(a + b).toBe(expected);
 });
 ```
 
-[test.each() docs](https://facebook.github.io/jest/docs/en/api.html#testeachtable-name-fn)
-
-## Skipping tests
-
-Don’t run these tests:
+**:)**
 
 ```js
-describe.skip('makePoniesPink'...
-tests.skip('make each pony pink'...
-```
-
-Run only these tests:
-
-```js
-describe.only('makePoniesPink'...
-tests.only('make each pony pink'...
-```
-
-## Testing modules with side effects
-
-Node.js and Jest will cache modules you `require`. To test modules with side effects you’ll need to reset the module registry between tests:
-
-```js
-const modulePath = "../module-to-test";
-
-afterEach(() => {
-  jest.resetModules();
-});
-
-test("first test", () => {
-  // Prepare conditions for the first test
-  const result = require(modulePath);
-  expect(result).toMatchSnapshot();
-});
-
-test("second text", () => {
-  // Prepare conditions for the second test
-  const fn = () => require(modulePath);
-  expect(fn).toThrow();
+it('should properly sanitize strings', () => {
+  expect( sanitizeString('Avi'+String.fromCharCode(243)+'n') ).toEqual('Avion');
+  expect( sanitizeString('The space') ).toEqual('The-space');
+  expect( sanitizeString('Weird chars!!') ).toEqual('Weird-chars-');
+  expect( sanitizeString('file name.zip') ).toEqual('file-name.zip');
+  expect( sanitizeString('my.name.zip') ).toEqual('my-name.zip');
 });
 ```
 
-## Usage with Babel and TypeScript
+Better: write a test for each type of sanitization. It will give a nice output of all possible cases, improving readability and maintainability.
 
-Add [babel-jest](https://github.com/facebook/jest/tree/master/packages/babel-jest) or [ts-jest](https://github.com/kulshekhar/ts-jest). Check their docs for installation instructions.
+**:) :)**
 
-## Resources
+```js
+it('should sanitize a string containing non-ASCII chars', () => {
+  expect( sanitizeString('Avi'+String.fromCharCode(243)+'n') ).toEqual('Avion');
+});
 
-- [Jest site](https://facebook.github.io/jest/)
-- [Testing React components with Jest and Enzyme](http://blog.sapegin.me/all/react-jest) by Artem Sapegin
-- [React Testing Examples](https://react-testing-examples.com/)
-- [Testing React Applications](https://youtu.be/59Ndb3YkLKA) by Max Stoiber
-- [Effective Snapshot Testing](https://blog.kentcdodds.com/effective-snapshot-testing-e0d1a2c28eca) by Kent C. Dodds
-- [Migrating to Jest](https://medium.com/@kentcdodds/migrating-to-jest-881f75366e7e#.pc4s5ut6z) by Kent C. Dodds
-- [Migrating AVA to Jest](http://browniefed.com/blog/migrating-ava-to-jest/) by Jason Brown
-- [How to Test React and MobX with Jest](https://semaphoreci.com/community/tutorials/how-to-test-react-and-mobx-with-jest) by Will Stern
-- [Testing React Intl components with Jest and Enzyme](https://medium.com/@sapegin/testing-react-intl-components-with-jest-and-enzyme-f9d43d9c923e) by Artem Sapegin
-- [Testing with Jest: 15 Awesome Tips and Tricks](https://medium.com/@stipsan/testing-with-jest-15-awesome-tips-and-tricks-42150ec4c262) by Stian Didriksen
-- Taking Advantage of Jest Matchers by Ben McCormick: [Part 1](https://benmccormick.org/2017/08/15/jest-matchers-1/), [Part 2](https://benmccormick.org/2017/09/04/jest-matchers-2/)
+it('should sanitize a string containing spaces', () => {
+  expect( sanitizeString('The space') ).toEqual('The-space');
+});
 
----
+it('should sanitize a string containing exclamation signs', () => {
+  expect( sanitizeString('Weird chars!!') ).toEqual('Weird-chars-');
+});
 
-## You may also like
+it('should sanitize a filename containing spaces', () => {
+  expect( sanitizeString('file name.zip') ).toEqual('file-name.zip');
+});
 
-- [Opinionated list of React components](https://github.com/sapegin/react-components)
+it('should sanitize a filename containing more than one dot', () => {
+  expect( sanitizeString('my.name.zip') ).toEqual('my-name.zip');
+});
+```
 
-## Contributing
+• [Back to ToC](#user-content-table-of-contents) •
 
-Improvements are welcome! Open an issue or send a pull request.
+### Don't write unnecessary expectations
 
-## Author and license
+Remember, unit tests are a design specification of how a certain *behaviour* should work, not a list of observations of everything the code happens to do.
 
-[Artem Sapegin](http://sapegin.me/), a frontend developer at [Wayfair](https://tech.wayfair.com/) and the creator of [React Styleguidist](https://github.com/styleguidist/react-styleguidist). I also write about frontend at [my blog](http://blog.sapegin.me/).
+**:(**
 
-CC0 1.0 Universal license, see the included [License.md](/License.md) file.
+```js
+it('should multiply the number passed as parameter and subtract one', () => {
+  const multiplySpy = spyOn(Calculator, 'multiple').and.callThrough();
+  const subtractSpy = spyOn(Calculator, 'subtract').and.callThrough();
+
+  const result = Calculator.compute(21.5);
+
+  expect(multiplySpy).toHaveBeenCalledWith(21.5);
+  expect(subtractSpy).toHaveBeenCalledWith(43, 1);
+  expect(result).toBe(42);
+});
+```
+
+**:)**
+
+```js
+it('should multiply the number passed as parameter and subtract one', () => {
+  const result = Calculator.compute(21.5);
+  expect(result).toBe(42);
+});
+```
+
+This will improve maintainability. Your test is no longer tied to implementation details.
+
+• [Back to ToC](#user-content-table-of-contents) •
+
+### Properly setup the actions that apply to all the tests involved
+
+**:(**
+
+```js
+describe('Saving the user profile', () => {
+  let profileModule;
+  let notifyUserSpy;
+  let onCompleteSpy;
+
+  beforeEach(() => {
+    profileModule = new ProfileModule();
+    notifyUserSpy = spyOn(profileModule, 'notifyUser');
+    onCompleteSpy = jasmine.createSpy();
+  });
+
+  it('should send the updated profile data to the server', () => {
+    jasmine.Ajax.install();
+
+    profileModule.save();
+
+    const request = jasmine.Ajax.requests.mostRecent();
+
+    expect(request.url).toBe('/profiles/1');
+    expect(request.method).toBe('POST');
+    expect(request.data()).toEqual({ username: 'mawrkus' });
+
+    jasmine.Ajax.uninstall();
+  });
+
+  it('should notify the user', () => {
+    jasmine.Ajax.install();
+
+    profileModule.save();
+
+    expect(notifyUserSpy).toHaveBeenCalled();
+
+    jasmine.Ajax.uninstall();
+  });
+
+  it('should properly execute the callback passed as parameter', () => {
+    jasmine.Ajax.install();
+
+    profileModule.save(onCompleteSpy);
+
+    jasmine.Ajax.uninstall();
+
+    expect(onCompleteSpy).toHaveBeenCalled();
+  });
+});
+```
+
+The setup code should apply to all the tests:
+
+**:)**
+
+```js
+describe('Saving the user profile', () => {
+  let profileModule;
+
+  beforeEach(() => {
+    jasmine.Ajax.install();
+    profileModule = new ProfileModule();
+  });
+
+  afterEach( () => {
+    jasmine.Ajax.uninstall();
+  });
+
+  it('should send the updated profile data to the server', () => {
+    profileModule.save();
+
+    const request = jasmine.Ajax.requests.mostRecent();
+
+    expect(request.url).toBe('/profiles/1');
+    expect(request.method).toBe('POST');
+
+  });
+
+  it('should notify the user', () => {
+    spyOn(profileModule, 'notifyUser');
+
+    profileModule.save();
+
+    expect(profileModule.notifyUser).toHaveBeenCalled();
+  });
+
+  it('should properly execute the callback passed as parameter', () => {
+    const onCompleteSpy = jasmine.createSpy();
+
+    profileModule.save(onCompleteSpy);
+
+    expect(onCompleteSpy).toHaveBeenCalled();
+  });
+});
+```
+
+Consider keeping the setup code minimal to preserve readability and maintainability.
+
+• [Back to ToC](#user-content-table-of-contents) •
+
+### Consider using factory functions in the tests
+
+Factories can:
+
+- help reduce the setup code, especially if you use dependency injection
+- make each test more readable, since the creation is a single function call that can be in the test itself instead of the setup
+- provide flexibility when creating new instances (setting an initial state, for example)
+
+There's a trade-off to find here between applying the DRY principle and readability.
+
+**:(**
+
+```js
+describe('User profile module', () => {
+  let profileModule;
+  let pubSub;
+
+  beforeEach(() => {
+    let element = document.getElementById('my-profile');
+    pubSub = new PubSub({ sync: true });
+
+    profileModule = new ProfileModule({
+      element,
+      pubSub,
+      likes: 0
+    });
+  });
+
+  it('should publish a topic when a new "like" is given', () => {
+    spyOn(pubSub, 'notify');
+    profileModule.incLikes();
+    expect(pubSub.notify).toHaveBeenCalledWith('likes:inc', { count: 1 });
+  });
+
+  it('should retrieve the correct number of likes', () => {
+    profileModule.incLikes();
+    profileModule.incLikes();
+    expect(profileModule.getLikes()).toBe(2);
+  });
+});
+```
+
+**:)**
+
+```js
+describe('User profile module', () => {
+  function createProfileModule({
+    element = document.getElementById('my-profile'),
+    likes = 0,
+    pubSub = new PubSub({ sync: true })
+  })
+  {
+    return new ProfileModule({ element, likes, pubSub });
+  }
+
+  it('should publish a topic when a new "like" is given', () => {
+    const pubSub = jasmine.createSpyObj('pubSub', ['notify']);
+    const profileModule = createProfileModule({ pubSub });
+
+    profileModule.incLikes();
+
+    expect(pubSub.notify).toHaveBeenCalledWith('likes:inc');
+  });
+
+  it('should retrieve the correct number of likes', () => {
+    const profileModule = createProfileModule({ likes: 40 });
+
+    profileModule.incLikes();
+    profileModule.incLikes();
+
+    expect(profileModule.getLikes()).toBe(42);
+  });
+});
+```
+
+Factories are particularly useful when dealing with the DOM:
+
+**:(**
+
+```js
+describe('The search component', () => {
+  describe('when the search button is clicked', () => {
+    let container;
+    let form;
+    let searchInput;
+    let submitInput;
+
+    beforeEach(() => {
+      fixtures.inject(`<div id="container">
+        <form class="js-form" action="/search">
+          <input type="search">
+          <input type="submit" value="Search">
+        </form>
+      </div>`);
+
+      container = document.getElementById('container');
+      form = container.getElementsByClassName('js-form')[0];
+      searchInput = form.querySelector('input[type=search]');
+      submitInput = form.querySelector('input[type=submith]');
+    });
+
+    it('should validate the text entered', () => {
+      const search = new Search({ container });
+      spyOn(search, 'validate');
+
+      search.init();
+
+      input(searchInput, 'peace');
+      click(submitInput);
+
+      expect(search.validate).toHaveBeenCalledWith('peace');
+    });
+
+    // ...
+  });
+});
+```
+
+**:)**
+
+```js
+function createHTMLFixture() {
+  fixtures.inject(`<div id="container">
+    <form class="js-form" action="/search">
+      <input type="search">
+      <input type="submit" value="Search">
+    </form>
+  </div>`);
+
+  const container = document.getElementById('container');
+  const form = container.getElementsByClassName('js-form')[0];
+  const searchInput = form.querySelector('input[type=search]');
+  const submitInput = form.querySelector('input[type=submith]');
+
+  return {
+    container,
+    form,
+    searchInput,
+    submitInput
+  };
+}
+
+describe('The search component', () => {
+  describe('when the search button is clicked', () => {
+    it('should validate the text entered', () => {
+      const { container, form, searchInput, submitInput } = createHTMLFixture();
+      const search = new Search({ container });
+      spyOn(search, 'validate');
+
+      search.init();
+
+      input(searchInput, 'peace');
+      click(submitInput);
+
+      expect(search.validate).toHaveBeenCalledWith('peace');
+    });
+
+    // ...
+  });
+});
+```
+
+• [Back to ToC](#user-content-table-of-contents) •
+
+### Know your testing framework API
+
+The API documentation of the testing framework/library should be your bedside book!
+
+Having a good knowledge of the API can help you in reducing the size/complexity of your test code and, in general, help you during development. A simple example:
+
+**:(**
+
+```js
+it('should call a method with the proper arguments', () => {
+  const foo = {
+    bar: jasmine.createSpy(),
+    baz: jasmine.createSpy()
+  };
+
+  foo.bar('qux');
+
+  expect(foo.bar).toHaveBeenCalled();
+  expect(foo.bar.calls.argsFor(0)).toEqual(['qux']);
+});
+
+/*it('should do more but not now', () => {
+});
+
+it('should do much more but not now', () => {
+});*/
+```
+
+**:)**
+
+```js
+fit('should call once a method with the proper arguments', () => {
+  const foo = jasmine.createSpyObj('foo', ['bar', 'baz']);
+
+  foo.bar('baz');
+
+  expect(foo.bar).toHaveBeenCalledWith('baz');
+});
+
+it('should do something else but not now', () => {
+});
+
+it('should do something else but not now', () => {
+});
+```
+
+#### Note
+
+The handy `fit` function used in the example above allows you to execute only one test without having to comment out all the tests below. `fdescribe` does the same for test suites. This could help save a lot of time when developing.
+
+More information on the [Jasmine website](http://jasmine.github.io).
+
+• [Back to ToC](#user-content-table-of-contents) •
+
+### Don't test multiple concerns in the same test
+
+If a method has several end results, each one should be tested separately. Whenever a bug occurs, it will help you locate the source of the problem.
+
+**:(**
+
+```js
+it('should send the profile data to the server and update the profile view properly', () => {
+  // expect(...)to(...);
+  // expect(...)to(...);
+});
+```
+
+**:)**
+
+```js
+it('should send the profile data to the server', () => {
+  // expect(...)to(...);
+});
+
+it('should update the profile view properly', () => {
+  // expect(...)to(...);
+});
+```
+
+Beware that writing "AND" or "OR" when naming your test smells bad...
+
+• [Back to ToC](#user-content-table-of-contents) •
+
+### Cover the general case and the edge cases
+
+"Strange behaviour" usually happens at the edges... Remember that your tests can be the live documentation of your code.
+
+**:(**
+
+```js
+it('should properly calculate a RPN expression', () => {
+  const result = RPN('5 1 2 + 4 * - 10 /');
+  expect(result).toBe(-0.7);
+});
+```
+
+**:)**
+
+```js
+describe('The RPN expression evaluator', () => {
+  it('should return null when the expression is an empty string', () => {
+    const result = RPN('');
+    expect(result).toBeNull();
+  });
+
+  it('should return the same value when the expression holds a single value', () => {
+    const result = RPN('42');
+    expect(result).toBe(42);
+  });
+
+  it('should properly calculate an expression', () => {
+    const result = RPN('5 1 2 + 4 * - 10 /');
+    expect(result).toBe(-0.7);
+  });
+
+  it('should throw an error whenever an invalid expression is passed', () => {
+    const compute = () => RPN('1 + - 1');
+    expect(compute).toThrow();
+  });
+});
+```
+
+• [Back to ToC](#user-content-table-of-contents) •
+
+### When applying TDD, always start by writing the simplest failing test
+
+**:(**
+
+```js
+it('should suppress all chars that appear multiple times', () => {
+  expect( keepUniqueChars('Hello Fostonic !!') ).toBe('HeFstnic');
+});
+```
+
+**:)**
+
+```js
+it('should return an empty string when passed an empty string', () => {
+  expect( keepUniqueChars('') ).toBe('');
+});
+```
+
+From there, start building the functionalities incrementally.
+
+• [Back to ToC](#user-content-table-of-contents) •
+
+### When applying TDD, always make small steps in each test-first cycle
+
+Build your tests suite from the simple case to the more complex ones. Keep in mind the incremental design. Deliver software fast, incrementally, and in short iterations.
+
+**:(**
+
+```js
+it('should return null when the expression is an empty string', () => {
+  const result = RPN('');
+  expect(result).toBeNull();
+});
+
+it('should properly calculate a RPN expression', () => {
+  const result = RPN('5 1 2 + 4 * - 10 /');
+  expect(result).toBe(-0.7);
+});
+```
+
+**:)**
+
+```js
+describe('The RPN expression evaluator', () => {
+  it('should return null when the expression is an empty string', () => {
+    const result = RPN('');
+    expect(result).toBeNull();
+  });
+
+  it('should return the same value when the expression holds a single value', () => {
+    const result = RPN('42');
+    expect(result).toBe(42);
+  });
+
+  describe('Additions-only expressions', () => {
+    it('should properly calculate a simple addition', () => {
+      const result = RPN('41 1 +');
+      expect(result).toBe(42);
+    });
+
+    it('should properly calculate a complex addition', () => {
+      const result = RPN('2 9 + 15 3 + + 7 6 + +');
+      expect(result).toBe(42);
+    });
+  });
+
+  // ...
+
+  describe('Complex expressions', () => {
+    it('should properly calculate an expression containing all 4 operators', () => {
+      const result = RPN('5 1 2 + 4 * - 10 /');
+      expect(result).toBe(-0.7);
+    });
+  });
+});
+```
+
+• [Back to ToC](#user-content-table-of-contents) •
+
+### Test the behaviour, not the internal implementation
+
+**:(**
+
+```js
+it('should add a user in memory', () => {
+  userManager.addUser('Dr. Falker', 'Joshua');
+
+  expect(userManager._users[0].name).toBe('Dr. Falker');
+  expect(userManager._users[0].password).toBe('Joshua');
+});
+```
+
+A better approach is to test at the same level of the API:
+
+**:)**
+
+```js
+it('should add a user in memory', () => {
+  userManager.addUser('Dr. Falker', 'Joshua');
+
+  expect(userManager.loginUser('Dr. Falker', 'Joshua')).toBe(true);
+});
+```
+
+Advantage:
+
++ Changing the internal implementation of a class/object will not necessarily force you to refactor the tests
+
+Disadvantage:
+
++ If a test is failing, we might have to debug to know which part of the code needs to be fixed
+
+Here, a balance has to be found, unit-testing some key parts can be beneficial.
+
+• [Back to ToC](#user-content-table-of-contents) •
+
+### Don't mock everything
+
+**:(**
+
+```js
+describe('when the user has already visited the page', () => {
+  // storage.getItem('page-visited', '1') === '1'
+  describe('when the survey is not disabled', () => {
+    // storage.getItem('survey-disabled') === null
+    it('should display the survey', () => {
+      const storage = jasmine.createSpyObj('storage', ['setItem', 'getItem']);
+      storage.getItem.and.returnValue('1'); // ouch.
+
+      const surveyManager = new SurveyManager(storage);
+      spyOn(surveyManager, 'display');
+
+      surveyManager.start();
+
+      expect(surveyManager.display).toHaveBeenCalled();
+    });
+  });
+
+  // ...
+});
+```
+
+This test fails, because the survey is considered disabled. Let's fix this:
+
+**:)**
+
+```js
+describe('when the user has already visited the page', () => {
+  // storage.getItem('page-visited', '1') === '1'
+  describe('when the survey is not disabled', () => {
+    // storage.getItem('survey-disabled') === null
+    it('should display the survey', () => {
+      const storage = jasmine.createSpyObj('storage', ['setItem', 'getItem']);
+      storage.getItem.and.callFake(key => {
+        switch (key) {
+          case 'page-visited':
+            return '1';
+
+          case 'survey-disabled':
+            return null;
+        }
+
+        return null;
+      }); // ouch.
+
+      const surveyManager = new SurveyManager(storage);
+      spyOn(surveyManager, 'display');
+
+      surveyManager.start();
+
+      expect(surveyManager.display).toHaveBeenCalled();
+    });
+  });
+
+  // ...
+});
+```
+
+This will work... but needs a lot of code. Let's try a simpler approach:
+
+**:(**
+
+```js
+describe('when the user has already visited the page', () => {
+  // storage.getItem('page-visited', '1') === '1'
+  describe('when the survey is not disabled', () => {
+    // storage.getItem('survey-disabled') === null
+    it('should display the survey', () => {
+      const storage = window.localStorage; // ouch.
+      storage.setItem('page-visited', '1');
+
+      const surveyManager = new SurveyManager();
+      spyOn(surveyManager, 'display');
+
+      surveyManager.start();
+
+      expect(surveyManager.display).toHaveBeenCalled();
+    });
+  });
+
+  // ...
+});
+```
+
+We created a permanent storage of data. What happens if we do not properly clean it?
+We might affect the other tests. Let's fix this:
+
+**:) :)**
+
+```js
+describe('when the user has already visited the page', () => {
+  // storage.getItem('page-visited', '1') === '1'
+  describe('when the survey is not disabled', () => {
+    // storage.getItem('survey-disabled') === null
+    it('should display the survey', () => {
+      // Note: have a look at https://github.com/tatsuyaoiw/webstorage
+      const storage = new MemoryStorage(); // yeah.
+      storage.setItem('page-visited', '1');
+
+      const surveyManager = new SurveyManager(storage);
+      spyOn(surveyManager, 'display');
+
+      surveyManager.start();
+
+      expect(surveyManager.display).toHaveBeenCalled();
+    });
+  });
+});
+```
+
+The `MemoryStorage` used here does not persist data. Nice and easy. Minimal. No side effects.
+
+#### Takeaway
+
+The idea to keep in mind is that *dependencies can still be "real" objects*. Don't mock everything because you can.
+In particular, consider using the "real" version of the objects if:
+
+- it leads to a simple, nice and easy tests setup
+- it does not create a shared state between the tests, causing unexpected side effects
+- the code being tested does not make AJAX requests, API calls or browser page reloads
+- the speed of execution of the tests stays *within the limits you fixed*
+
+• [Back to ToC](#user-content-table-of-contents) •
+
+### Create new tests for every defect
+
+Whenever a bug is found, create a test that replicates the problem **before touching any code**. From there, you can apply TDD as usual to fix it.
+
+• [Back to ToC](#user-content-table-of-contents) •
+
+### Don't write unit tests for complex user interactions
+
+Examples of complex user interactions:
+
++ Filling a form, drag and dropping some items then submitting the form
++ Clicking a tab, clicking an image thumbnail then navigating through a gallery of images previously loaded from a database
++ (...)
+
+These interactions might involve many units of work and should be handled at a higher level by **functional tests**. They will take more time to execute. They could be flaky (false negatives) and they need debugging whenever a failure is reported.
+
+For functional testing, consider using a test automation framework ([Selenium](http://docs.seleniumhq.org/), ...) or QA manual testing.
+
+• [Back to ToC](#user-content-table-of-contents) •
+
+### Test simple user actions
+
+Example of simple user actions:
+
++ Clicking on a link that toggles the visibility of a DOM element
++ Submitting a form that triggers the form validation
++ (...)
+
+These actions can be easily tested **by simulating DOM events**, for example:
+
+```js
+describe('When clicking on the "Preview profile" link', () => {
+  it('should show the profile preview if it is hidden', () => {
+    const previewLink = document.createElement('a');
+    const profileModule = createProfileModule({ previewLink, previewIsVisible: false });
+
+    spyOn(profileModule, 'showPreview');
+
+    click(previewLink);
+
+    expect(profileModule.showPreview).toHaveBeenCalled();
+  });
+
+  it('should hide the profile preview if it is displayed', () => {
+    const previewLink = document.createElement('a');
+    const profileModule = createProfileModule({ previewLink, previewIsVisible: true });
+
+    spyOn(profileModule, 'hidePreview');
+
+    click(previewLink);
+
+    expect(profileModule.hidePreview).toHaveBeenCalled();
+  });
+});
+```
+
+• [Back to ToC](#user-content-table-of-contents) •
+
+### Review test code first
+
+When reviewing code, always start by reading the code of the tests. Tests are mini use cases of the code that you can drill into.
+
+It will help you understand the intent of the developer very quickly (could be just by looking at the names of the tests).
+
+• [Back to ToC](#user-content-table-of-contents) •
+
+### Practice code katas, learn with pair programming
+
+Because experience is the _only_ teacher. Ultimately, greatness comes from practicing; applying the theory over and over again, using feedback to get better every time.
+
+• [Back to ToC](#user-content-table-of-contents) •
+
+## References
+
++ Roy Osherove - "JS Unit Testing Good Practices and Horrible Mistakes" : https://www.youtube.com/watch?v=iP0Vl-vU3XM
++ Enrique Amodeo - "Learning Behavior-driven Development with JavaScript" : https://www.packtpub.com/application-development/learning-behavior-driven-development-javascript
++ Steven Sanderson - "Writing Great Unit Tests: Best and Worst Practices" : http://blog.stevensanderson.com/2009/08/24/writing-great-unit-tests-best-and-worst-practises/
++ Rebecca Murphy - "Writing Testable JavaScript" : http://alistapart.com/article/writing-testable-javascript
++ YUI Team - "Writing Effective JavaScript Unit Tests with YUI Test" : http://yuiblog.com/blog/2009/01/05/effective-tests/
++ Colin Snover - "Testable code best practices" : http://www.sitepen.com/blog/2014/07/11/testable-code-best-practices/
++ Miško Hevery - "The Clean Code Talks -- Unit Testing" : https://www.youtube.com/watch?v=wEhu57pih5w
++ Addy Osmani - "Learning JavaScript Design Patterns" : http://addyosmani.com/resources/essentialjsdesignpatterns/book/
++ José Armesto - "Unit Testing sucks (and it’s our fault) " : https://www.youtube.com/watch?v=GZ9iZsMAZFQ
++ Clean code cheat sheet: http://www.planetgeek.ch/2014/11/18/clean-code-cheat-sheet-v-2-4/
+
+• [Back to ToC](#user-content-table-of-contents) •
+
+## Original Source
+
+Ruben Norte: https://github.com/mawrkus/js-unit-testing-guide
+
+• [Back to ToC](#user-content-table-of-contents) •
