@@ -9,6 +9,10 @@ toc = true
 script = 'animation'
 +++
 
+<h3 class="section-head" id="h-node"><a href="#h-node">Anatomy of a modern Node.js application architecture</a></h3>
+
+<img alt="Image" src="/img/diagrams/dev_ops/node.png" width="800">
+
 <h3 class="section-head" id="h-tcpip"><a href="#h-tcpip">TCP/IP</a></h3>
 
 <img alt="Image" src="/img/diagrams/dev_ops/TCP_IP.png" width="800">
