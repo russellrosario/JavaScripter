@@ -9,6 +9,10 @@ toc = true
 script = 'animation'
 +++
 
+<h3 class="section-head" id="h-principles"><a href="#h-principles">30 principles of software engineering</a></h3>
+
+<img alt="Image" src="/img/diagrams/cicd/principles.png" width="800">
+
 <h3 class="section-head" id="h-agile"><a href="#h-agile">Agile development</a></h3>
 
 <img alt="Image" src="/img/diagrams/cicd/agile.jpg" width="800">
