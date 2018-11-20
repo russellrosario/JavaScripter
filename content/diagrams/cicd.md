@@ -9,6 +9,14 @@ toc = true
 script = 'animation'
 +++
 
+<h3 class="section-head" id="h-testing"><a href="#h-testing">Testing paradigms</a></h3>
+
+<img alt="Image" src="/img/diagrams/cicd/testing.png" width="800">
+
+<h3 class="section-head" id="h-release"><a href="#h-release">Release process</a></h3>
+
+<img alt="Image" src="/img/diagrams/cicd/release_process.png" width="800">
+
 <h3 class="section-head" id="h-principles"><a href="#h-principles">30 principles of software engineering</a></h3>
 
 <img alt="Image" src="/img/diagrams/cicd/principles.png" width="800">
