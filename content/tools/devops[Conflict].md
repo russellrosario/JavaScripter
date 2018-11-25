@@ -9,7 +9,7 @@ toc = false
 script = 'animation'
 +++
 
-## Table of Contents
+# Table of Contents
   - [Cloud Computing](#cloud-computing)
   - [Continuous Integration and Continuous Deployment](#continuous-integration-and-continuous-deployment)
   - [Desktop utilities](#desktop-utilities)
