@@ -2,7 +2,7 @@ baseURL = ""
 languageCode = "en-us"
 title = "JavaScripter"
 theme = "kube"
-description = "JavaScripter is the go-to resource for junior JavaScript developers"
+description = "JavaScripter is a compilation of notes, cheatsheets, and diagrams during my journey from novice to full stack developer by Russell Rosario."
 Paginate = 4
 [Params]
   RSSLink = "/index.xml"
