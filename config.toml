@@ -1,15 +1,15 @@
 baseURL = ""
 languageCode = "en-us"
-title = "Full Stack JavaScript Cheatsheets"
+title = "JavaScripter"
 theme = "kube"
-description = "Full Stack JavaScript Cheatsheets is the go-to resource for junior JavaScript developers"
+description = "JavaScripter is the go-to resource for junior JavaScript developers"
 Paginate = 4
 [Params]
   RSSLink = "/index.xml"
-  author = "newpixcom" # add your company name
+  author = "Russell Rosario" # add your company name
   github = "rosariorussell" # add your github profile name
-  twitter = "" # add your twitter profile
-  email = "myemail@myaddress.xxx"
+  twitter = "russellrosario" # add your twitter profile
+  email = "rosariorussell@gmail.com"
 
 [[menu.main]]
     name = "Cheatsheets"
