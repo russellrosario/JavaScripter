@@ -27,7 +27,7 @@
   - Serverless
 - Advanced
   - TypeScript
-  - Algorithms
+  - Algorithms & Data Structures
   - Debugging
   - Security
   - Scrum & Agile
@@ -36,6 +36,5 @@
   - Python & Pandas
   - Elasticsearch
   - Machine Learning
-  - Web scraping
-  - GraphQL
+  - Web scraping (Headless Chrome)
   - Blockchain
