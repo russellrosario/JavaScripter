@@ -1,40 +1,39 @@
 ## https://www.javascripter.co/
 
-### JavaScripter is a compilation of notes, cheatsheets, and diagrams during my journey from novice to full stack developer.
+### A compilation of notes during my journey from novice to full stack JavaScript developer by Russell Rosario.
 
-- The Basics
+- Basics
   - CS 101
-  - JavaScript
-  - Node & NPM
-  - Version Control (Git)
-  - Internet protocols (TCP/IP & REST)
-- Front-end
-  - HTML & CSS
-  - Bootstrap & jQuery
-  - React & Angular
-  - Deployment (static sites)
-- Back-end
-  - Databases (SQL vs noSQL)
-  - Express middleware
-  - Authentication
-  - Websockets
-  - Deployment (dynamic sites)
+  - CS 201
+  - Version Control
+  - Web Standards
+- Frontend
+  - HTML
+  - CSS
+  - JavaScript 101
+  - JavaScript 201
+  - Frameworks
+- Backend
+  - Node
+  - Databases
+  - Web frameworks
+  - APIs
 - DevOps
-  - DNS & CDN
-  - Scaling up (Docker & load balancers)
-  - CI/CD
-  - Testing
-  - Serverless
-- Advanced
-  - TypeScript
-  - Algorithms & Data Structures
+  - Networks
   - Debugging
+  - Deployment
+  - Development Process
+  - CI/CD
   - Security
-  - Scrum & Agile
+- Scaling
+  - Serverless
   - Infrastructure as Code
+  - Containers
+  - Web Performance
+  - Clusters
 - Applications
-  - Python & Pandas
-  - Elasticsearch
+  - Data manipulation
   - Machine Learning
-  - Web scraping (Headless Chrome)
+  - Big Data
+  - Web scraping
   - Blockchain

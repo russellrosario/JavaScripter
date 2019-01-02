@@ -2,7 +2,7 @@ baseURL = ""
 languageCode = "en-us"
 title = "JavaScripter"
 theme = "kube"
-description = "JavaScripter is a compilation of notes, cheatsheets, and diagrams during my journey from novice to full stack developer by Russell Rosario."
+description = "A compilation of notes during my journey from novice to full stack JavaScript developer by Russell Rosario."
 Paginate = 4
 [Params]
   RSSLink = "/index.xml"
@@ -12,18 +12,26 @@ Paginate = 4
   email = "rosariorussell@gmail.com"
 
 [[menu.main]]
-    name = "Cheatsheets"
-    weight = -100
-    url = "/cheatsheets/"
+    name = "Basics"
+    weight = 100
+    url = "/basics/"
 [[menu.main]]
-    name = "Diagrams"
-    weight = -100
-    url = "/diagrams/"
+    name = "Frontend"
+    weight = 200
+    url = "/Frontend/"
 [[menu.main]]
-    name = "Resources"
-    weight = -100
-    url = "/resources/"
+    name = "Backend"
+    weight = 300
+    url = "/Backend/"
 [[menu.main]]
-    name = "Tools"
-    weight = -100
-    url = "/tools/"
+    name = "DevOps"
+    weight = 400
+    url = "/DevOps/"
+[[menu.main]]
+    name = "Scaling"
+    weight = 500
+    url = "/Scaling/"
+[[menu.main]]
+    name = "Applications"
+    weight = 600
+    url = "/Applications/"
