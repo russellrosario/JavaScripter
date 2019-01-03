@@ -1,7 +1,7 @@
 +++
 description = "Methods used on objects"
 title = "JavaScript Objects"
-date = "2017-04-10T16:43:08+01:00"
+
 draft = false
 weight = 200
 bref="JavaScript is designed on a simple object-based paradigm. An object is a collection of properties, and a property is an association between a name (or key) and a value. A property's value can be a function, in which case the property is known as a method"

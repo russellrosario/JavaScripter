@@ -1,7 +1,7 @@
 +++
 description = "Understanding SQL databases and CRUD functions"
 title = "SQL"
-date = "2017-04-10T16:43:08+01:00"
+
 draft = false
 weight = 200
 bref="SQL is a domain-specific language used in programming and designed for managing data held in a relational database management system, or for stream processing in a relational data stream management system"

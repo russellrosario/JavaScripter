@@ -1,7 +1,7 @@
 +++
 description = ""
 title = "JavaScript"
-date = "2017-04-10T16:43:08+01:00"
+
 draft = false
 weight = 100
 bref="This list is mainly about JavaScript – the language. Not about APIs, tooling, frameworks or other aspects of todays JavaScript ecosystem"

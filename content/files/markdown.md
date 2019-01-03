@@ -1,7 +1,7 @@
 +++
 description = "Reference for simple markdown writeup"
 title = "Markdown"
-date = "2017-04-10T16:43:08+01:00"
+
 draft = false
 weight = 200
 bref="Markdown is a lightweight markup language with plain text formatting syntax. It is designed so that it can be converted to HTML and many other formats using a tool by the same name"

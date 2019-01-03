@@ -1,7 +1,7 @@
 +++
 description = "CSS selectors and properties"
 title = "CSS"
-date = "2017-04-10T16:43:08+01:00"
+
 draft = false
 weight = 200
 bref="CSS stands for Cascading Style Sheets. CSS describes how HTML elements are to be displayed on screen, paper, or in other media"

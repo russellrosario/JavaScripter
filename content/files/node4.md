@@ -1,7 +1,7 @@
 +++
 description = "Functionality within Node.js libraries"
 title = "Node"
-date = "2017-04-10T16:43:08+01:00"
+
 draft = false
 weight = 200
 bref="Node.js is an open-source, cross-platform JavaScript run-time environment that executes JavaScript code outside of a browser"

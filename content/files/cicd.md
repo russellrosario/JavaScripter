@@ -1,7 +1,7 @@
 +++
 description = "Continuous Integration & Development"
 title = "Continuous software development"
-date = "2017-04-10T16:43:08+01:00"
+
 draft = false
 weight = 200
 bref="Continuous software development is an umbrella term that describes several aspects of iterative software application development, including continuous integration, continuous delivery, continuous testing and continuous deployment"

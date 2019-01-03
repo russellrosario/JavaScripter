@@ -1,7 +1,7 @@
 +++
 description = "AI on AWS"
 title = "Artificial intelligence"
-date = "2017-04-10T16:43:08+01:00"
+
 draft = false
 weight = 200
 bref="Artificial intelligence (AI) is a term for simulated intelligence in machines."

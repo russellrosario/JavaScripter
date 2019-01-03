@@ -1,7 +1,7 @@
 +++
 description = "Modules, directives, forms, etc"
 title = "Angular framework"
-date = "2017-04-10T16:43:08+01:00"
+
 draft = false
 weight = 200
 bref="Angular is a TypeScript-based open-source front-end web application platform led by the Angular Team at Google and by a community of individuals and corporations. Angular is a complete rewrite from the same team that built AngularJS"

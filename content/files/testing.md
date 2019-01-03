@@ -1,7 +1,7 @@
 +++
 description = "Test driven development"
 title = "TDD"
-date = "2017-04-10T16:43:08+01:00"
+
 draft = false
 weight = 200
 bref="Test-driven development (TDD) is a software development process that relies on the repetition of a very short development cycle: requirements are turned into very specific test cases, then the software is improved to pass the new tests, only"

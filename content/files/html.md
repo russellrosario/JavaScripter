@@ -1,7 +1,7 @@
 +++
 description = "HTML tag references"
 title = "HTML"
-date = "2017-04-10T16:43:08+01:00"
+
 draft = false
 weight = 200
 bref="HTML is the standard markup language for creating Web pages. HTML stands for Hyper Text Markup Language. HTML describes the structure of Web pages using markup. HTML elements are the building blocks of HTML pages. HTML elements are represented by tags"

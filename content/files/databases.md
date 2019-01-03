@@ -1,7 +1,7 @@
 +++
 description = "SQL vs NoSQL"
 title = "Databases"
-date = "2017-04-10T16:43:08+01:00"
+
 draft = false
 weight = 200
 bref="A database is an organized collection of data, stored and accessed electronically"

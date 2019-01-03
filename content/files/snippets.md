@@ -1,7 +1,7 @@
 +++
 description = "JavaScript global functions"
 title = "Snippets"
-date = "2017-04-10T16:43:08+01:00"
+
 draft = false
 weight = 200
 bref="Curated collection of useful JavaScript snippets that you can understand in 30 seconds or less"

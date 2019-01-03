@@ -1,7 +1,7 @@
 +++
 description = "MongoDB and Mongoose NoSQL methods"
 title = "MongoDB"
-date = "2017-04-10T16:43:08+01:00"
+
 draft = false
 weight = 200
 bref="MongoDB is a free and open-source cross-platform document-oriented database program. Classified as a NoSQL database program, MongoDB uses JSON-like documents with schemata"

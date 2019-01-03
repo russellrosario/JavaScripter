@@ -1,7 +1,7 @@
 +++
 description = "Components, properties, state, etc."
 title = "React framework"
-date = "2017-04-10T16:43:08+01:00"
+
 draft = false
 weight = 200
 bref="React is a JavaScript library for building user interfaces. It is maintained by Facebook and a community of individual developers and companies. React can be used as a base in the development of single-page or mobile applications"

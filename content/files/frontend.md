@@ -1,7 +1,7 @@
 +++
 description = "React with Redux and Angular"
 title = "Frontend frameworks"
-date = "2017-04-10T16:43:08+01:00"
+
 draft = false
 weight = 200
 bref=" Front end frameworks declare rules on how developers should structure their HTML, CSS, and JavaScript, to make the application easier to develop"

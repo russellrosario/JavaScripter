@@ -1,7 +1,7 @@
 +++
 description = "Simple DOM manipulation with jQuery"
 title = "jQuery"
-date = "2017-04-10T16:43:08+01:00"
+
 draft = false
 weight = 200
 bref="jQuery is a cross-platform JavaScript library designed to simplify the client-side scripting of HTML"

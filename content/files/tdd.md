@@ -1,7 +1,7 @@
 +++
 description = ""
 title = "Testing frameworks"
-date = "2017-04-10T16:43:08+01:00"
+
 draft = false
 weight = 200
 bref="A curated list of articles related to JavaScript testing"

@@ -1,7 +1,7 @@
 +++
 description = ""
 title = "CSS"
-date = "2017-04-10T16:43:08+01:00"
+
 draft = false
 weight = 200
 bref="A curated list of awesome frameworks, style guides, and other cool nuggets for writing amazing CSS"

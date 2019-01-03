@@ -1,7 +1,7 @@
 +++
 description = "Command line interface shortcuts"
 title = "CLI"
-date = "2017-04-10T16:43:08+01:00"
+
 draft = false
 weight = 200
 bref="The command line is a text interface for your computer. It's a program that takes in commands, which it passes on to the computer's operating system to run"
