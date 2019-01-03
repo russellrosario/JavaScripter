@@ -3,7 +3,7 @@
 ### A compilation of notes during my journey from novice to full stack JavaScript developer by Russell Rosario.
 
 - Basics
-  - CS 101
+  - [CS 101](content/basics/cs101.md)
   - CS Advanced
   - Protocols
 - Frontend
