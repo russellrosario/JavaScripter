@@ -4,7 +4,7 @@ title = "Protocols"
 draft = false
 weight = 300
 bref="Rules and guidelines established to promote consistency in the design code which makes up a web page"
-toc = false
+toc = true
 script = 'animation'
 +++
 
