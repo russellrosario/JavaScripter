@@ -4,35 +4,29 @@
 
 - Basics
   - CS 101
-  - CS 201
-  - Version Control
-  - Web Standards
+  - CS Advanced
+  - Protocols
 - Frontend
   - HTML
   - CSS
-  - JavaScript 101
-  - JavaScript 201
-  - Frameworks
+  - JavaScript
+  - JavaScript 2.0
+  - Client-side frameworks
 - Backend
   - Node
   - Databases
-  - Web frameworks
-  - APIs
-- DevOps
-  - Networks
-  - Debugging
-  - Deployment
-  - Development Process
-  - CI/CD
+  - Web framework
+  - Web API
   - Security
-- Scaling
-  - Serverless
-  - Infrastructure as Code
-  - Containers
-  - Web Performance
-  - Clusters
+- DevOps
+  - Methodologies
+  - Testing
+  - Debugging
+  - Performance
+  - Scalability
+  - Infrastructure as code
 - Applications
-  - Data manipulation
+  - Data wrangling
   - Machine Learning
   - Big Data
   - Web scraping

@@ -1,6 +1,6 @@
 +++
 description = "Algorithms, data structures, networks, CLI"
-title = "CS Intermediate"
+title = "CS Advanced"
 draft = false
 weight = 200
 bref="Computer Science is the theory, experimentation, and engineering that form the basis for the design and use of computers"
