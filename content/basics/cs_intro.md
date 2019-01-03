@@ -1,6 +1,6 @@
 +++
-description = "Hardware, binary, CLI"
-title = "CS 101"
+description = "CPU, memory, IO, binary"
+title = "CS Intro"
 draft = false
 weight = 100
 bref="Computer Science is the theory, experimentation, and engineering that form the basis for the design and use of computers"
@@ -16,6 +16,6 @@ script = 'animation'
   <p>TBD</p>
   <div style="text-align:right"> <a href="#top">&#8593; Top</a></div>
 
-<h3 class="section-head" id="h-Section3"><a href="#h-Section3">Command Line</a></h3>
+<h3 class="section-head" id="h-Section3"><a href="#h-Section3">Processes & Threads</a></h3>
   <p>TBD</p>
   <div style="text-align:right"> <a href="#top">&#8593; Top</a></div>

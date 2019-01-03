@@ -28,10 +28,6 @@ Paginate = 4
     weight = 400
     url = "/DevOps/"
 [[menu.main]]
-    name = "Scaling"
-    weight = 500
-    url = "/Scaling/"
-[[menu.main]]
     name = "Applications"
     weight = 600
     url = "/Applications/"

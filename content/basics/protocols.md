@@ -1,6 +1,6 @@
 +++
 description = "HTTP, TCP/IP, DNS"
-title = "Web Standards"
+title = "Protocols"
 draft = false
 weight = 300
 bref="Rules and guidelines established to promote consistency in the design code which makes up a web page"
@@ -20,6 +20,3 @@ script = 'animation'
   <p>TBD</p>
   <div style="text-align:right"> <a href="#top">&#8593; Top</a></div>
 
-<h3 class="section-head" id="h-Section4"><a href="#h-Section4">SSH</a></h3>
-  <p>TBD</p>
-  <div style="text-align:right"> <a href="#top">&#8593; Top</a></div>

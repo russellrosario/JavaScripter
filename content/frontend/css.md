@@ -1,5 +1,5 @@
 +++
-description = "Modules, directives, forms, etc"
+description = "Selectors, fonts, bootstrap"
 title = "CSS"
 draft = false
 weight = 200
