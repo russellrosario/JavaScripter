@@ -9,7 +9,7 @@ script = 'animation'
 +++
 
 <h3 class="section-head" id="h-Section1"><a href="#h-Section1">Technical details</a></h3>
-  <p>TBD</p>
+  <p>Async non blocking single threaded</p>
 <div style="text-align:right"> <a href="#top">&#8593; Top</a></div>
 
 <h3 class="section-head" id="h-Section2"><a href="#h-Section2">Event loop</a></h3>

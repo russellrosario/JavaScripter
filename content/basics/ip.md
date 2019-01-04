@@ -1,5 +1,5 @@
 +++
-description = "HTTP, TCP/IP, DNS"
+description = "Networks, HTTP, TCP/IP, DNS"
 title = "Internet protocols"
 draft = false
 weight = 300

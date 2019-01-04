@@ -1,5 +1,5 @@
 +++
-description = "Algorithms, data structures, command line"
+description = "Algorithms & data structures"
 title = "Computer Science"
 draft = false
 weight = 200
@@ -8,13 +8,7 @@ toc = true
 script = 'animation'
 +++
 
-<h3 class="section-head" id="h-Section1"><a href="#h-Section1">Command line interface (CLI)</a></h3>
-  <div class="example">
-    <p>A means of interacting with a computer program where the user (or client) issues commands to the program in the form of successive lines of text (command lines). Most users rely upon graphical user interfaces and menu-driven interactions with a mouse. However, many software developers, system administrators and advanced users still rely heavily on command-line interfaces to perform tasks more efficiently, configure their machine, or access programs and program features that are not available through a graphical interface.</p>
-    <p>A Unix shell is a command-line interpreter or shell that provides a command line user interface for Unix-like operating systems. Bash is a Unix shell and command language that can be used for executing commands from the CLI. <i> Windows has their own their shell and command language. Install Git Bash on Windows to run these commands.</i></p>
-    <img src="/img/basics/cli.png">
-  </div>
-<div style="text-align:right"> <a href="#top">&#8593; Top</a></div>
+
 
 <h3 class="section-head" id="h-Section2"><a href="#h-Section2">Algorithmic Complexity</a></h3>
   <div class="example">

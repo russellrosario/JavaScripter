@@ -432,8 +432,9 @@ script = 'animation'
 
 </details>
 
-
 ---
+
+
 
 ## 🔌 Adapter
 

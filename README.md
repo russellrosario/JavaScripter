@@ -7,11 +7,10 @@
   - [Computer Science](content/basics/cs.md)
   - [Internet Protocols](content/basics/ip.md)
 - Frontend
-  - [HTML](content/frontend/html.md)
-  - [CSS](content/frontend/css.md)
+  - [HTML & CSS](content/frontend/html_css.md)
   - [JavaScript](content/frontend/js.md)
   - [JavaScript 2.0](content/frontend/js2.md)
-  - [Client-side frameworks](content/frontend/client_side_frameworks.md)
+  - [Client-side frameworks](content/frontend/frameworks.md)
 - Backend
   - [Node](content/backend/node.md)
   - [Databases](content/backend/databases.md)

@@ -3,7 +3,7 @@ description = "Hardware, software, binary"
 title = "Fundamentals"
 draft = false
 weight = 100
-bref="Computer Science is the theory, experimentation, and engineering that form the basis for the design and use of computers"
+bref="Computers consist of two major elements: hardware and software. Hardware is any physical device used in or with your machine. Software is a set of instructions for a computer to perform specific operations"
 toc = true
 script = 'animation'
 +++
