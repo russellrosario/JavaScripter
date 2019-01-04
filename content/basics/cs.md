@@ -1,6 +1,6 @@
 +++
-description = "Algorithms, data structures, networks, CLI"
-title = "CS Advanced"
+description = "Algorithms, data structures, command line"
+title = "Computer Science"
 draft = false
 weight = 200
 bref="Computer Science is the theory, experimentation, and engineering that form the basis for the design and use of computers"
@@ -8,28 +8,7 @@ toc = true
 script = 'animation'
 +++
 
-<h3 class="section-head" id="h-Section1"><a href="#h-Section1">Networks</a></h3>
-  <div class="example">
-    <dl>
-      <dt>LAN</dt>
-      <dd>A computer network that spans a relatively small area connected via ethernet and wifi.</dd>
-    </dl>
-    <dl>
-      <dt>WAN</dt>
-      <dd>A computer network that spans a large area by connecting multiple LANs. The largest WAN in existence is the Internet.</dd>
-    </dl>
-    <dl>
-      <dt>VPN</dt>
-      <dd>Extends a private network across a public network, and enables users to send and receive data across shared or public networks as if their computing devices were directly connected to the private network.</dd>
-    </dl>
-    <dl>
-      <dt>IP</dt>
-      <dd>A numerical label assigned to each device connected to a computer network that uses the Internet Protocol for communication. When communicating with devices within the network, a private IP address is used. When communicating with devices outside the network, a public IP address is used. Since all devices within a private network share the same public IP address, port forwarding is used by the router to determine how to route data among devices. <a href="https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing">CIDR</a> is a method for dividing networks into subnetworks.</dd>
-    </dl>
-  </div>
-<div style="text-align:right"> <a href="#top">&#8593; Top</a></div>
-
-<h3 class="section-head" id="h-Section2"><a href="#h-Section2">Command line interface (CLI)</a></h3>
+<h3 class="section-head" id="h-Section1"><a href="#h-Section1">Command line interface (CLI)</a></h3>
   <div class="example">
     <p>A means of interacting with a computer program where the user (or client) issues commands to the program in the form of successive lines of text (command lines). Most users rely upon graphical user interfaces and menu-driven interactions with a mouse. However, many software developers, system administrators and advanced users still rely heavily on command-line interfaces to perform tasks more efficiently, configure their machine, or access programs and program features that are not available through a graphical interface.</p>
     <p>A Unix shell is a command-line interpreter or shell that provides a command line user interface for Unix-like operating systems. Bash is a Unix shell and command language that can be used for executing commands from the CLI. <i> Windows has their own their shell and command language. Install Git Bash on Windows to run these commands.</i></p>
@@ -37,7 +16,7 @@ script = 'animation'
   </div>
 <div style="text-align:right"> <a href="#top">&#8593; Top</a></div>
 
-<h3 class="section-head" id="h-Section3"><a href="#h-Section3">Algorithmic Complexity</a></h3>
+<h3 class="section-head" id="h-Section2"><a href="#h-Section2">Algorithmic Complexity</a></h3>
   <div class="example">
     <p>Big O notation is the language we use for talking about how long an algorithm takes to run. It's how we compare the efficiency of different approaches to a problem.</p>
     <p>To demonstrate Big O notation, let's use the example of a phone book. We will assume our phone book has businesses (the "Yellow Pages") which have unique names and people (the "White Pages") which may not have unique names. A phone number is assigned to at most one person or business. We will also assume that it takes constant time to flip to a specific page.</p>
@@ -92,7 +71,7 @@ script = 'animation'
   </div>
   <div style="text-align:right"> <a href="#top">&#8593; Top</a></div>
 
-<h3 class="section-head" id="h-Section4"><a href="#h-Section4">Data Structures</a></h3>
+<h3 class="section-head" id="h-Section3"><a href="#h-Section3">Data Structures</a></h3>
   <div class="example">
     <div style="text-align:center">
       <img src="/img/basics/data_structures.jpg">

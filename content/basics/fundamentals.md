@@ -1,6 +1,6 @@
 +++
 description = "Hardware, software, binary"
-title = "CS 101"
+title = "Fundamentals"
 draft = false
 weight = 100
 bref="Computer Science is the theory, experimentation, and engineering that form the basis for the design and use of computers"
