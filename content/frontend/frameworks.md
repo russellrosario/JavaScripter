@@ -1,5 +1,5 @@
 +++
-description = "Bootstrap, jQuery, Static sites, UI/UX"
+description = "Bootstrap, jQuery, Static sites"
 title = "Frontend tools"
 draft = false
 weight = 400
@@ -74,31 +74,6 @@ script = 'animation'
       <dt>Gatsby</dt>
       <dd>React components</dd>
       <dd>GraphQL - plugins</dd>
-    </dl>
-  </div>
-<div style="text-align:right"> <a href="#top">&#8593; Top</a></div>
-
-<h3 class="section-head" id="h-Section4"><a href="#h-Section4">UI/UX</a></h3>
-  <div class="example">
-    <dl>
-      <dt>Fonts</dt>
-      <dd><a href="https://fonts.google.com/">Google Fonts</a></dd>
-    </dl>
-    <dl>
-      <dt>Icons</dt>
-      <dd>TBD</dd>
-    </dl>
-    <dl>
-      <dt>Images</dt>
-      <dd>Pixabay</dd>
-      <dd>Unsplash</dd>
-      <dd>Pexels</dd>
-      <dd>Image compression</dd>
-    </dl>
-    <dl>
-      <dt>Color Palettes</dt>
-      <dd><a href="https://flatuicolors.com/">Flat UI Colors</a></dd>
-      <dd><a href="https://www.materialpalette.com/">Material Design Palette</a></dd>
     </dl>
   </div>
 <div style="text-align:right"> <a href="#top">&#8593; Top</a></div>
