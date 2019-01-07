@@ -11,7 +11,7 @@ script = 'animation'
 <h3 class="section-head" id="h-Section1"><a href="#h-Section1">Authentication</a></h3>
   <div class="example">
     <dl>
-      <dt>Commonly used</dt>
+      <dt>hash, salt, cookies/tokens</dt>
       <dd>TBD </dd>
     </dl>
   </div>
@@ -20,7 +20,7 @@ script = 'animation'
 <h3 class="section-head" id="h-Section2"><a href="#h-Section2">Best practices</a></h3>
   <div class="example">
     <dl>
-      <dt>Commonly used</dt>
+      <dt>Key management, least privilege, SSL, NPM audit, 3rd party - stripe/cognito</dt>
       <dd>TBD </dd>
     </dl>
   </div>
@@ -29,7 +29,7 @@ script = 'animation'
 <h3 class="section-head" id="h-Section3"><a href="#h-Section3">Common vulnerabilities</a></h3>
   <div class="example">
     <dl>
-      <dt>Commonly used</dt>
+      <dt>XSS, SQL injection, DDOS, social engineering</dt>
       <dd>TBD </dd>
     </dl>
   </div>
@@ -38,7 +38,7 @@ script = 'animation'
 <h3 class="section-head" id="h-Section4"><a href="#h-Section4">Local attacks</a></h3>
   <div class="example">
     <dl>
-      <dt>Commonly used</dt>
+      <dt>MITM, MAC, VPN, monitor open ports and running processes</dt>
       <dd>TBD </dd>
     </dl>
   </div>

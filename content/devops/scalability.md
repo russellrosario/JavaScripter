@@ -16,7 +16,7 @@ script = 'animation'
     </dl>
     <dl>
       <dt>Docker</dt>
-      <dd>TBD </dd>
+      <dd>Ports </dd>
     </dl>
   </div>
 <div style="text-align:right"> <a href="#top">&#8593; Top</a></div>
@@ -38,19 +38,19 @@ script = 'animation'
   <div class="example">
     <dl>
       <dt>CDN</dt>
-      <dd>TBD </dd>
+      <dd>Static files </dd>
     </dl>
     <dl>
       <dt>Caching</dt>
-      <dd>TBD </dd>
+      <dd>Service workers, Redis </dd>
     </dl>
     <dl>
       <dt>Data transfer</dt>
-      <dd>TBD </dd>
+      <dd>GZIP, QUIC, streams </dd>
     </dl>
     <dl>
       <dt>Language selection</dt>
-      <dd>TBD </dd>
+      <dd> Java, webassembly </dd>
     </dl>
   </div>
 <div style="text-align:right"> <a href="#top">&#8593; Top</a></div>

@@ -1,6 +1,6 @@
 +++
-description = "Resources for web development"
-title = "UI/UX"
+description = "Tools, UI/UX"
+title = "Resources"
 draft = false
 weight = 400
 bref="JavaScript frameworks provide tooling to efficiently handle commonly faced problems in client-side development"

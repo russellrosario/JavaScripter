@@ -14,32 +14,26 @@ script = 'animation'
       <dt>Why Python?</dt>
       <dd>Packages, pip </dd>
     </dl>
-
+    <dl>
+      <dt>Language details</dt>
+      <dd>TBD </dd>
+    </dl>
   </div>
 <div style="text-align:right"> <a href="#top">&#8593; Top</a></div>
 
 <h3 class="section-head" id="h-Section1"><a href="#h-Section1">Libraries</a></h3>
   <div class="example">
     <dl>
-      <dt>Numpy</dt>
+      <dt>Numpy, Pandas, Matplotlib</dt>
       <dd>TBD </dd>
     </dl>
     <dl>
-      <dt>Pandas</dt>
-      <dd>TBD </dd>
+      <dt>Automation</dt>
+      <dd>PY Autogui</dd>
     </dl>
     <dl>
-      <dt>Matplotlib</dt>
-      <dd>TBD </dd>
-    </dl>
-  </div>
-<div style="text-align:right"> <a href="#top">&#8593; Top</a></div>
-
-<h3 class="section-head" id="h-Section2"><a href="#h-Section2">Web Scraping</a></h3>
-  <div class="example">
-    <dl>
-      <dt>Commonly used</dt>
-      <dd>TBD </dd>
+      <dt>Web Scraping</dt>
+      <dd>Beautiful soup, cron jobs, screenshot </dd>
     </dl>
   </div>
 <div style="text-align:right"> <a href="#top">&#8593; Top</a></div>

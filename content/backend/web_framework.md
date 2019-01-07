@@ -12,6 +12,10 @@ script = 'animation'
   <div class="example">
     <dl>
       <dt>Basics</dt>
+      <dd>Verbs-status, headers, CORS </dd>
+    </dl>
+    <dl>
+      <dt>Websockets</dt>
       <dd>TBD </dd>
     </dl>
     <dl>

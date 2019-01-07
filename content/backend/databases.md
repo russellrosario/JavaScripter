@@ -20,7 +20,7 @@ script = 'animation'
 <h3 class="section-head" id="h-Section2"><a href="#h-Section2">NoSQL</a></h3>
   <div class="example">
     <dl>
-      <dt>TBD</dt>
+      <dt>MongoDB</dt>
       <dd>TBD </dd>
     </dl>
   </div>
@@ -29,7 +29,7 @@ script = 'animation'
 <h3 class="section-head" id="h-Section3"><a href="#h-Section3">SQL vs NoSQL</a></h3>
   <div class="example">
     <dl>
-      <dt>TBD</dt>
+      <dt>ACID, Schemaless</dt>
       <dd>TBD </dd>
     </dl>
   </div>

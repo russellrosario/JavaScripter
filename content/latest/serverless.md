@@ -11,7 +11,7 @@ script = 'animation'
 <h3 class="section-head" id="h-Section0"><a href="#h-Section0">Why?</a></h3>
   <div class="example">
     <dl>
-      <dt>TBD</dt>
+      <dt>Pros/Cons</dt>
       <dd>TBD </dd>
     </dl>
   </div>
@@ -20,7 +20,7 @@ script = 'animation'
 <h3 class="section-head" id="h-Section1"><a href="#h-Section1">Serverless framework</a></h3>
   <div class="example">
     <dl>
-      <dt>TBD</dt>
+      <dt>IaC, alternatives, YAML, plugins </dt>
       <dd>TBD </dd>
     </dl>
   </div>
@@ -29,7 +29,7 @@ script = 'animation'
 <h3 class="section-head" id="h-Section2"><a href="#h-Section2">Functions & events</a></h3>
   <div class="example">
     <dl>
-      <dt>TBD</dt>
+      <dt>Services, Code snippets</dt>
       <dd>TBD </dd>
     </dl>
   </div>
@@ -38,7 +38,7 @@ script = 'animation'
 <h3 class="section-head" id="h-Section3"><a href="#h-Section3">Resources & variables</a></h3>
   <div class="example">
     <dl>
-      <dt>TBD</dt>
+      <dt>Code snippets, export, import, cloudformation, join ref</dt>
       <dd>TBD </dd>
     </dl>
   </div>

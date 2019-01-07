@@ -7,12 +7,13 @@
   - [Computer Science](content/basics/cs.md)
   - [Internet Protocols](content/basics/ip.md)
 - Languages
+  - [HTML & CSS](content/languages/html_css.md)
   - [JavaScript](content/languages/js.md)
   - [Python](content/languages/python.md)
 - Frontend
-  - [HTML & CSS](content/frontend/html_css.md)
   - [React](content/frontend/react.md)
   - [Frontend tools](content/frontend/frameworks.md)
+  - [UI/UX](content/frontend/uiux.md)
 - Backend
   - [Node](content/backend/node.md)
   - [Databases](content/backend/databases.md)
@@ -27,3 +28,5 @@
   - [Big Data](content/latest/big_data.md)
   - [Blockchain](content/latest/blockchain.md)
   - [Serverless](content/latest/serverless.md)
+
+Diagrams

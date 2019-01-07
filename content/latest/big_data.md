@@ -11,7 +11,7 @@ script = 'animation'
 <h3 class="section-head" id="h-Section1"><a href="#h-Section1">Hadoop</a></h3>
   <div class="example">
     <dl>
-      <dt>Commonly used</dt>
+      <dt>RDD</dt>
       <dd>TBD </dd>
     </dl>
   </div>
@@ -20,7 +20,7 @@ script = 'animation'
 <h3 class="section-head" id="h-Section2"><a href="#h-Section2">Apache Spark</a></h3>
   <div class="example">
     <dl>
-      <dt>Commonly used</dt>
+      <dt>MapReduce</dt>
       <dd>TBD </dd>
     </dl>
   </div>
@@ -29,7 +29,7 @@ script = 'animation'
 <h3 class="section-head" id="h-Section3"><a href="#h-Section3">Streams</a></h3>
   <div class="example">
     <dl>
-      <dt>Commonly used</dt>
+      <dt>Kinesis, batch functions, integrity</dt>
       <dd>TBD </dd>
     </dl>
   </div>

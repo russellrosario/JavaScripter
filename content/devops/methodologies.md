@@ -11,16 +11,20 @@ script = 'animation'
 <h3 class="section-head" id="h-Section1"><a href="#h-Section1">Version control</a></h3>
   <div class="example">
     <dl>
-      <dt>TBD</dt>
+      <dt>Git</dt>
       <dd>TBD </dd>
     </dl>
   </div>
 <div style="text-align:right"> <a href="#top">&#8593; Top</a></div>
 
-<h3 class="section-head" id="h-Section2"><a href="#h-Section2">Agile & Scrum</a></h3>
+<h3 class="section-head" id="h-Section2"><a href="#h-Section2">Agile</a></h3>
   <div class="example">
     <dl>
-      <dt>TBD</dt>
+      <dt>vs Waterfall</dt>
+      <dd>TBD </dd>
+    </dl>
+    <dl>
+      <dt>Scrum</dt>
       <dd>TBD </dd>
     </dl>
   </div>
@@ -35,7 +39,16 @@ script = 'animation'
   </div>
 <div style="text-align:right"> <a href="#top">&#8593; Top</a></div>
 
-<h3 class="section-head" id="h-Section4"><a href="#h-Section4">AWS Well-Architected</a></h3>
+<h3 class="section-head" id="h-Section4"><a href="#h-Section4">Test Driven Development</a></h3>
+  <div class="example">
+    <dl>
+      <dt>TBD</dt>
+      <dd>TBD </dd>
+    </dl>
+  </div>
+<div style="text-align:right"> <a href="#top">&#8593; Top</a></div>
+
+<h3 class="section-head" id="h-Section5"><a href="#h-Section5">AWS Well-Architected</a></h3>
   <div class="example">
     <p><a href="https://aws.amazon.com/architecture/well-architected/">AWS whitepaper</a> on the key concepts and design principles for architecting in the cloud. The 5 pillars are:</p>
     <dl>

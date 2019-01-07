@@ -94,7 +94,7 @@ script = 'animation'
 <h3 class="section-head" id="h-Section3"><a href="#h-Section3">Regular Expressions</a></h3>
   <div class="example">
     <dl>
-      <dt>Commonly used</dt>
+      <dt>Commonly used, tools</dt>
       <dd>TBD </dd>
     </dl>
   </div>
