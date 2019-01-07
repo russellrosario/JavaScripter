@@ -9,18 +9,49 @@ script = 'animation'
 +++
 
 <h3 class="section-head" id="h-Section1"><a href="#h-Section1">Tensors</a></h3>
-  <p>TensorFlow</p>
-  <p>TensorFlow.js</p>
-  <p>Keras</p>
+  <div class="example">
+    <dl>
+      <dt>TensorFlow</dt>
+      <dd>TBD </dd>
+    </dl>
+    <dl>
+      <dt>Keras</dt>
+      <dd>TBD </dd>
+    </dl>
+    <dl>
+      <dt>JS Libraries</dt>
+      <dd>Tensorflow.js </dd>
+      <dd>ML5.js </dd>
+    </dl>
+  </div>
 <div style="text-align:right"> <a href="#top">&#8593; Top</a></div>
 
 <h3 class="section-head" id="h-Section2"><a href="#h-Section2">Unsupervised vs supervised</a></h3>
-  <p>Unsupervised</p>
-  <p>Supervised</p>
+  <div class="example">
+    <dl>
+      <dt>Unsupervised</dt>
+      <dd>TBD </dd>
+    </dl>
+    <dl>
+      <dt>Supervised</dt>
+      <dd>TBD </dd>
+    </dl>
+  </div>
 <div style="text-align:right"> <a href="#top">&#8593; Top</a></div>
 
 <h3 class="section-head" id="h-Section3"><a href="#h-Section3">Neural networks</a></h3>
-  <p>ANN</p>
-  <p>CNN</p>
-  <p>RNN</p>
+  <div class="example">
+    <dl>
+      <dt>ANN</dt>
+      <dd>TBD </dd>
+    </dl>
+    <dl>
+      <dt>CNN</dt>
+      <dd>TBD </dd>
+    </dl>
+    <dl>
+      <dt>RNN</dt>
+      <dd>TBD </dd>
+    </dl>
+  </div>
 <div style="text-align:right"> <a href="#top">&#8593; Top</a></div>

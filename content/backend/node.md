@@ -1,5 +1,5 @@
 +++
-description = "Node under the hood & NPM"
+description = "Node and NPM"
 title = "Node"
 draft = false
 weight = 100
@@ -8,15 +8,34 @@ toc = true
 script = 'animation'
 +++
 
-<h3 class="section-head" id="h-Section1"><a href="#h-Section1">Technical details</a></h3>
-  <p>Async non blocking single threaded</p>
+<h3 class="section-head" id="h-Section1"><a href="#h-Section1">Node</a></h3>
+  <div class="example">
+    <dl>
+      <dt>Under the hood</dt>
+      <dd>Single-thread, v8, C++, libuv </dd>
+    </dl>
+    <dl>
+      <dt>Event loop</dt>
+      <dd>Non-blocking </dd>
+    </dl>
+    <dl>
+      <dt>Forking</dt>
+      <dd>TBD</dd>
+    </dl>
+  </div>
 <div style="text-align:right"> <a href="#top">&#8593; Top</a></div>
 
-<h3 class="section-head" id="h-Section2"><a href="#h-Section2">Event loop</a></h3>
-  <p>TBD</p>
-  <div style="text-align:right"> <a href="#top">&#8593; Top</a></div>
 
-<h3 class="section-head" id="h-Section3"><a href="#h-Section3">NPM</a></h3>
-  <p>TBD</p>
-  <div style="text-align:right"> <a href="#top">&#8593; Top</a></div>
+<h3 class="section-head" id="h-Section2"><a href="#h-Section2">NPM</a></h3>
+  <div class="example">
+    <dl>
+      <dt>Package manager</dt>
+      <dd>TBD </dd>
+    </dl>
+    <dl>
+      <dt>NPM Scripts</dt>
+      <dd>TBD </dd>
+    </dl>
+  </div>
+<div style="text-align:right"> <a href="#top">&#8593; Top</a></div>
 

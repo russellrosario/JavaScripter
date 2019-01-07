@@ -92,5 +92,10 @@ script = 'animation'
 <div style="text-align:right"> <a href="#top">&#8593; Top</a></div>
 
 <h3 class="section-head" id="h-Section3"><a href="#h-Section3">Regular Expressions</a></h3>
-  <p>TBD</p>
-  <div style="text-align:right"> <a href="#top">&#8593; Top</a></div>
+  <div class="example">
+    <dl>
+      <dt>Commonly used</dt>
+      <dd>TBD </dd>
+    </dl>
+  </div>
+<div style="text-align:right"> <a href="#top">&#8593; Top</a></div>

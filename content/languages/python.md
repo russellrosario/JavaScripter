@@ -1,5 +1,5 @@
 +++
-description = "Numpy, Pandas, Matplotlib, Web scraping"
+description = "Pandas, Matplotlib, Web scraping"
 title = "Python"
 draft = false
 weight = 200
@@ -8,10 +8,38 @@ toc = true
 script = 'animation'
 +++
 
-<h3 class="section-head" id="h-Section1"><a href="#h-Section1">Regex</a></h3>
-  <p>TBD</p>
+<h3 class="section-head" id="h-Section0"><a href="#h-Section0">Python</a></h3>
+  <div class="example">
+    <dl>
+      <dt>Why Python?</dt>
+      <dd>Packages, pip </dd>
+    </dl>
+
+  </div>
 <div style="text-align:right"> <a href="#top">&#8593; Top</a></div>
 
-<h3 class="section-head" id="h-Section2"><a href="#h-Section2">Python Pandas</a></h3>
-  <p>TBD</p>
-  <div style="text-align:right"> <a href="#top">&#8593; Top</a></div>
+<h3 class="section-head" id="h-Section1"><a href="#h-Section1">Libraries</a></h3>
+  <div class="example">
+    <dl>
+      <dt>Numpy</dt>
+      <dd>TBD </dd>
+    </dl>
+    <dl>
+      <dt>Pandas</dt>
+      <dd>TBD </dd>
+    </dl>
+    <dl>
+      <dt>Matplotlib</dt>
+      <dd>TBD </dd>
+    </dl>
+  </div>
+<div style="text-align:right"> <a href="#top">&#8593; Top</a></div>
+
+<h3 class="section-head" id="h-Section2"><a href="#h-Section2">Web Scraping</a></h3>
+  <div class="example">
+    <dl>
+      <dt>Commonly used</dt>
+      <dd>TBD </dd>
+    </dl>
+  </div>
+<div style="text-align:right"> <a href="#top">&#8593; Top</a></div>

@@ -35,12 +35,26 @@ script = 'animation'
 <div style="text-align:right"> <a href="#top">&#8593; Top</a></div>
 
 <h3 class="section-head" id="h-Section2"><a href="#h-Section2">jQuery</a></h3>
+  <div class="example">
   <p>jQuery is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers.</p>
-  <p>/files/</p>
-  <p>DOM Traversal and Manipulation - Selectors</p>
-  <p>Event Handling - docs</p>
-  <p>Ajax - sample code</p>
-  <p>You may not need jQuery - http://youmightnotneedjquery.com, 30 challenge</p>
+    <dl>
+      <dt>DOM Traversal and Manipulation</dt>
+      <dd>Selectors </dd>
+    </dl>
+    <dl>
+      <dt>Event Handling</dt>
+      <dd>docs </dd>
+    </dl>
+    <dl>
+      <dt>Ajax</dt>
+      <dd>sample code </dd>
+    </dl>
+    <dl>
+      <dt>Vanilla JavaScript</dt>
+      <dd>http://youmightnotneedjquery.com </dd>
+      <dd>30 challenge </dd>
+    </dl>
+  </div>
 <div style="text-align:right"> <a href="#top">&#8593; Top</a></div>
 
 

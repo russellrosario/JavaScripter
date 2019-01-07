@@ -9,17 +9,49 @@ script = 'animation'
 +++
 
 <h3 class="section-head" id="h-Section2"><a href="#h-Section2">Containers</a></h3>
-  <p>TBD</p>
-  <div style="text-align:right"> <a href="#top">&#8593; Top</a></div>
+  <div class="example">
+    <dl>
+      <dt>Microservices</dt>
+      <dd>TBD </dd>
+    </dl>
+    <dl>
+      <dt>Docker</dt>
+      <dd>TBD </dd>
+    </dl>
+  </div>
+<div style="text-align:right"> <a href="#top">&#8593; Top</a></div>
 
 <h3 class="section-head" id="h-Section3"><a href="#h-Section3">Load balancing</a></h3>
-  <p>TBD</p>
-  <div style="text-align:right"> <a href="#top">&#8593; Top</a></div>
+  <div class="example">
+    <dl>
+      <dt>ALB vs ELB</dt>
+      <dd>TBD </dd>
+    </dl>
+    <dl>
+      <dt>Autoscaling</dt>
+      <dd>TBD </dd>
+    </dl>
+  </div>
+<div style="text-align:right"> <a href="#top">&#8593; Top</a></div>
 
 <h3 class="section-head" id="h-Section4"><a href="#h-Section4">Web performance</a></h3>
-  <p>CDN</p>
-  <p>Caching</p>
-  <p>Data transfer</p>
-  <p>Language selection</p>
+  <div class="example">
+    <dl>
+      <dt>CDN</dt>
+      <dd>TBD </dd>
+    </dl>
+    <dl>
+      <dt>Caching</dt>
+      <dd>TBD </dd>
+    </dl>
+    <dl>
+      <dt>Data transfer</dt>
+      <dd>TBD </dd>
+    </dl>
+    <dl>
+      <dt>Language selection</dt>
+      <dd>TBD </dd>
+    </dl>
+  </div>
 <div style="text-align:right"> <a href="#top">&#8593; Top</a></div>
 
