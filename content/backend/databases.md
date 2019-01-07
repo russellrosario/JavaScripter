@@ -1,5 +1,5 @@
 +++
-description = "SQL vs NoSQL"
+description = "SQL, NoSQL, Elasticsearch"
 title = "Databases"
 draft = false
 weight = 200
@@ -17,5 +17,9 @@ script = 'animation'
   <div style="text-align:right"> <a href="#top">&#8593; Top</a></div>
 
 <h3 class="section-head" id="h-Section3"><a href="#h-Section3">SQL vs NoSQL</a></h3>
+  <p>TBD</p>
+  <div style="text-align:right"> <a href="#top">&#8593; Top</a></div>
+
+<h3 class="section-head" id="h-Section4"><a href="#h-Section4">Elasticsearch</a></h3>
   <p>TBD</p>
   <div style="text-align:right"> <a href="#top">&#8593; Top</a></div>

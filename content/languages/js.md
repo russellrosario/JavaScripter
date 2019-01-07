@@ -1,24 +1,16 @@
 +++
-description = "JavaScript basics, quirks, CLI"
+description = "JavaScript and its quirks"
 title = "JavaScript"
 draft = false
-weight = 300
+weight = 100
 bref="JavaScript is a high-level, dynamic, weakly typed, prototype-based, and multi-paradigm interpreted programming language"
 toc = true
 script = 'animation'
 +++
 
-<h3 class="section-head" id="h-Section0"><a href="#h-Section0">Getting started with the CLI</a></h3>
-  <div class="example">
-    <p>The Command line interface (CLI) is a means of interacting with a computer program where the user (or client) issues commands to the program in the form of successive lines of text (command lines). Most users rely upon graphical user interfaces and menu-driven interactions with a mouse. However, many software developers, system administrators and advanced users still rely heavily on command-line interfaces to perform tasks more efficiently, configure their machine, or access programs and program features that are not available through a graphical interface.</p>
-    <p>A Unix shell is a command-line interpreter or shell that provides a command line user interface for Unix-like operating systems. Bash is a Unix shell and command language that can be used for executing commands from the CLI. <i> Windows has their own their shell and command language. Install Git Bash on Windows to run these commands.</i></p>
-    <img src="/img/basics/cli.png">
-  </div>
-<div style="text-align:right"> <a href="#top">&#8593; Top</a></div>
-
 <h3 class="section-head" id="h-Section1"><a href="#h-Section1">Why JavaScript?</a></h3>
   <div class="example">
-    <p>JavaScript is a very powerful language that can do almost any type of programming (functional, object, imperative). It's growth has made it the most popular language used today. Thousands of libraries and frameworks are available to simplify the task of coding. JavaScript can be run on the client or the server, eliminating the need to switch between different languages and making it the perfect web development tool.</p>
+    <p>JavaScript is a powerful language that can do almost any type of programming (functional, object, imperative). It's growth has made it the most popular language used today. Thousands of libraries and frameworks are available to simplify the task of coding. JavaScript can be run on the client or the server, eliminating the need to switch between different languages and making it the perfect web development tool.</p>
 
   </div>
 <div style="text-align:right"> <a href="#top">&#8593; Top</a></div>
@@ -52,7 +44,7 @@ script = 'animation'
     </dl>
     <dl>
       <dt>Class</dt>
-      <dd>An object containing a "blueprint" for creating many objects of the same "type". Classes contain a constructor function that is invoked when using the <b>new</b> keyword. Instances created through a class definition will inherit methods (functions) and properties of the parent class object through the <b>prototype chain</b>. </dd>
+      <dd>An object containing a "blueprint" for creating many objects of the same "type". Classes contain a constructor function that is invoked when using the <mark>new</mark> keyword. Instances created through a class definition will inherit methods (functions) and properties of the parent class object through the <b>prototype chain</b>. </dd>
     </dl>
     <dl>
       <dt>Conditionals</dt>
@@ -64,7 +56,7 @@ script = 'animation'
     </dl>
     <dl>
       <dt>Operators</dt>
-      <dd><img src="/img/frontend/js1.png" width="85%"></dd>
+      <dd><img src="https://www.javascripter.co/img/frontend/js1.png" width="85%"></dd>
     </dl>
   </div>
   <div style="text-align:right"> <a href="#top">&#8593; Top</a></div>
@@ -77,7 +69,7 @@ script = 'animation'
     </dl>
     <dl>
       <dt>"this" keyword</dt>
-      <dd>As soon as the program runs, "this" is defaulted to the global object. As the program executes, "this" will change to the object it belongs to, which might be different each time the function is called. In a browser event, this refers to the element that received the event. There are call(), bind(), and apply() methods to set the value of a function's "this" regardless of how it's called. There are also arrow functions which don't provide their own this binding (it retains the this value of the enclosing lexical context).</dd>
+      <dd>As soon as the program runs, "this" is defaulted to the global object. As the program executes, "this" will change to the object it belongs to, which might be different each time the function is called. In a browser event, this refers to the element that received the event. There are <mark>call()</mark>, <mark>bind()</mark>, and <mark>apply()</mark> methods to set the value of a function's "this" regardless of how it's called. There are also arrow functions which don't provide their own this binding (it retains the this value of the enclosing lexical context).</dd>
     </dl>
     <dl>
       <dt>Closures & Scopes</dt>
@@ -88,10 +80,6 @@ script = 'animation'
       <dd>JavaScript's default behavior of moving declarations to the top. This occurs during the compilation step when the JavaScript engine creates the program's scopes before the interpreter executes the code.</dd>
     </dl>
     <dl>
-      <dt>Type coercion</dt>
-      <dd>The process of converting value from one type to another (such as string to number, object to boolean, and so on). Use === to check for equality AND type.</dd>
-    </dl>
-    <dl>
       <dt>Floating points</dt>
       <dd>Unlike many other programming languages, JavaScript does not define different types of numbers, like integers, short, long, floating-point etc. JavaScript numbers are always stored as double precision floating point numbers which means that 1/10 in base 2 is a repeating decimal that will be rounded.</dd>
     </dl>
@@ -100,16 +88,16 @@ script = 'animation'
       <dd>A specification to standardize JavaScript with updates to the language every year. As a result, the latest features of JavaScript might not be able to run in older runtime environments. Fortunately, tools like Webpack and Babel can transpile JavaScript. The transpiler converts the latest versions of JavaScript into earlier versions like ES5 that are compatible with almost all runtimes.</dd>
     </dl>
     <dl>
-      <dt>TypeScript</dt>
-      <dd>A strict syntactical superset of JavaScript that adds optional static typing to the language. Existing JavaScript programs are also valid TypeScript programs. Many developers prefer a statically typed language due to improved debugging and type inference. In addition, TypeScript extends functionality by providing additional language features and transpiling. </dd>
+      <dt>Type coercion</dt>
+      <dd>The process of converting values from one type to another (such as string to number, object to boolean, and so on). <i>See chart below for examples.</i> Use <mark>===</mark> to check for equality AND type</ins>. Many developers prefer a statically typed language for issues like this. Using <b>TypeScript</b> adds static typing and other useful features before being transcompiled into JavaScript.</dd>
     </dl>
-        <img src="/img/frontend/type_coercion.png">
+        <img src="https://www.javascripter.co/img/frontend/type_coercion.png">
   </div>
   <div style="text-align:right"> <a href="#top">&#8593; Top</a></div>
 
 
 
-<h3 class="section-head" id="h-Section6"><a href="#h-Section6">Additional resources</a></h3>
+<h3 class="section-head" id="h-Section6"><a href="#h-Section6">Resources</a></h3>
   <div class="example">
     <dl>
       <dt><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">MDN JavaScript docs</a></dt>
@@ -126,6 +114,10 @@ script = 'animation'
     <dl>
       <dt><a href="/files/design_patterns/">Design patterns</a></dt>
       <dd>Design patterns for commonly occuring themes in software engineering</dd>
+    </dl>
+    <dl>
+      <dt><a href="https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html">TypeScript in 5 minutes</a></dt>
+      <dd> Official documentation from TypeScript</dd>
     </dl>
   </div>
 <div style="text-align:right"> <a href="#top">&#8593; Top</a></div>

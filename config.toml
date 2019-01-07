@@ -16,18 +16,22 @@ Paginate = 4
     weight = 100
     url = "/basics/"
 [[menu.main]]
-    name = "Frontend"
+    name = "Languages"
     weight = 200
+    url = "/Languages/"
+[[menu.main]]
+    name = "Frontend"
+    weight = 300
     url = "/Frontend/"
 [[menu.main]]
     name = "Backend"
-    weight = 300
+    weight = 400
     url = "/Backend/"
 [[menu.main]]
     name = "DevOps"
-    weight = 400
+    weight = 500
     url = "/DevOps/"
 [[menu.main]]
-    name = "Applications"
+    name = "Latest"
     weight = 600
-    url = "/Applications/"
+    url = "/Latest/"

@@ -1,9 +1,9 @@
 +++
-description = "Regex, Python, Pandas"
-title = "Data Wrangling"
+description = "Numpy, Pandas, Matplotlib, Web scraping"
+title = "Python"
 draft = false
-weight = 100
-bref="Data wrangling, sometimes referred to as data munging, is the process of transforming and mapping data from one raw data form into another format with the intent of making it more appropriate and valuable for a variety of downstream purposes such as analytics"
+weight = 200
+bref="Python is an interpreted, high-level, general-purpose programming language"
 toc = true
 script = 'animation'
 +++

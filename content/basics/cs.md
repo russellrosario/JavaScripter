@@ -1,5 +1,5 @@
 +++
-description = "Algorithms & data structures"
+description = "Algorithms, data structures, regex"
 title = "Computer Science"
 draft = false
 weight = 200
@@ -10,7 +10,7 @@ script = 'animation'
 
 
 
-<h3 class="section-head" id="h-Section2"><a href="#h-Section2">Algorithmic Complexity</a></h3>
+<h3 class="section-head" id="h-Section1"><a href="#h-Section1">Algorithmic Complexity</a></h3>
   <div class="example">
     <p>Big O notation is the language we use for talking about how long an algorithm takes to run. It's how we compare the efficiency of different approaches to a problem.</p>
     <p>To demonstrate Big O notation, let's use the example of a phone book. We will assume our phone book has businesses (the "Yellow Pages") which have unique names and people (the "White Pages") which may not have unique names. A phone number is assigned to at most one person or business. We will also assume that it takes constant time to flip to a specific page.</p>
@@ -57,18 +57,18 @@ script = 'animation'
       <dd>You fix the robot so that it's loading things correctly. The next day, one of your co-workers plays a prank on you and wires the loading dock robot to the automated printing systems. Every time the robot goes to load an original book, the factory printer makes a duplicate run of all the phonebooks! Fortunately, the robot's bug-detection systems are sophisticated enough that the robot doesn't try printing even more copies when it encounters a duplicate book for loading, but it still has to load every original and duplicate book that's been printed.</dd>
     </dl>
     <div style="text-align:center">
-      <img src="/img/basics/algos.png">
+      <img src="https://www.javascripter.co/img/basics/algos.png">
     </div>
     <div style="text-align:center;margin-top:55px;">
-      <img src="/img/basics/sorting.png">
+      <img src="https://www.javascripter.co/img/basics/sorting.png">
     </div>
   </div>
   <div style="text-align:right"> <a href="#top">&#8593; Top</a></div>
 
-<h3 class="section-head" id="h-Section3"><a href="#h-Section3">Data Structures</a></h3>
+<h3 class="section-head" id="h-Section2"><a href="#h-Section2">Data Structures</a></h3>
   <div class="example">
     <div style="text-align:center">
-      <img src="/img/basics/data_structures.jpg">
+      <img src="https://www.javascripter.co/img/basics/data_structures.jpg">
     </div>
     <div class="row">
       <div class="col col-6">
@@ -90,3 +90,7 @@ script = 'animation'
     </div>
   </div>
 <div style="text-align:right"> <a href="#top">&#8593; Top</a></div>
+
+<h3 class="section-head" id="h-Section3"><a href="#h-Section3">Regular Expressions</a></h3>
+  <p>TBD</p>
+  <div style="text-align:right"> <a href="#top">&#8593; Top</a></div>
