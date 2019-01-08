@@ -26,8 +26,16 @@ script = 'animation'
   </div>
 <div style="text-align:right"> <a href="#top">&#8593; Top</a></div>
 
-<h3 class="section-head" id="h-Section2"><a href="#h-Section2">Unsupervised vs supervised</a></h3>
+<h3 class="section-head" id="h-Section2"><a href="#h-Section2">Machine Learning</a></h3>
   <div class="example">
+    <dl>
+      <dt>Use Cases</dt>
+      <dd>Image recognition </dd>
+      <dd>Object detection and tracking</dd>
+      <dd>Speech recognition & synthesis</dd>
+      <dd>Algorithmic trading strategies</dd>
+      <dd>Sentiment analysis</dd>
+    </dl>
     <dl>
       <dt>Unsupervised</dt>
       <dd>TBD </dd>

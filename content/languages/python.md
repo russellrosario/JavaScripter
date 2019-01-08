@@ -16,7 +16,7 @@ script = 'animation'
     </dl>
     <dl>
       <dt>Pandas</dt>
-      <dd>Provides the basis for working with analyzing tabular data. Pandas' data manipulation capabilities are built on top of NumPy, which is a library for efficient array computations. Matplotlib is for graphing and visualization of this data. These libraries provide the basis for exploratory data analysis.</dd>
+      <dd>Provides the basis for manipulating tabular data. Pandas' data manipulation capabilities are built on top of NumPy, which is a library for efficient array computations. Matplotlib is for graphing and visualization of this data. These libraries provide the basis for exploratory data analysis.</dd>
     </dl>
     <dl>
       <dt>PyAutoGUI</dt>

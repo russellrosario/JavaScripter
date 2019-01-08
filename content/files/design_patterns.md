@@ -12,7 +12,7 @@ script = 'animation'
 <a href="https://www.javascripter.co/cheatsheets/design_patterns">Link to full explanations</a>
 
 
-<img alt="Image" src="/img/diagrams/design_patterns/designpatterns1.jpg" width="800">
+<img alt="Image" src="/img/files/designpatterns1.jpg" width="800">
 
 
-<img alt="Image" src="/img/diagrams/design_patterns/designpatterns2.jpg" width="800">
+<img alt="Image" src="/img/files/designpatterns2.jpg" width="800">
