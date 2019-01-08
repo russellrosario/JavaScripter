@@ -28,5 +28,3 @@
   - [Big Data](content/latest/big_data.md)
   - [Blockchain](content/latest/blockchain.md)
   - [Serverless](content/latest/serverless.md)
-
-Diagrams

@@ -1,5 +1,5 @@
 +++
-description = "Bootstrap, jQuery, Static sites"
+description = "Bootstrap & jQuery"
 title = "Frontend tools"
 draft = false
 weight = 400
@@ -49,31 +49,22 @@ script = 'animation'
       <dt>Ajax</dt>
       <dd>sample code </dd>
     </dl>
+  </div>
+<div style="text-align:right"> <a href="#top">&#8593; Top</a></div>
+
+
+<h3 class="section-head" id="h-Section3"><a href="#h-Section3">Other options</a></h3>
+  <div class="example">
     <dl>
       <dt>Vanilla JavaScript</dt>
       <dd>http://youmightnotneedjquery.com </dd>
       <dd>30 challenge </dd>
     </dl>
-  </div>
-<div style="text-align:right"> <a href="#top">&#8593; Top</a></div>
-
-
-<h3 class="section-head" id="h-Section3"><a href="#h-Section3">Static site generator</a></h3>
-  <div class="example">
     <dl>
-      <dt>Single page applications</dt>
-      <dd>Next.js</dd>
-    </dl>
-    <dl>
-      <dt>Hugo</dt>
-      <dd>Templates, Override </dd>
-      <dd>Fast, hugo server --disableFastRender, Markdown</dd>
-      <dd>Netlify</dd>
-    </dl>
-    <dl>
-      <dt>Gatsby</dt>
-      <dd>React components</dd>
-      <dd>GraphQL - plugins</dd>
+      <dt>CSS</dt>
+      <dd>Materialize, Semantic UI</dd>
+      <dd>SCSS</dd>
+      <dd>Grid system</dd>
     </dl>
   </div>
 <div style="text-align:right"> <a href="#top">&#8593; Top</a></div>

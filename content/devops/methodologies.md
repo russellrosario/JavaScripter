@@ -1,5 +1,5 @@
 +++
-description = "Git, agile, scrum, CI/CD"
+description = "Git, Scrum, CI/CD, TDD"
 title = "Methodologies"
 draft = false
 weight = 100

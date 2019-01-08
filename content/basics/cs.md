@@ -72,20 +72,20 @@ script = 'animation'
     </div>
     <div class="row">
       <div class="col col-6">
-          <figure>
-    <img alt="Image" src="/img/basics/bst.png" width="85%">
-    <figcaption>
-      Binary search trees keep their keys in sorted order, so that lookup and other operations can use the principle of binary search. This means that each comparison allows the operations to skip about half of the tree, so that each lookup is much better than the linear time required to find items by key in an (unsorted) array, but slower than the corresponding operations on hash tables.
-    </figcaption>
-  </figure>
+        <figure>
+          <img alt="Image" src="/img/basics/bst.png" width="85%">
+          <figcaption>
+          Binary search trees keep their keys in sorted order, so that lookup and other operations can use the principle of binary search. This means that each comparison allows the operations to skip about half of the tree, so that each lookup is much better than the linear time required to find items by key in an (unsorted) array, but slower than the corresponding operations on hash tables.
+          </figcaption>
+        </figure>
       </div>
       <div class="col col-6">
         <figure>
-    <img alt="Image" src="/img/basics/hash.png">
-    <figcaption>
-      Hash functions are used in hash tables, to quickly locate a data record (e.g., a dictionary definition) given its search key. Specifically, the hash function is used to map the search key to a list; the index gives the place in the hash table where the corresponding record should be stored. Typically, the set of possible keys is larger than the number of different table indices, and so it will map several different keys to the same index which could result in collisions. So then, each slot of a hash table is associated with a set of records, often called a bucket.
-    </figcaption>
-  </figure>
+          <img alt="Image" src="/img/basics/hash.png">
+          <figcaption>
+            Hash functions are used in hash tables, to quickly locate a data record (e.g., a dictionary definition) given its search key. Specifically, the hash function is used to map the search key to a list; the index gives the place in the hash table where the corresponding record should be stored. Typically, the set of possible keys is larger than the number of different table indices, and so it will map several different keys to the same index which could result in collisions. So then, each slot of a hash table is associated with a set of records, often called a bucket.
+          </figcaption>
+        </figure>
       </div>
     </div>
   </div>
