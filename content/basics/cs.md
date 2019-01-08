@@ -73,7 +73,7 @@ script = 'animation'
     <div class="row">
       <div class="col col-6">
         <figure>
-          <img alt="Image" src="/img/basics/bst.png" width="85%">
+          <img alt="Image" src="https://www.javascripter.co/img/basics/bst.png" width="85%">
           <figcaption>
           Binary search trees keep their keys in sorted order, so that lookup and other operations can use the principle of binary search. This means that each comparison allows the operations to skip about half of the tree, so that each lookup is much better than the linear time required to find items by key in an (unsorted) array, but slower than the corresponding operations on hash tables.
           </figcaption>
@@ -81,7 +81,7 @@ script = 'animation'
       </div>
       <div class="col col-6">
         <figure>
-          <img alt="Image" src="/img/basics/hash.png">
+          <img alt="Image" src="https://www.javascripter.co/img/basics/hash.png">
           <figcaption>
             Hash functions are used in hash tables, to quickly locate a data record (e.g., a dictionary definition) given its search key. Specifically, the hash function is used to map the search key to a list; the index gives the place in the hash table where the corresponding record should be stored. Typically, the set of possible keys is larger than the number of different table indices, and so it will map several different keys to the same index which could result in collisions. So then, each slot of a hash table is associated with a set of records, often called a bucket.
           </figcaption>
@@ -94,8 +94,58 @@ script = 'animation'
 <h3 class="section-head" id="h-Section3"><a href="#h-Section3">Regular Expressions</a></h3>
   <div class="example">
     <dl>
-      <dt>Commonly used, tools</dt>
-      <dd>TBD </dd>
+      <dt><a href="https://www.javascripter.co/img/basics/regex.gif">See full cheatsheet</a></dt><br/>
+    <dl>
+    <dl>
+      <dt>Most commonly used JS functions</dt>
+      <dd>str.test(reg)
+```
+var str = "The best things in life are free";
+var reg = new RegExp("e");
+var res = reg.test(str);
+```
+
+str.match(reg)
+```
+var paragraph = 'The quick brown fox jumped over the lazy dog. It barked.';
+var reg = /[A-Z]/g;
+var found = paragraph.match(reg);
+console.log(found); // expected output: Array ["T", "I"]
+```
+
+reg.exec(str)
+```
+var str = "The best things in life are free";
+var reg = new RegExp("e");
+var res = reg.exec(str);
+```
+
+str.replace(str1,str2)
+```
+var p = 'The quick brown fox jumped over the lazy dog. If the dog reacted, was it really lazy?';
+var reg = /dog/gi;
+```
+
+str.search(reg)
+```
+let str = "A drop of ink may make a million think";
+alert( str.search( /a/i ) ); // 0 (the first position)
+```
+
+str.includes('')
+```
+var sentence = 'The quick brown fox jumped over the lazy dog.';
+var word = 'fox';
+console.log('The word "' + word + (sentence.includes(word)? '" is' : '" is not') + ' in the sentence'); // expected output: "The word "fox" is in the sentence"
+```
+
+str.split('')
+```
+var str = 'The quick brown fox jumped over the lazy dog.';
+var words = str.split(' ');
+console.log(words[3]); // expected output: "fox"
+```
+  </dd>
     </dl>
   </div>
 <div style="text-align:right"> <a href="#top">&#8593; Top</a></div>
