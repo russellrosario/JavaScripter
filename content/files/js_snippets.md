@@ -1,7 +1,6 @@
 +++
-description = "JavaScript global functions"
-title = "Snippets"
-
+description = "Short global functions in JS"
+title = "JavaScript snippets"
 draft = false
 weight = 200
 bref="Curated collection of useful JavaScript snippets that you can understand in 30 seconds or less"

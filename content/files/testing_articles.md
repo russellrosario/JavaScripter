@@ -1,7 +1,6 @@
 +++
-description = ""
-title = "Testing frameworks"
-
+description = "JS related testing"
+title = "Testing articles"
 draft = false
 weight = 200
 bref="A curated list of articles related to JavaScript testing"

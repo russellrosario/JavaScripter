@@ -36,7 +36,6 @@ script = 'animation'
       <dt>NPM Scripts</dt>
       <dd>Npm has a run command that can run scripts defined in the scripts property of a package.json file. It provides additional commands to the CLI, such as <mark>npm run test</mark>. This functionality reduces the need for third-party tooling like Grunt or Gulp. </dd><br/>
       <dd>You can add even more functionality to NPM scripts by installing open source dev dependencies. npm-run-all can run scripts in parallel (usually multiple tasks are run in sequence with &&). onchange will automatically re-run the task by watching for changes in your code.</dd>
-
     </dl>
   </div>
 <div style="text-align:right"> <a href="#top">&#8593; Top</a></div>

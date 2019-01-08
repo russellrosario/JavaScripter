@@ -100,20 +100,24 @@ script = 'animation'
 <h3 class="section-head" id="h-Section6"><a href="#h-Section6">Resources</a></h3>
   <div class="example">
     <dl>
-      <dt><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">MDN JavaScript docs</a></dt>
-      <dd>The best tutorials and references for JavaScript on the web</dd>
-    </dl>
-    <dl>
       <dt><a href="/files/arrays/">Array methods</a></dt>
       <dd>All the functions you will ever need to manipulate array data</dd>
     </dl>
     <dl>
-      <dt><a href="/files/snippets/">JavaScript Snippets</a></dt>
+      <dt><a href="/files/js_libraries/">JavaScript Libraries</a></dt>
+      <dd>Awesome browser-side JavaScript libraries</dd>
+    </dl>
+    <dl>
+      <dt><a href="/files/js_snippets/">JavaScript Snippets</a></dt>
       <dd>A huge collection of useful functions</dd>
     </dl>
     <dl>
       <dt><a href="/files/design_patterns/">Design patterns</a></dt>
       <dd>Design patterns for commonly occuring themes in software engineering</dd>
+    </dl>
+    <dl>
+      <dt><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">MDN JavaScript docs</a></dt>
+      <dd>The best tutorials and references for JavaScript on the web</dd>
     </dl>
     <dl>
       <dt><a href="https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html">TypeScript in 5 minutes</a></dt>

@@ -35,10 +35,12 @@ script = 'animation'
 
 <h3 class="section-head" id="h-Section2"><a href="#h-Section2">jQuery</a></h3>
   <div class="example">
-  <p><a href="https://jquery.com/">jQuery</a> is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers.</p>
+  <p>A fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers.</p>
     <dl>
       <dt><a href="http://api.jquery.com/category/selectors/">Selectors</a></dt>
-      <dd>jQuery can accept the same selectors that apply in CSS. In addition, jQuery provides filters for selecting specific elements.<dd>
+      <dd>jQuery accepts the same selectors that apply in CSS. It also provides its own. <dd>
+      <dt><a href="http://api.jquery.com/category/traversing/">Traversing</a></dt>
+      <dd>Filters for traversing the DOM and selecting elements.<dd>
       <dt><a href="http://api.jquery.com/category/attributes/">Attributes</a></dt>
       <dd>A list of methods that get and set DOM attributes of elements</dd>
       <dt><a href="http://api.jquery.com/category/events/">Events</a></dt>

@@ -1,6 +1,6 @@
 +++
-description = "Array methods"
-title = "Arrays"
+description = "JS array methods"
+title = "Array methods"
 
 draft = false
 weight = 200

@@ -1,7 +1,6 @@
 +++
 description = ""
-title = "React"
-
+title = "React Libraries"
 draft = false
 weight = 200
 bref="Catalog of React Components & Libraries"

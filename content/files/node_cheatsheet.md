@@ -1,6 +1,6 @@
 +++
-description = "Functionality within Node.js libraries"
-title = "Node"
+description = ""
+title = "Node functions"
 draft = false
 weight = 200
 bref="Functionality within Node.js libraries"

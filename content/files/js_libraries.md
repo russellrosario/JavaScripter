@@ -1,9 +1,8 @@
 +++
-description = ""
-title = "JavaScript"
-
+description = "Browser-side JS libraries"
+title = "JavaScript libraries"
 draft = false
-weight = 100
+weight = 200
 bref="A collection of awesome browser-side JavaScript libraries, resources and shiny things"
 toc = false
 script = 'animation'
@@ -12,7 +11,7 @@ script = 'animation'
 
 ## TABLE OF CONTENTS
 
-* [Awesome JavaScript](#awesome-javascript)
+* Awesome JavaScript
   * [Package Managers](#package-managers)
   * [Loaders](#loaders)
   * [Bundlers](#bundlers)

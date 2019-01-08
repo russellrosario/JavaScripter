@@ -1,5 +1,5 @@
 +++
-description = "Understanding string manipulation in JavaScript"
+description = "String manipulation in JavaScript"
 title = "Regular Expressions"
 
 draft = false

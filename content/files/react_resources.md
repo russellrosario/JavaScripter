@@ -1,7 +1,6 @@
 +++
 description = ""
-title = "React"
-
+title = "React Resources"
 draft = false
 weight = 200
 bref="A collection of awesome things regarding React ecosystem"

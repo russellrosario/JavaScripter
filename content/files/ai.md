@@ -1,7 +1,6 @@
 +++
-description = ""
+description = "Resources on AI"
 title = "Artificial Intelligence"
-
 draft = false
 weight = 200
 bref="A curated list of Artificial Intelligence (AI) courses, books, video lectures and papers"
