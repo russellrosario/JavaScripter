@@ -47,14 +47,12 @@ script = 'animation'
     <dl>
       <dt><a href="https://www.w3schools.com/">w3schools</a></dt>
       <dd>The best resource for learning everything about HTML and CSS</dd>
-    </dl>
-    <dl>
-      <dt><a href="https://validator.w3.org/">Markup Validation Service</a></dt>
-      <dd>Checks the markup validity of web documents in HTML</dd>
-    </dl>
-    <dl>
+      <dt><a href="http://entity-lookup.leftlogic.com/">HTML Entity Lookup</a></dt>
+      <dt><a href="https://validator.w3.org/">HTML Validation Service</a></dt>
+      <dt><a href="https://jigsaw.w3.org/css-validator">CSS Validation Service</a></dt>
       <dt><a href="https://guide.freecodecamp.org/css/tutorials/css-selectors-cheat-sheet/">CSS Selectors</a></dt>
       <dd>Reference for combining selectors, pseudo-selectors (first child), pseudo-classes (hovered item)</dd>
+      <dt><a href="http://css3buttongenerator.com">CSS Button Generator</a></dt>
     </dl>
   </div>
 <div style="text-align:right"> <a href="#top">&#8593; Top</a></div>
