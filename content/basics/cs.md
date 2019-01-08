@@ -94,15 +94,19 @@ script = 'animation'
 <h3 class="section-head" id="h-Section3"><a href="#h-Section3">Regular Expressions</a></h3>
   <div class="example">
     <dl>
-      <dt><a href="https://www.javascripter.co/img/basics/regex.gif">See full cheatsheet</a></dt><br/>
+      <dt><a href="/files/regex">See full cheatsheet</a></dt><br/>
     <dl>
     <dl>
-      <dt>Most commonly used JS functions</dt>
+      <dt><a href="https://regexr.com/">RegExr tool for regular expressions</a></dt><br/>
+    <dl>
+    <dl>
+      <dt>Commonly regex functions in JS</dt>
       <dd>str.test(reg)
 ```
 var str = "The best things in life are free";
 var reg = new RegExp("e");
 var res = reg.test(str);
+console.log(res) // expected output: true
 ```
 
 str.match(reg)
@@ -118,12 +122,15 @@ reg.exec(str)
 var str = "The best things in life are free";
 var reg = new RegExp("e");
 var res = reg.exec(str);
+console.log(res) // expected output: ["e", index: 2, input: "The best things in life are free", groups: undefined]
 ```
 
 str.replace(str1,str2)
 ```
 var p = 'The quick brown fox jumped over the lazy dog. If the dog reacted, was it really lazy?';
 var reg = /dog/gi;
+p.replace(reg,'cat')
+console.log(res) // expected output: "The quick brown fox jumped over the lazy cat. If the cat reacted, was it really lazy?"
 ```
 
 str.search(reg)
@@ -132,18 +139,19 @@ let str = "A drop of ink may make a million think";
 alert( str.search( /a/i ) ); // 0 (the first position)
 ```
 
-str.includes('')
+str.includes("")
 ```
 var sentence = 'The quick brown fox jumped over the lazy dog.';
 var word = 'fox';
-console.log('The word "' + word + (sentence.includes(word)? '" is' : '" is not') + ' in the sentence'); // expected output: "The word "fox" is in the sentence"
+console.log(sentence.includes(word)); // expected output: true
 ```
 
-str.split('')
+str.split(' ') and words.join(' ')
 ```
 var str = 'The quick brown fox jumped over the lazy dog.';
 var words = str.split(' ');
 console.log(words[3]); // expected output: "fox"
+console.log(words.join(" ") === str) // expected output: true
 ```
   </dd>
     </dl>

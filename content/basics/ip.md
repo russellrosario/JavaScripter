@@ -26,12 +26,14 @@ script = 'animation'
       <dt>IP address</dt>
       <dd>A numerical label assigned to each device connected to a computer network that uses the Internet Protocol for communication. When communicating with devices within the network, a private IP address is used. When communicating with devices outside the network, a public IP address is used. Since all devices within a private network share the same public IP address, port forwarding and network address translation is used by the router to determine how to route data among devices. <a href="https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing">CIDR</a> is a method for dividing networks into subnetworks.</dd>
     </dl>
-    <figure>
-      <img alt="Image" src="https://www.javascripter.co/img/basics/AWS_VPC.png">
-      <figcaption>
-        An example a cloud VPN on AWS.
-      </figcaption>
-    </figure>
+    <div style="text-align:center">
+      <figure>
+        <img alt="Image" src="https://www.javascripter.co/img/basics/AWS_VPC.png">
+        <figcaption>
+          An example of a cloud VPN on AWS
+        </figcaption>
+      </figure>
+    </div>
   </div>
 <div style="text-align:right"> <a href="#top">&#8593; Top</a></div>
 
