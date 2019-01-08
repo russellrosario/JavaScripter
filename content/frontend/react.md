@@ -92,33 +92,23 @@ script = 'animation'
       <dd><b>Next.js</b> - a popular and lightweight framework for <ins>server‑rendered</ins> applications built with React. <i>See diagram below for difference between server and client rendering</i></dd><br/>
       <dd><b>React Native</b> - A framework for building native applications using JavaScript. React Native compiles to native app components, which makes it possible for you to build native mobile applications. In React JS, React is the base abstraction of React DOM for the web platform, while with React Native, React is still the base abstraction but of React Native. So the syntax and workflow remain similar, but the components are different.</i></dd>
     </dl>
-    <div class="row">
-      <div class="col col-6">
-        <figure>
-          <img alt="Image" src="https://www.javascripter.co/img/frontend/ssr.png" width="100%">
-            <figcaption>
-            Server side rendering
-            </figcaption>
-        </figure>
-      </div>
-      <div class="col col-6">
-        <figure>
-          <img alt="Image" src="https://www.javascripter.co/img/frontend/csr.png">
-          <figcaption>
-            Client side rendering
-          </figcaption>
-        </figure>
-      </div>
-    </div>
-  </div>
+          <img alt="Image" src="https://www.javascripter.co/img/frontend/rendering.PNG" width="100%">
 <div style="text-align:right"> <a href="#top">&#8593; Top</a></div>
 
 
 <h3 class="section-head" id="h-Section3"><a href="#h-Section3">Resources</a></h3>
   <div class="example">
     <dl>
-      <dt>Cheatsheets, dev tools, libraries - forms, redux</dt>
-      <dd>https://reactjs.org/docs/getting-started.html</dd>
+      <dt><a href="https://reactjs.org/docs/getting-started.html">React documentation</a></dt>
+    </dl>
+    <dl>
+      <dt><a href="https://devhints.io/react">React cheatsheet</a></dt>
+    </dl>
+    <dl>
+      <dt><a href="https://github.com/brillout/awesome-react-components">Awesome react components</a></dt>
+    </dl>
+    <dl>
+      <dt><a href="https://redux.js.org/introduction/getting-started">Redux documentation</a></dt>
     </dl>
   </div>
 <div style="text-align:right"> <a href="#top">&#8593; Top</a></div>
