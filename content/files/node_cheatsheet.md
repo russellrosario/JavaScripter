@@ -1,38 +1,14 @@
 +++
 description = "Functionality within Node.js libraries"
 title = "Node"
-
 draft = false
 weight = 200
-bref="Node.js is an open-source, cross-platform JavaScript run-time environment that executes JavaScript code outside of a browser"
+bref="Functionality within Node.js libraries"
 toc = true
 script = 'animation'
 +++
 
-# Node
-
-![Node](nodeJS.jpg)
-
-## SIMPLE SERVER
-
-```
-const http = require('http');
-
-const hostname = '127.0.0.1';
-const port = 3000;
-
-const server = http.createServer((req, res) => {
-  res.statusCode = 200;
-  res.setHeader('Content-Type', 'text/plain');
-  res.end('Hello World!\n');
-});
-
-server.listen(port, hostname, () => {
-  console.log(`Server running at http://${hostname}:${port}/`);
-});
-```
-
-## GLOBAL OBJECTS
+<h3 class="section-head" id="h-Section2"><a href="#h-Section2">Global Objects</a></h3>
 
 In browsers, the top-level scope is the global scope.
 That means that in browsers if you're in the global scope var something will define a global variable.
@@ -47,7 +23,7 @@ process;     // The process object is a global object and can be accessed from a
 Buffer;      // The Buffer class is a global type for dealing with binary data directly.
 ```
 
-## CONSOLE
+<h3 class="section-head" id="h-Section3"><a href="#h-Section3">Console</a></h3>
 
 ```
 console.log([data], [...]);             // Prints to stdout with newline.
@@ -61,7 +37,7 @@ console.trace(label);                   // Print a stack trace to stderr of the 
 console.assert(expression, [message]);  // Same as assert.ok() where if the expression evaluates as false throw an AssertionError with message.
 ```
 
-## TIMERS
+<h3 class="section-head" id="h-Section4"><a href="#h-Section4">Timers</a></h3>
 
 ```
 setTimeout(callback, delay, [arg], [...]);   // To schedule execution of a one-time callback after delay milliseconds. Optionally you can also pass arguments to the callback.
@@ -75,7 +51,7 @@ unref();  // Allow you to create a timer that is active but if it is the only it
 ref();    // If you had previously unref()d a timer you can call ref() to explicitly request the timer hold the program open.
 ```
 
-## MODULES
+<h3 class="section-head" id="h-Section5"><a href="#h-Section5">Modules</a></h3>
 
 ```
 var module = require('./module.js');    // Loads the module module.js in the same directory.
@@ -106,7 +82,7 @@ module.exports = function(width) {
 }
 ```
 
-## PROCESS
+<h3 class="section-head" id="h-Section6"><a href="#h-Section6">Process</a></h3>
 
 ```
 process.on('exit', function(code) {});              // Emitted when the process is about to exit
@@ -150,7 +126,7 @@ process.uptime();                     // Number of seconds Node has been running
 process.hrtime();                     // Returns the current high-resolution real time in a [seconds, nanoseconds] tuple Array.
 ```
 
-## CHILD PROCESS
+<h3 class="section-head" id="h-Section7"><a href="#h-Section7">Child process</a></h3>
 
 Node provides a tri-directional popen facility through the child_process module.
 It is possible to stream data through a child's stdin, stdout, and stderr in a fully non-blocking way.
@@ -172,7 +148,7 @@ child_process.execFile(file, [args], [options], [callback]);  // Runs a command 
 child_process.fork(modulePath, [args], [options]);            // This is a special case of the spawn() functionality for spawning Node processes. In addition to having all the methods in a normal ChildProcess instance, the returned object has a communication channel built-in.
 ```
 
-## UTIL
+<h3 class="section-head" id="h-Section8"><a href="#h-Section8">Util</a></h3>
 
 These functions are in the module 'util'. Use require('util') to access them.
 
@@ -193,7 +169,7 @@ util.promisify(fn)             // Takes a function whose last argument is a call
 util.inherits(constructor, superConstructor);  // Inherit the prototype methods from one constructor into another.
 ```
 
-## EVENTS
+<h3 class="section-head" id="h-Section9"><a href="#h-Section9">Events</a></h3>
 
 All objects which emit events are instances of events.EventEmitter. You can access this module by doing: require("events");
 To access the EventEmitter class, require('events').EventEmitter.
@@ -212,7 +188,7 @@ emitter.emit(event, [arg1], [arg2], [...]);  // Execute each of the listeners in
 EventEmitter.listenerCount(emitter, event);  // Return the number of listeners for a given event.
 ```
 
-## STREAM
+<h3 class="section-head" id="h-Section10"><a href="#h-Section10">Stream</a></h3>
 
 A stream is an abstract interface implemented by various objects in Node. For example a request to an HTTP server is a stream, as is stdout.
 Streams are readable, writable, or both. All streams are instances of EventEmitter.
@@ -268,7 +244,7 @@ Examples of Duplex streams include: tcp sockets, zlib streams, crypto streams.
 Transform streams are Duplex streams where the output is in some way computed from the input. They implement both the Readable and Writable interfaces. See above for usage.
 Examples of Transform streams include: zlib streams, crypto streams.
 
-## FILE SYSTEM
+<h3 class="section-head" id="h-Section11"><a href="#h-Section11">File System</a></h3>
 
 To use this module do require('fs').
 All the methods have asynchronous and synchronous forms.
@@ -360,7 +336,7 @@ fs.createReadStream(path, [options]);   // Returns a new ReadStream object.
 fs.createWriteStream(path, [options]);  // Returns a new WriteStream object.
 ```
 
-## PATH
+<h3 class="section-head" id="h-Section12"><a href="#h-Section12">Path</a></h3>
 
 Use require('path') to use this module.
 This module contains utilities for handling and transforming file paths.
@@ -380,21 +356,27 @@ path.sep;                             // The platform-specific file separator. '
 path.delimiter;                       // The platform-specific path delimiter, ';' or ':'.
 ```
 
-## HTTP
+<h3 class="section-head" id="h-Section13"><a href="#h-Section13">HTTP</a></h3>
 
 An example of a web server written with Node which responds with 'Hello World'.
 To use the HTTP server and client one must require('http').
 To run the server, put the code into a file called example.js and execute it with the node program.
 
 ```
-var http = require('http');
+const http = require('http');
 
-http.createServer(function (request, response) {
-  response.writeHead(200, {'Content-Type': 'text/plain'});
-  response.end('Hello World\n');
-}).listen(8124);
+const hostname = '127.0.0.1';
+const port = 3000;
 
-console.log('Server running at http://127.0.0.1:8124/');
+const server = http.createServer((req, res) => {
+  res.statusCode = 200;
+  res.setHeader('Content-Type', 'text/plain');
+  res.end('Hello World!\n');
+});
+
+server.listen(port, hostname, () => {
+  console.log(`Server running at http://${hostname}:${port}/`);
+});
 ```
 
 ```
@@ -461,7 +443,7 @@ message.socket;                         // The net.Socket object associated with
 message.setTimeout(msecs, callback);    // Calls message.connection.setTimeout(msecs, callback).
 ```
 
-## URL
+<h3 class="section-head" id="h-Section14"><a href="#h-Section14">URL</a></h3>
 
 This module has utilities for URL resolution and parsing. Call require('url') to use it.
 
@@ -471,7 +453,7 @@ url.format(urlObj);                                          // Take a parsed UR
 url.resolve(from, to);                                       // Take a base URL, and a href URL, and resolve them as a browser would for an anchor tag.
 ```
 
-## QUERY STRING
+<h3 class="section-head" id="h-Section15"><a href="#h-Section15">Query String</a></h3>
 
 This module provides utilities for dealing with query strings. Call require('querystring') to use it.
 
@@ -480,7 +462,7 @@ querystring.stringify(obj, [sep], [eq]);         // Serialize an object to a que
 querystring.parse(str, [sep], [eq], [options]);  // Deserialize a query string to an object. Optionally override the default separator ('&') and assignment ('=') characters.
 ```
 
-## ASSERT
+<h3 class="section-head" id="h-Section16"><a href="#h-Section16">Assert</a></h3>
 
 This module is used for writing unit tests for your applications, you can access it with require('assert').
 
@@ -498,7 +480,7 @@ assert.doesNotThrow(block, [message]);                // Expects block not to th
 assert.ifError(value);                                // Tests if value is not a false value, throws if it is a true value. Useful when testing the first argument, error in callbacks.
 ```
 
-## OS
+<h3 class="section-head" id="h-Section17"><a href="#h-Section17">OS</a></h3>
 
 Provides a few basic operating-system related utility functions.
 Use require('os') to access this module.
@@ -520,7 +502,7 @@ os.networkInterfaces();  // Get a list of network interfaces.
 os.EOL;                  // A constant defining the appropriate End-of-line marker for the operating system.
 ```
 
-## BUFFER
+<h3 class="section-head" id="h-Section18"><a href="#h-Section18">Buffer</a></h3>
 
 Buffer is used to dealing with binary data
 Buffer is similar to an array of integers but corresponds to a raw memory allocation outside the V8 heap
