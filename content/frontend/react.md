@@ -59,7 +59,7 @@ script = 'animation'
   </div>
 <div style="text-align:right"> <a href="#top">&#8593; Top</a></div>
 
-<h3 class="section-head" id="h-Section1"><a href="#h-Section1">Libraries</a></h3>
+<h3 class="section-head" id="h-Section1"><a href="#h-Section1">Advanced</a></h3>
   <div class="example">
     <dl>
       <dt>React Router</dt>
@@ -101,13 +101,18 @@ script = 'animation'
 <h3 class="section-head" id="h-Section3"><a href="#h-Section3">Resources</a></h3>
   <div class="example">
     <dl>
-      <dt><a href="https://reactjs.org/docs/getting-started.html">React documentation</a></dt>
+      <dt><a href="/files/react_resources">React resources</a></dt>
+      <dd>A huge list of learning resources for everything related to React, React Native, JSX, Flux, Redux, MobX, Testing, GraphQL, and more!</dd>
+    </dl>
+    <dl>
+      <dt><a href="/files/react_libraries">Awesome React libraries</a></dt>
+      <dd>Components, UI/UX, dev tools, tilities, and more!</dd>
     </dl>
     <dl>
       <dt><a href="https://devhints.io/react">React cheatsheet</a></dt>
     </dl>
     <dl>
-      <dt><a href="https://github.com/brillout/awesome-react-components">Awesome react components</a></dt>
+      <dt><a href="https://reactjs.org/docs/getting-started.html">React official documentation</a></dt>
     </dl>
     <dl>
       <dt><a href="https://redux.js.org/introduction/getting-started">Redux documentation</a></dt>

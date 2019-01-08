@@ -40,7 +40,7 @@ script = 'animation'
   </div>
 <div style="text-align:right"> <a href="#top">&#8593; Top</a></div>
 
-<h3 class="section-head" id="h-Section2"><a href="#h-Section2">Matplotlib cheat sheets</a></h3>
+<h3 class="section-head" id="h-Section2"><a href="#h-Section2">Matplotlib cheat sheet</a></h3>
   <div class="example">
     <img alt="Image" src="https://www.javascripter.co/img/languages/mpl.png">
   </div>
