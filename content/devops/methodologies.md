@@ -33,8 +33,8 @@ script = 'animation'
 <h3 class="section-head" id="h-Section3"><a href="#h-Section3">CI/CD</a></h3>
   <div class="example">
     <dl>
-      <dt>TBD</dt>
-      <dd>TBD </dd>
+      <dt>Development environments</dt>
+      <dd>For example, in a development environment you may want verbose logging of errors for debugging, while the same behavior can become a security concern in a production environment. And in development, you don’t need to worry about scalability, reliability, and performance, while those concerns become critical in production. </dd>
     </dl>
   </div>
 <div style="text-align:right"> <a href="#top">&#8593; Top</a></div>

@@ -18,6 +18,8 @@ script = 'animation'
       <dd>V8 is a powerful open source Javascript engine provided by Google that compiles JavaScript source code to native machine code instead of interpreting it in real time. The core functionality of Node.js resides in a JavaScript library. The Node.js bindings, written in C++, connect these technologies to each other and to the operating system. These bindings allow the JavaScript to understand more than what the ECMAScript standard specifies the JavaScript should understand.</dd><br/>
       <dt>Event loop</dt>
       <dd>Node.js registers with the operating system so the OS notifies it of connections and issues a callback. Within the Node.js runtime, each connection is a small heap allocation. Traditionally, processes or threads handled each connection. In contrast, Node.js uses an event loop that does not need to be called explicitly. Any function performing I/O must use a callback, and the server automatically enters the event loop at the end of the callback definition. Node.js exits the event loop when there are no further callbacks to be performed. </dd><br/>
+      <dt>Process.env</dt>
+      <dd>The process.env global variable is injected by the Node at runtime for your application to use and it represents the state of the system environment your application is in when it starts. Secret variables are stored here rather than in accessible code.</dd><br/>
     <div style="text-align:center">
       <img alt="Image" src="https://www.javascripter.co/img/backend/nodeJS.jpg">
     </div>
