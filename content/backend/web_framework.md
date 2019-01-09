@@ -51,7 +51,7 @@ script = 'animation'
       <dt>Hashing and salting</dt>
       <dd>Hashing performs a one-way transformation on a password, turning the password into another string, called the hashed password. Salting is adding random data as an additional input to the hash function. Authentication then relies on comparing the salt + hash of the original password. This protects commonly used passwords or users who use the same password on several sites, by making all salted hash instances for the same password different from each other.</dd>
     <div style="text-align:center">
-      <img alt="Image" src="https://www.javascripter.co/img/backend/salt_hash.png" width="50%">
+      <img alt="Image" src="https://www.javascripter.co/img/backend/salt_hash.png">
       <figcaption>
       Preventing reverse engineering via brute forcing the hash algorithm
       </figcaption>
@@ -59,7 +59,7 @@ script = 'animation'
       <dt>Cookies vs tokens</dt>
       <dd>Cookie-based authentication is stateful. This means that an authentication record or session must be kept both server and client-side. Token-based authentication is stateless. The server does not keep a record of which users are logged in or which tokens have been issued. Instead, every request to the server is accompanied by a signed token which the server uses to verify the authenticity of the request. Today, most authentication has moved from cookie-based to token-based.</dd>
     <div style="text-align:center">
-      <img alt="Image" src="https://www.javascripter.co/img/backend/cookie_token.png" width="50%">
+      <img alt="Image" src="https://www.javascripter.co/img/backend/cookie_token.png">
     </div><br/>
       <dt>Authentication libraries</dt>
       <dd><b>Passport</b> -  authentication middleware for Node that provides "strategies" for handling all types of authentication mechanisms. <b>JWT</b> (JSON web tokens) and <b>OAuth</b> (login with Facebook/Google account) are the most common. </dd><br/>
@@ -111,11 +111,11 @@ script = 'animation'
         </ul></dd><br/>
       <dt>Secure development environments</dt>
       <dd><ul>
-        <li>Use a VPN to encrypt data if using unsecured networks vulnerable to packet sniffing and man-in-the-middle attacks</li>
-        <li>Monitor open ports and running processes</li>
-        <li>Use HTTPS whenever possible</li>
-        <li>Successful key management - involves dealing with the generation, exchange, storage, use, crypto-shredding (destruction) and replacement of keys. It is the more challenging side of cryptography in a sense that it involves aspects of social engineering such as system policy, user training, organizational and departmental interactions, and coordination between all of these elements, in contrast to pure mathematical practices that can be automated.</li>
-        <li>Principle of least privilege - Every process, user, or program must be able to access only the information and resources that are necessary for its legitimate purpose and nothing more.</li>
+        <li><b>Different security concerns than production</b> - For example, in a development environment you may want verbose logging of errors for debugging, while the same behavior can become a security concern in a production environment. And in development, you don’t need to worry about scalability, reliability, and performance, while those concerns become critical in production.
+        <li><b>Successful key management</b> - involves dealing with the generation, exchange, storage, use, crypto-shredding (destruction) and replacement of keys. It is the more challenging side of cryptography in a sense that it involves aspects of social engineering such as system policy, user training, organizational and departmental interactions, and coordination between all of these elements, in contrast to pure mathematical practices that can be automated.</li>
+        <li><b>Principle of least privilege</b> - Every process, user, or program must be able to access only the information and resources that are necessary for its legitimate purpose and nothing more.</li>
+        <li><b>Use HTTPS or a VPN</b> - encrypt data if using unsecured or untrustworthy networks vulnerable to packet sniffing and man-in-the-middle attacks.</li>
+        <li><b>Monitor system</b> - Check open ports and unrecognized running processes</li>
         </ul></dd><br/>
     </dl>
   </div>

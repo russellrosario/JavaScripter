@@ -100,7 +100,7 @@ script = 'animation'
       <dt><a href="https://regexr.com/">RegExr tool for regular expressions</a></dt><br/>
     <dl>
     <dl>
-      <dt>Commonly regex functions in JS</dt>
+      <dt>Common regex functions in JS</dt>
       <dd>str.test(reg)
 ```
 var str = "The best things in life are free";

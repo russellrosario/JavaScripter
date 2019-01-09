@@ -22,9 +22,7 @@
   - [Methodologies](content/devops/methodologies.md)
   - [Testing](content/devops/testing.md)
   - [Scalability](content/devops/scalability.md)
-  - [Security](content/devops/security.md)
 - Latest
   - [Machine Learning](content/latest/machine_learning.md)
-  - [Big Data](content/latest/big_data.md)
-  - [Blockchain](content/latest/blockchain.md)
+  - [Big Data & Blockchain](content/latest/big_data_blockchain.md)
   - [Serverless](content/latest/serverless.md)
