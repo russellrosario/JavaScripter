@@ -100,6 +100,9 @@ script = 'animation'
       <dt>SSL/TLS Certificate</dt>
       <dd>In HTTPS, the communication protocol is encrypted using Transport Layer Security (TLS) to encrypt data before it is sent from the client to the server, thus preventing some common hacks (Man in the middle). HTTPS is based on <b>public/private-key cryptography</b>. This means that there is a key pair: The public key is used for encryption and the secret private key is required for decryption. A website certificate is a public key with a label identifying the owner. when your browser connects to an HTTPS server, the server will answer with its certificate. The browser checks if the certificate is valid and signed by a trusted certification authority. After the verification, the browser extracts the public key and uses it to encrypt information it sends back to the server. The server can decrypt it because the server has the matching private key.
 </dd><br/>
+    <div style="text-align:center" width="85%">
+      <img alt="Image" src="https://www.javascripter.co/img/backend/key_encryption.png">
+    </div><br/>
       <dt>Set security related HTTP headers</dt>
       <dd><b>Cross-origin resource sharing (CORS)</b> is a mechanism that allows restricted resources on a web page to be requested from another domain outside the domain from which the first resource was served. A web page may freely embed cross-origin images, stylesheets, scripts, iframes, and videos. Certain "cross-domain" requests, notably Ajax requests, are forbidden by default by the same-origin security policy. These have to be set explicitly on the header.</dd><br/>
       <dd>There are many other security related headers. Use a middleware function like <a href="https://helmetjs.github.io/">Helmet</a> to set these for you.</dd><br/>

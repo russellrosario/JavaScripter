@@ -34,3 +34,19 @@ script = 'animation'
     </dl>
   </div>
 <div style="text-align:right"> <a href="#top">&#8593; Top</a></div>
+
+Apache Spark for big data
+Extracts data from a variety of sources, loads the data into resilient distributed dataset (RDD) across a cluster of Hadoop nodes (AWS EMR service), and outputs the processed data to a source(s)
+Spark is the cluster manager that creates RDD
+Fast because processing is done in memory
+Fault tolerant
+Components of spark - streaming, sql, graphX, MLLib
+Vs Redshift
+Spark is serverless - not always running, pay for use
+Spark is more flexible, customizable
+Redshift is much larger scale
+Transforming RDD’s
+Map, flatmap, filter, distinct, sample
+union , intersection, subtract, cartesian
+RDD Actions
+Collect, count, countByValue, take, top, reduce
