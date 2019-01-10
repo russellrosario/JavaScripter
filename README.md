@@ -24,6 +24,5 @@
   - [Scalability](content/devops/scalability.md)
 - Latest
   - [Machine Learning](content/latest/machine_learning.md)
-  - [Big Data](content/latest/big_data.md)
-  - [Blockchain](content/latest/blockchain.md)
+  - [Big Data & Blockchain](content/latest/big_data_blockchain.md)
   - [Serverless](content/latest/serverless.md)
