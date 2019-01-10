@@ -97,8 +97,9 @@ script = 'animation'
     <dl>
       <dt>Dependencies</dt>
       <dd>Don’t use deprecated or vulnerable versions of your dependencies. Use <mark>npm audit fix</mark> to scan your project for vulnerabilities and automatically install any compatible updates to vulnerable dependencies. Alternatively, use <a href="https://snyk.io/"> Snyk.io</a>.</dd><br/>
-      <dt>Use HTTPS/TLS</dt>
-      <dd>In HTTPS, the communication protocol is encrypted using Transport Layer Security (TLS) to encrypt data before it is sent from the client to the server, thus preventing some common (and easy) hacks. </dd><br/>
+      <dt>SSL/TLS Certificate</dt>
+      <dd>In HTTPS, the communication protocol is encrypted using Transport Layer Security (TLS) to encrypt data before it is sent from the client to the server, thus preventing some common hacks (Man in the middle). HTTPS is based on <b>public/private-key cryptography</b>. This means that there is a key pair: The public key is used for encryption and the secret private key is required for decryption. A website certificate is a public key with a label identifying the owner. when your browser connects to an HTTPS server, the server will answer with its certificate. The browser checks if the certificate is valid and signed by a trusted certification authority. After the verification, the browser extracts the public key and uses it to encrypt information it sends back to the server. The server can decrypt it because the server has the matching private key.
+</dd><br/>
       <dt>Set security related HTTP headers</dt>
       <dd><b>Cross-origin resource sharing (CORS)</b> is a mechanism that allows restricted resources on a web page to be requested from another domain outside the domain from which the first resource was served. A web page may freely embed cross-origin images, stylesheets, scripts, iframes, and videos. Certain "cross-domain" requests, notably Ajax requests, are forbidden by default by the same-origin security policy. These have to be set explicitly on the header.</dd><br/>
       <dd>There are many other security related headers. Use a middleware function like <a href="https://helmetjs.github.io/">Helmet</a> to set these for you.</dd><br/>
@@ -109,12 +110,11 @@ script = 'animation'
         <li><b>Cross-Site Request Forgery (CSRF)</b> - unauthorized commands are transmitted from a user that the web application trusts.</li>
         <li><b>Distributed Denial-of-service attack (DDoS)</b> - flooding the server or resource with superfluous requests in an attempt to overload systems and prevent some or all legitimate requests from being fulfilled.</li>
         </ul></dd><br/>
-      <dt>Secure development environments</dt>
+      <dt>Secure development environments as well</dt>
       <dd><ul>
-        <li><b>Different security concerns than production</b> - For example, in a development environment you may want verbose logging of errors for debugging, while the same behavior can become a security concern in a production environment. And in development, you don’t need to worry about scalability, reliability, and performance, while those concerns become critical in production.
-        <li><b>Successful key management</b> - involves dealing with the generation, exchange, storage, use, crypto-shredding (destruction) and replacement of keys. It is the more challenging side of cryptography in a sense that it involves aspects of social engineering such as system policy, user training, organizational and departmental interactions, and coordination between all of these elements, in contrast to pure mathematical practices that can be automated.</li>
-        <li><b>Principle of least privilege</b> - Every process, user, or program must be able to access only the information and resources that are necessary for its legitimate purpose and nothing more.</li>
-        <li><b>Use HTTPS or a VPN</b> - encrypt data if using unsecured or untrustworthy networks vulnerable to packet sniffing and man-in-the-middle attacks.</li>
+        <li><b>Successful key management</b> - involves dealing with the generation, exchange, storage, use, destruction and replacement of keys. It is the more challenging side of cryptography as it involves aspects of social engineering, system policy, user training, organizational and departmental interactions, and coordination between all of these elements.</li>
+        <li><b>Principle of least privilege</b> - Every process, user, or program must be able to access only the information and resources that are necessary for its legitimate purpose and nothing more. This especially applies in teams of developers.</li>
+        <li><b>Use VPN</b> - encrypt data if using unsecured or untrustworthy networks vulnerable to packet sniffing and man-in-the-middle attacks.</li>
         <li><b>Monitor system</b> - Check open ports and unrecognized running processes</li>
         </ul></dd><br/>
     </dl>

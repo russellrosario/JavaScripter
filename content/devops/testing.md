@@ -82,10 +82,20 @@ Note that code written without a test-first approach is often very hard to test!
       <li><a href="https://developers.google.com/web/tools/chrome-devtools/">Official Documentation</a></li>
       </ul>
       </dd>
-      <dt>Server-side debugging</dt>
-      <dd>Logs - cloudwatch</dd>
-      <dd>Instance health check</dd>
-      <dd>Sentry.io</dd>
+      <dt>Error tracking</dt>
+      <dd><b>Logging</b> - the practice of storing large volumes of computer generated audit logs for later analysis. The creation of logs is dependent on the goals of the application. In addition, there are middleware packages like <a href="https://github.com/expressjs/morgan">Morgan</a> that can automate some of these processes. For reporting, modern logging systems use <a href="http://localhost:1313/backend/databases/#h-Section4">Elasticsearch</a> to visualize logs and metrics using string analysis. <br/>
+      <ins>Logging can also be used for:</ins>
+      <ul>
+<li>Compliance with security policies</li>
+<li>Compliance with audit or regulation</li>
+<li>System troubleshooting</li>
+<li>Forensics (during investigations or in response to subpoena)</li>
+<li>Security incident response</li>
+<li>Understanding online user behavior</li>
+</ul>
+  </dd>
+      <dt>Monitoring</dt>
+      <dd>It is important to monitor systems and send automated notifications to respond to system-wide performance changes. On AWS, <b>CloudWatch</b> provides a unified view of AWS resources, applications and services that run on AWS. You can set alarms, visualize logs and metrics, take automated actions, configure health checks, troubleshoot issues, and discover insights to optimize your applications, and ensure they are running smoothly. Another service essential monitoring system health is <a href="https://sentry.io">Sentry.io</a> which provides client-side error notifications.</dd>
     </dl>
   </div>
 <div style="text-align:right"> <a href="#top">&#8593; Top</a></div>
