@@ -1,5 +1,5 @@
 +++
-description = "Docker, load balancing, web performance"
+description = "Containers, Serverless, performance"
 title = "Scalability"
 draft = false
 weight = 500
@@ -54,7 +54,45 @@ script = 'animation'
   </div>
 <div style="text-align:right"> <a href="#top">&#8593; Top</a></div>
 
-<h3 class="section-head" id="h-Section2"><a href="#h-Section2">Web performance</a></h3>
+<h3 class="section-head" id="h-Section2"><a href="#h-Section2">Serverless</a></h3>
+  <div class="example">
+    <dl>
+      <dt>Benefits</dt>
+      <dd><ul>
+      <li><b>Pay per use</b> - paying for use rather than capacity can be significantly cheaper depending on use case</li>
+      <li><b>Scalability</b> - horizontal scaling is built into the platform</li>
+      <li><b>Faster development</b> - functions can be built standalone, independent from the rest of the application.</li>
+      <li><b>Maintenance</b> - vendor handles server upgrades and maintenance.</li>
+      </ul>
+      </dd>
+      <dt>Drawbacks</dt>
+      <dd>      <ul>
+      <li><b>3rd party API</b> - vendor lock-in</li>
+      <li><b>Lack of operational tools</b> - debugging and testing are difficult</li>
+      <li><b>Architectural complexity</b> - as functions get more granular, the wiring between those functions increases exponentially.</li>
+      <li><b>Timeouts & Latency</b> - becuase serverless functions run in ephemeral containers, there is increased latency when the container does not yet exist. In addition, there is a timeout which prevents long running functions from executing to completion.</li>
+      </ul> </dd>
+    </dl>
+    <dl>
+      <dt>Serverless framework</dt>
+      <dd>Infrastructure as code </dd>
+      <dd>Alternatives - Vendor agnostic, language independent, packages functions, larger community (plugins)</dd>
+    </dl>
+     <dl>
+      <dt>serverless.yml</dt>
+      <dd>Services</dd>
+      <dd>Functions & events</dd>
+      <dd>Layers</dd>
+      <dd>Resources</dd>
+      <dd>Variables</dd>
+      <dd>export, import, cloudformation, join ref </dd>
+      <dd>Deploying</dd>
+      <dd>https://serverless.com/framework/docs/providers/aws/guide/serverless.yml/</dd>
+    </dl>
+  </div>
+<div style="text-align:right"> <a href="#top">&#8593; Top</a></div>
+
+<h3 class="section-head" id="h-Section3"><a href="#h-Section3">Web performance</a></h3>
   <div class="example">
     <dl>
       <dt>Load balancing and Autoscaling</dt>
