@@ -13,7 +13,7 @@
 - Frontend
   - [React](content/frontend/react.md)
   - [Frontend tools](content/frontend/frameworks.md)
-  - [UI/UX](content/frontend/uiux.md)
+  - [UI/UX Resources](content/frontend/resources.md)
 - Backend
   - [Node](content/backend/node.md)
   - [Databases](content/backend/databases.md)

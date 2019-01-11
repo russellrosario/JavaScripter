@@ -25,6 +25,9 @@ script = 'animation'
 <h3 class="section-head" id="h-Section3"><a href="#h-Section3">Proof of work/stake</a></h3>
   <div class="example">
     <p>Similar to Bitcoin, miners are tasked with solving a complex mathematical problem in order to successfully “mine” a block. Any computational problem that requires orders of magnitude more resources to solve algorithmically than it takes to verify the solution is a good candidate for proof of work (factorization of the product of two large prime numbers). In order to discourage centralisation due to the use of specialised hardware, as has occurred in the Bitcoin network, Ethereum chose a memory-hard computational problem which makes Ethereum’s Proof of Work ASIC-resistant. </p>
+    <div style="text-align:center">
+      <img alt="Image" src="https://www.javascripter.co/img/latest/proof.png">
+    </div>
   </div>
 <div style="text-align:right"> <a href="#top">&#8593; Top</a></div>
 
@@ -77,16 +80,23 @@ browser-based IDE. Here are some example contracts:
 3. [Safe remote purchase](https://solidity.readthedocs.io/en/v0.4.24/solidity-by-example.html#safe-remote-purchase)
 4. [Micropayment Channel](https://solidity.readthedocs.io/en/v0.4.24/solidity-by-example.html#micropayment-channel)</p>
       </dd><br/>
-      <dt>Differences from JavaScript syntax</dd>
+      <dt>Solidity vs JavaScript</dd>
       <dd>
       <ul>
-      <li>Pragma</li>
-      <li>Static typing</li>
-      <li>Argument data type - you have to declare the argument datatype before the argument, and that argument has a convention of an underscore before it. I.e. <mark>function example(uint _num, string _str)</mark></li>
-      <li>Array - dynamic and static</li>
-      <li>Storage</li>
-      <li>Signed integers</li>
-      <li>Struct</li>
+      <li><b>Version Pragma</b> - Source files can (and should) be annotated with a version pragma to reject being compiled with future compiler versions that might introduce incompatible changes. </li>
+      <li><b>Static typing</b> - Argument and variable datatypes need to be declared</li>
+      <li><b>New types</b>
+      <ul>
+      <li>Address - holds a 20 byte value (size of an Ethereum address) and serve as a base for all contracts.</li>
+      <li>Function modifiers - automatically check a condition prior to executing the function</li>
+      <li>Events - for interacting with EVM</li>
+      <li>Structs - custom defined types that can group several variables</li>
+      <li>Enums - sequential set of integer values</li>
+      <li>Mappings - hash tables which consist of key types and corresponding value type pairs</li>
+      <li>Time units - Suffixes like seconds, minutes, hours, days, weeks and years after literal numbers can be used to convert between units of time where seconds are the base unit</li>
+      </ul></li>
+      <li><b>Data location</b> - Every complex type, i.e. arrays and structs, has an additional annotation, the “data location”, about whether it is stored in memory (which is not persisting) or in storage (where the state variables are held). </li>
+      <li><b>Gas</b> - each transaction is charged with a certain amount of Ether, whose purpose is to limit the amount of work that is needed to execute the transaction and to pay for this execution. </li>
       </ul>
       </dd>
       </dl>
