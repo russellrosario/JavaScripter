@@ -89,14 +89,14 @@ Read more on <ins>Godel's Incompleteness theorem</ins>:
 <h3 class="section-head" id="h-Section3"><a href="#h-Section3">Neural networks</a></h3>
   <div class="example">
   <p>If a machine learning algorithm returns an inaccurate prediction, then an engineer needs to step in and make adjustments. Deep learning structures algorithms in layers to create a neural network that can learn and make intelligent decisions on its own.</p>
-    <div style="text-align:center">
-      <img alt="Image" src="https://www.javascripter.co/img/latest/nn.png">
-    </div>
     <dl>
       <dt>Feedforward</dt>
       <dd><b>Input layer</b> - will take a representation of the data as a tensor.
       <dd><b>Hidden layer</b> - there can be one or many hidden layers. Each layer has <ins>neuron</ins> unit(s). Every neuron has its own <ins>weighting</ins> for each of the units of the previous layer. After summing the weights and activations, the neuron goes through an <ins>activation function</ins> that squashes the value and produces a new tensor. A <ins>bias</ins> shifts the activation function to the left or right. </dd></dd>
       <dd><b>Output layer</b> - the neurons of this layer also use weights and activation functions. If the shape of the input tensor is different than the output tensor, the weighting has the ability to transform the shape.</dd>
+      <div style="text-align:center">
+      <img alt="Image" src="https://www.javascripter.co/img/latest/activation.png">
+    </div>
       <br/>
       <dt>Backpropagation</dt>
       <dd>Shorthand for "the backward propagation of errors," since an error is computed at the output and distributed backwards throughout the network’s layers in order for it to learn from mistakes. Error is calculated and then a <ins>gradient descent</ins> optimization algorithm (a differential equation) is used to determine the direction of steepest decline. In order to avoid local minimas, the learning rate should be gradually adjusted higher.</dd>

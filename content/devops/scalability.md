@@ -56,6 +56,7 @@ script = 'animation'
 
 <h3 class="section-head" id="h-Section2"><a href="#h-Section2">Serverless</a></h3>
   <div class="example">
+        <p>A cloud-computing execution model in which the cloud provider acts as the server, dynamically managing the allocation of machine resources. Pricing is based on the actual amount of resources consumed by an application, rather than on pre-purchased units of capacity. This allows for infrastructure to be provisioned and terminated quickly and cheaply.</p>
     <dl>
       <dt>Benefits</dt>
       <dd><ul>
@@ -75,24 +76,37 @@ script = 'animation'
     </dl>
     <dl>
       <dt>Serverless framework</dt>
-      <dd>Infrastructure as code </dd>
-      <dd>Alternatives - Vendor agnostic, language independent, packages functions, larger community (plugins)</dd>
-    </dl>
-     <dl>
-      <dt>serverless.yml</dt>
-      <dd>Services</dd>
-      <dd>Functions & events</dd>
-      <dd>Layers</dd>
-      <dd>Resources</dd>
-      <dd>Variables</dd>
-      <dd>export, import, cloudformation, join ref </dd>
-      <dd>Deploying</dd>
-      <dd>https://serverless.com/framework/docs/providers/aws/guide/serverless.yml/</dd>
+      <dd>
+      <ul>
+      <li>vendor agnostic (AWS, Azure, Google Cloud, etc)</li>
+      <li>language independent (Node, Java, Python, etc)</li>
+      <li>packages functions AND provisions resources</li>
+      <li>large community that builds excellent plugins</li>
+      </ul>
+      </dd>
+      <dd><b>Infrastructure as code (IaC)</b> - The process of managing and provisioning computer data centers through definition files.
+      <ul>
+      <li>Cost - aims at helping not only the enterprise financially, but also in terms of people and effort, meaning that by removing the manual component, people are able to refocus their efforts towards other enterprise tasks.</li>
+      <li>Speed - Infrastructure automation enables speed through faster execution when configuring your infrastructure and aims at providing visibility to help other teams across the enterprise work quickly and more efficiently. </li>
+      <li>Risk - Automation removes the risk associated with human error, like manual misconfiguration; removing this can decrease downtime and increase reliability.</li>
+      </ul>
+      </dd>
+      <dt>Serverless.yml</dt>
+      <dd><b>Services</b> - A property of the serverless.yml that names the project.</dd>
+      <dd><b>Provider</b> - A property describing the cloud provider and default parameters for the rest of the file. The IAM role and permissions will be set here as well.</dd>
+      <dd><b>Functions</b> - A property of the serverless.yml which lists the names of the function in your service. Inside the function is a handler pointing to the code. Functions can be nested inside other functions. Environment variables can be set as well as tagging. If the function fails, a DLQ (SNS) can be published.</dd>
+      <dd><b>Events</b> - things that trigger your functions to run (an S3 bucket upload, an SNS topic, and HTTP endpoints created via API Gateway)</dd>
+      <dd><b>Layers</b> - Code that you've used else where that you can import into the serverless function.</dd>
+      <dd><b>Resources</b> - A property of the serverless.yml which defines the infrastructure your functions depend on, like AWS DynamoDB or AWS S3. Resources deployed by Serverless have the naming scheme - <mark>{Function Name}{Cloud Formation Resource Type}{Resource Name}{SequentialID or Random String}</mark> (does not include S3). You can reference any resource by using the logical name or ARN.
+</dd>
+      <dd><b>Variables</b> - allow users to dynamically replace config values in serverless.yml config.</dd><br/>
+      <dd>[Full documentation](https://serverless.com/framework/docs/providers/aws/guide/serverless.yml/)</dd>
+      <dd>[Reference .yml](https://serverless.com/framework/docs/providers/aws/guide/serverless.yml/)</dd>
     </dl>
   </div>
 <div style="text-align:right"> <a href="#top">&#8593; Top</a></div>
 
-<h3 class="section-head" id="h-Section3"><a href="#h-Section3">Web performance</a></h3>
+<h3 class="section-head" id="h-Section3"><a href="#h-Section3">Performance</a></h3>
   <div class="example">
     <dl>
       <dt>Load balancing and Autoscaling</dt>
