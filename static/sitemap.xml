@@ -1,148 +1,93 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url>
-  <loc>https://www.javascripter.co/</loc>
-  <lastmod>2019-01-12T17:36:07+00:00</lastmod>
-  <priority>1.00</priority>
-</url>
-<url>
-  <loc>https://www.javascripter.co/basics/fundamentals/</loc>
-  <lastmod>2019-01-12T17:36:07+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.javascripter.co/basics/cs/</loc>
-  <lastmod>2019-01-12T17:36:07+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.javascripter.co/basics/ip/</loc>
-  <lastmod>2019-01-12T17:36:07+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.javascripter.co/languages/html_css/</loc>
-  <lastmod>2019-01-12T17:36:07+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.javascripter.co/languages/js/</loc>
-  <lastmod>2019-01-12T17:36:07+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.javascripter.co/languages/python/</loc>
-  <lastmod>2019-01-12T17:36:07+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.javascripter.co/frontend/react/</loc>
-  <lastmod>2019-01-12T17:36:07+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.javascripter.co/frontend/frameworks/</loc>
-  <lastmod>2019-01-12T17:36:07+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.javascripter.co/frontend/resources/</loc>
-  <lastmod>2019-01-12T17:36:07+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.javascripter.co/backend/node/</loc>
-  <lastmod>2019-01-12T17:36:07+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.javascripter.co/backend/databases/</loc>
-  <lastmod>2019-01-12T17:36:07+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.javascripter.co/backend/web_framework/</loc>
-  <lastmod>2019-01-12T17:36:07+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.javascripter.co/devops/methodologies/</loc>
-  <lastmod>2019-01-12T17:36:07+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.javascripter.co/devops/testing/</loc>
-  <lastmod>2019-01-12T17:36:07+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.javascripter.co/devops/scalability/</loc>
-  <lastmod>2019-01-12T17:36:07+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.javascripter.co/latest/machine_learning/</loc>
-  <lastmod>2019-01-12T17:36:07+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.javascripter.co/latest/big_data/</loc>
-  <lastmod>2019-01-12T17:36:07+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.javascripter.co/latest/blockchain/</loc>
-  <lastmod>2019-01-12T17:36:07+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://www.javascripter.co/files/regex/</loc>
-  <lastmod>2019-01-12T17:36:07+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://www.javascripter.co/files/arrays/</loc>
-  <lastmod>2019-01-12T17:36:07+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://www.javascripter.co/files/js_libraries/</loc>
-  <lastmod>2019-01-12T17:36:07+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://www.javascripter.co/files/js_snippets/</loc>
-  <lastmod>2019-01-12T17:36:07+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://www.javascripter.co/files/design_patterns/</loc>
-  <lastmod>2019-01-12T17:36:07+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://www.javascripter.co/files/react_resources/</loc>
-  <lastmod>2019-01-12T17:36:07+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://www.javascripter.co/files/react_libraries/</loc>
-  <lastmod>2019-01-12T17:36:07+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://www.javascripter.co/files/node_cheatsheet/</loc>
-  <lastmod>2019-01-12T17:36:07+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://www.javascripter.co/files/node_packages/</loc>
-  <lastmod>2019-01-12T17:36:07+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://www.javascripter.co/files/testing_articles/</loc>
-  <lastmod>2019-01-12T17:36:07+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
+<?xml version="1.0" encoding="utf-8"?>
+<!--Created using XmlSitemapGenerator.org - Free HTML, RSS and XML sitemap generator-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+  <url>
+    <loc>https://www.javascripter.co/</loc>
+  </url>
+  <url>
+    <loc>https://www.javascripter.co/latest/big_data/</loc>
+  </url>
+  <url>
+    <loc>https://www.javascripter.co/latest/machine_learning/</loc>
+  </url>
+  <url>
+    <loc>https://www.javascripter.co/backend/node/</loc>
+  </url>
+  <url>
+    <loc>https://www.javascripter.co/backend/databases/</loc>
+  </url>
+  <url>
+    <loc>https://www.javascripter.co/devops/scalability/</loc>
+  </url>
+  <url>
+    <loc>https://www.javascripter.co/devops/testing/</loc>
+  </url>
+  <url>
+    <loc>https://www.javascripter.co/latest/blockchain/</loc>
+  </url>
+  <url>
+    <loc>https://www.javascripter.co/backend/web_framework/</loc>
+  </url>
+  <url>
+    <loc>https://www.javascripter.co/devops/methodologies/</loc>
+  </url>
+  <url>
+    <loc>https://www.javascripter.co/frontend/frameworks/</loc>
+  </url>
+  <url>
+    <loc>https://www.javascripter.co/basics/fundamentals/</loc>
+  </url>
+  <url>
+    <loc>https://www.javascripter.co/frontend/react/</loc>
+  </url>
+  <url>
+    <loc>https://www.javascripter.co/languages/js/</loc>
+  </url>
+  <url>
+    <loc>https://www.javascripter.co/frontend/resources/</loc>
+  </url>
+  <url>
+    <loc>https://www.javascripter.co/languages/html_css/</loc>
+  </url>
+  <url>
+    <loc>https://www.javascripter.co/basics/ip/</loc>
+  </url>
+  <url>
+    <loc>https://www.javascripter.co/languages/python/</loc>
+  </url>
+  <url>
+    <loc>https://www.javascripter.co/files/testing_articles/</loc>
+  </url>
+  <url>
+    <loc>https://www.javascripter.co/basics/cs/</loc>
+  </url>
+  <url>
+    <loc>https://www.javascripter.co/files/design_patterns/</loc>
+  </url>
+  <url>
+    <loc>https://www.javascripter.co/files/arrays/</loc>
+  </url>
+  <url>
+    <loc>https://www.javascripter.co/files/js_libraries/</loc>
+  </url>
+  <url>
+    <loc>https://www.javascripter.co/files/node_cheatsheet/</loc>
+  </url>
+  <url>
+    <loc>https://www.javascripter.co/files/node_packages/</loc>
+  </url>
+  <url>
+    <loc>https://www.javascripter.co/files/js_snippets/</loc>
+  </url>
+  <url>
+    <loc>https://www.javascripter.co/files/regex/</loc>
+  </url>
+  <url>
+    <loc>https://www.javascripter.co/files/react_libraries/</loc>
+  </url>
+  <url>
+    <loc>https://www.javascripter.co/files/react_resources/</loc>
+  </url>
 </urlset>
+<!--<guid value="b1c1b66f-fcb7-4e2d-8a1b-517673beeb31" />-->
+<!--Created using XmlSitemapGenerator.org - Free HTML, RSS and XML sitemap generator-->
