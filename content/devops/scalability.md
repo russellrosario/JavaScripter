@@ -107,14 +107,15 @@ script = 'animation'
       <li><b>Recursively reference properties</b> - <var>${file(../config.${self:provider.stage}.json):CREDS}</var></li>
       <li><b>Environment Variables</b> - <var>${env:SOME_VAR}</var>. <i>Keep in mind that sensitive information which is provided through environment variables can be written into less protected or publicly accessible build logs, CloudFormation templates, et cetera.</i></li>
       <li><b>Referencing CLI Options</b> -<var>${opt:some_option}</var>. A common CLI option is the dev stage.</li>
-      <li><b>CloudFormation Outputs</b> - allows your service to communicate with other services/stacks using <var>${cf:stackName.outputKey}</var>. Output names are added to the <ins>Export</ins> field in the resources property:<br/>
+      <li><b>CloudFormation Outputs</b> - allows your service to communicate with other services/stacks using <var>${cf:stackName.outputKey}</var>. <br/>
+      Output names are added to the <ins>Export</ins> field in the resources property:<br/>
       <img alt="Image" src="https://www.javascripter.co/img/devops/exporting_cf.PNG"><br/>
-      <ins>Import</ins> into other services:
-      <img alt="Image" src="https://www.javascripter.co/img/devops/importing_cf.PNG"><br/>
+      <ins>Import</ins> into other services:<br/>
+      <img alt="Image" src="https://www.javascripter.co/img/devops/importing_cf.PNG">
       </li>
       <li><b>S3 Objects</b> - <var>${s3:myBucket/myKey}-hello</var></li>
       </ul>
-      </dd><br/>
+      </dd>
       <dd>[Full documentation](https://serverless.com/framework/docs/providers/aws/guide/serverless.yml/)</dd>
       <dd>[Reference .yml](https://serverless.com/framework/docs/providers/aws/guide/serverless.yml/)</dd>
     </dl>
