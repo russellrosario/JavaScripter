@@ -26,7 +26,7 @@ script = 'animation'
   <div class="example">
     <p>Similar to Bitcoin, miners are tasked with solving a complex mathematical problem in order to successfully “mine” a block. Any computational problem that requires orders of magnitude more resources to solve algorithmically than it takes to verify the solution is a good candidate for proof of work (factorization of the product of two large prime numbers). In order to discourage centralisation due to the use of specialised hardware, as has occurred in the Bitcoin network, Ethereum chose a memory-hard computational problem which makes Ethereum’s Proof of Work ASIC-resistant. </p>
     <div style="text-align:center">
-      <img alt="Image" src="https://www.javascripter.co/img/latest/proof.png">
+      <img alt="Image" src="https://www.javascripter.co/img/latest/proof.png" width="70%">
     </div>
   </div>
 <div style="text-align:right"> <a href="#top">&#8593; Top</a></div>
