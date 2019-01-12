@@ -1,5 +1,5 @@
 +++
-description = "A compilation of notes during my journey from novice to full stack JavaScript developer by Russell Rosario."
+description = "Helping junior developers navigate the complex world of software engineering without information overload"
 title = "JavaScripter"
 draft = false
 

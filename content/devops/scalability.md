@@ -81,7 +81,7 @@ script = 'animation'
       <li>vendor agnostic (AWS, Azure, Google Cloud, etc)</li>
       <li>language independent (Node, Java, Python, etc)</li>
       <li>packages functions AND provisions resources</li>
-      <li>large community that builds excellent plugins</li>
+      <li>large community that builds excellent <ins>plugins</ins></li>
       </ul>
       </dd>
       <dd><b>Infrastructure as code (IaC)</b> - The process of managing and provisioning computer data centers through definition files.
@@ -97,9 +97,24 @@ script = 'animation'
       <dd><b>Functions</b> - A property of the serverless.yml which lists the names of the function in your service. Inside the function is a handler pointing to the code. Functions can be nested inside other functions. Environment variables can be set as well as tagging. If the function fails, a DLQ (SNS) can be published.</dd>
       <dd><b>Events</b> - things that trigger your functions to run (an S3 bucket upload, an SNS topic, and HTTP endpoints created via API Gateway)</dd>
       <dd><b>Layers</b> - Code that you've used else where that you can import into the serverless function.</dd>
-      <dd><b>Resources</b> - A property of the serverless.yml which defines the infrastructure your functions depend on, like AWS DynamoDB or AWS S3. Resources deployed by Serverless have the naming scheme - <mark>{Function Name}{Cloud Formation Resource Type}{Resource Name}{SequentialID or Random String}</mark> (does not include S3). You can reference any resource by using the logical name or ARN.
+      <dd><b>Resources</b> - A property of the serverless.yml which defines the infrastructure your functions depend on, like AWS DynamoDB or AWS S3. Resources deployed by Serverless have the naming scheme - <var>{Function Name}{Cloud Formation Resource Type}{Resource Name}{SequentialID or Random String}</var>. <i>Does not apply to S3</i>.
 </dd>
-      <dd><b>Variables</b> - allow users to dynamically replace config values in serverless.yml config.</dd><br/>
+      <dd><b>Variables</b> - allow users to dynamically replace config values in serverless.yml config with <mark>${}</mark> notation.
+      <ul>
+      <li><b>Self reference</b> - <var>${self:someProperty}</var></li>
+      <li><b>Other files</b> - <var>${file(../myFile.json):someProperty}</var></li>
+      <li><b>In JS files</b> - reference JavaScript files to add dynamic data into your variables. <var>${file(../myFile.js):someModule}</var></li>
+      <li><b>Recursively reference properties</b> - <var>${file(../config.${self:provider.stage}.json):CREDS}</var></li>
+      <li><b>Environment Variables</b> - <var>${env:SOME_VAR}</var>. <i>Keep in mind that sensitive information which is provided through environment variables can be written into less protected or publicly accessible build logs, CloudFormation templates, et cetera.</i></li>
+      <li><b>Referencing CLI Options</b> -<var>${opt:some_option}</var>. A common CLI option is the dev stage.</li>
+      <li><b>CloudFormation Outputs</b> - allows your service to communicate with other services/stacks using <var>${cf:stackName.outputKey}</var>. Output names are added to the <ins>Export</ins> field in the resources property:<br/>
+      <img alt="Image" src="https://www.javascripter.co/img/devops/exporting_cf.PNG"><br/>
+      <ins>Import</ins> into other services:
+      <img alt="Image" src="https://www.javascripter.co/img/devops/importing_cf.PNG"><br/>
+      </li>
+      <li><b>S3 Objects</b> - <var>${s3:myBucket/myKey}-hello</var></li>
+      </ul>
+      </dd><br/>
       <dd>[Full documentation](https://serverless.com/framework/docs/providers/aws/guide/serverless.yml/)</dd>
       <dd>[Reference .yml](https://serverless.com/framework/docs/providers/aws/guide/serverless.yml/)</dd>
     </dl>
