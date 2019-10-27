@@ -21,7 +21,7 @@ script = 'animation'
       <dt>Process.env</dt>
       <dd>The process.env global variable is injected by the Node at runtime for your application to use and it represents the state of the system environment your application is in when it starts. Secret variables are stored here rather than in accessible code.</dd><br/>
     <div style="text-align:center">
-      <img alt="Image" src="https://www.javascripter.co/img/backend/nodeJS.jpg">
+      <img alt="Image" src="https://www.javascripter.org/img/backend/nodeJS.jpg">
     </div>
     </dl>
   </div>

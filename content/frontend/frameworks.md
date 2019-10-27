@@ -23,7 +23,7 @@ script = 'animation'
       <dt>Grid system</dt>
       <dd>A mobile-first flexbox grid to build layouts of all shapes and sizes thanks to a twelve column system. Each column of a row contains a col class specifying how many of the 12 columns it can possibly take up (no more than 12 total). These classes can also take a prefix (e.g. <mark>.col-sm-</mark>, <mark>.col-lg-</mark>) specifying which devices they apply to. Media queries are optionally used to specify the breakpoints (in pixels) for these class prefixes.</dd>
     <div style="text-align:center">
-        <img alt="Image" src="https://www.javascripter.co/img/frontend/grid.png">
+        <img alt="Image" src="https://www.javascripter.org/img/frontend/grid.png">
     </div>
     </dl>
     <dl>
@@ -56,7 +56,7 @@ script = 'animation'
 });
 </code></pre>
     <div style="text-align:center">
-        <img alt="Image" src="https://www.javascripter.co/img/frontend/ajax.gif">
+        <img alt="Image" src="https://www.javascripter.org/img/frontend/ajax.gif">
     </div>
       </dd>
     </dl>

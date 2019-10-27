@@ -23,7 +23,7 @@ script = 'animation'
       <dd>
       Hadoop uses <ins>YARN</ins> to split up the functionalities of resource management and job scheduling/monitoring into separate daemons. The <ins>Resource Manager</ins> accepts job submissions and allocates resources for the first container. The <ins>Node Manager</ins> is the per-machine framework agent responsible for monitoring container usage and reporting it back to the Resource Manager. The per-application <ins>Application Master</ins> is tasked with negotiating resources from the ResourceManager and working with the NodeManager(s) to execute and monitor the tasks.
       <div style="text-align:center" width="85%">
-      <img alt="Image" src="https://www.javascripter.co/img/latest/yarn.gif">
+      <img alt="Image" src="https://www.javascripter.org/img/latest/yarn.gif">
     </div>
     <figcaption style="text-align:center">
     Hadoop YARN
@@ -32,7 +32,7 @@ script = 'animation'
       <dt>Spark vs Hadoop MapReduce</dd>
       <dd>With MapReduce, queries are split and distributed across parallel nodes and processed in parallel (the Map step). The results are then gathered and delivered (the Reduce step). Apache Spark was developed in response to limitations in the MapReduce paradigm, as it adds the ability to set up many operations (not just map followed by reduce). In addition, Spark computations are carried out in memory and stored there, until the user actively persists them, whereas Hadoop MapReduce writes to a disk, making it up to 100 times slower. Spark also creates a <b>Directed Acyclic Graph (DAG)</b>, to visualize the order of operations and the relationship between the operations in the DAG. DAGs enable optimizations between steps allowing for it to be up to 10 times faster on disk than Hadoop. However, the volume of data processed also differs: Hadoop MapReduce is able to work with far larger data sets than Spark and is the more economical solution when speed is not critical.</dd>
     <div style="text-align:center" width="75%">
-      <img alt="Image" src="https://www.javascripter.co/img/latest/dag.png">
+      <img alt="Image" src="https://www.javascripter.org/img/latest/dag.png">
     </div>
     <figcaption style="text-align:center">
     Directed Acyclic Graph
@@ -52,12 +52,12 @@ script = 'animation'
       <dt>Pubsub</dt>
       <dd>A stream is a continuous inbound flow of messages. The messages themselves are encapsulated (individual) and received one at a time in quick succession. The workflow includes one or more message producers and any number of message consumers. This is commonly known as publish/subscribe or “pubsub”. When a message is published, the subscribers receive it nearly instantaneously.
     <div style="text-align:center">
-      <img alt="Image" src="https://www.javascripter.co/img/latest/pubsub.png">
+      <img alt="Image" src="https://www.javascripter.org/img/latest/pubsub.png">
     </div><br/>
       <dt>Processing</dt>
       <dd>Streams are processed differently from batch data – normal functions cannot operate on streams as a whole, as they have potentially unlimited data.</dd>
       <div style="text-align:center">
-      <img alt="Image" src="https://www.javascripter.co/img/latest/batch.jpg">
+      <img alt="Image" src="https://www.javascripter.org/img/latest/batch.jpg">
     </div><br/>
       <dt>Idempotence<dt>
       <dd>An idempotent operation is one that has no additional effect if it is called more than once with the same input parameters. Stream services usually provide "at least once" delivery to handle failed operations. This means that there should be some sort of "rollback" for mid-operation failure.</dd>

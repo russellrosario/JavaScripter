@@ -73,12 +73,12 @@ script = 'animation'
     <div class="row">
       <div class="col col-6">
         <figure>
-          <img alt="Image" src="https://www.javascripter.co/img/frontend/redux1.png" width="100%">
+          <img alt="Image" src="https://www.javascripter.org/img/frontend/redux1.png" width="100%">
         </figure>
       </div>
       <div class="col col-6">
         <figure>
-          <img alt="Image" src="https://www.javascripter.co/img/frontend/redux2.png">
+          <img alt="Image" src="https://www.javascripter.org/img/frontend/redux2.png">
         </figure>
       </div>
     </div>
@@ -93,7 +93,7 @@ script = 'animation'
       <dd><b>React Native</b> - A framework for building native applications using JavaScript. React Native compiles to native app components, which makes it possible for you to build native mobile applications. In React JS, React is the base abstraction of React DOM for the web platform, while with React Native, React is still the base abstraction but of React Native. So the syntax and workflow remain similar, but the components are different.</i></dd>
     </dl>
     <div style="text-align:center">
-      <img alt="Image" src="https://www.javascripter.co/img/frontend/rendering.PNG" width="50%">
+      <img alt="Image" src="https://www.javascripter.org/img/frontend/rendering.PNG" width="50%">
     </div>
 <div style="text-align:right"> <a href="#top">&#8593; Top</a></div>
 

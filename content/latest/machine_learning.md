@@ -50,7 +50,7 @@ Read more on <ins>Godel's Incompleteness theorem</ins>:
       <li><b>Supervised</b> - Data is labeled and the algorithms learn to predict the output from input data.</li>
       <li><b>Unsupervised</b> - Data is unlabeled and the algorithms learn to find structure from the input data. </dd>
     <div style="text-align:center">
-      <img alt="Image" src="https://www.javascripter.co/img/latest/learning.png">
+      <img alt="Image" src="https://www.javascripter.org/img/latest/learning.png">
     </div>
       <dt>Training and Testing</dt>
       <dd>Separating data into training and testing sets is an important part of evaluating data mining models. Typically, when you separate a data set into a training set and testing set, most of the data is used for training, and a smaller portion of the data is used for testing.</dd>
@@ -65,7 +65,7 @@ Read more on <ins>Godel's Incompleteness theorem</ins>:
       <dt>Tensor</dt>
       <dd>Tensors are a type of data structure used in linear algebra. It is a container which can house data in N dimensions, along with its linear operations. A <ins>tensor processing unit (TPU)</ins> is an AI accelerator application-specific integrated circuit (ASIC) developed by Google specifically for neural network machine learning.</dd>
       <div style="text-align:center">
-      <img alt="Image" src="https://www.javascripter.co/img/latest/tensor.jpg" width="50%">
+      <img alt="Image" src="https://www.javascripter.org/img/latest/tensor.jpg" width="50%">
     </div>
       <dt>Tensorflow</dt>
       <dd>An open source library by Google for building machine learning models.
@@ -80,7 +80,7 @@ Read more on <ins>Godel's Incompleteness theorem</ins>:
       <dt>Keras</dt>
       <dd>Keras is a minimalist Python library for deep learning that can run on top of TensorFlow. It was developed to make implementing deep learning models as fast and easy as possible for research and development. Using Keras allows for quickly building models by using built-in <ins>estimators</ins>. See below for decision tree on choosing estimator algorithm. </dd><br/>
       <div style="text-align:center">
-      <img alt="Image" src="https://www.javascripter.co/img/latest/ml_map.png">
+      <img alt="Image" src="https://www.javascripter.org/img/latest/ml_map.png">
     </div>
     </dl>
   </div>
@@ -95,13 +95,13 @@ Read more on <ins>Godel's Incompleteness theorem</ins>:
       <dd><b>Hidden layer</b> - there can be one or many hidden layers. Each layer has <ins>neuron</ins> unit(s). Every neuron has its own <ins>weighting</ins> for each of the units of the previous layer. After summing the weights and activations, the neuron goes through an <ins>activation function</ins> that squashes the value and produces a new tensor. A <ins>bias</ins> shifts the activation function to the left or right. </dd></dd>
       <dd><b>Output layer</b> - the neurons of this layer also use weights and activation functions. If the shape of the input tensor is different than the output tensor, the weighting has the ability to transform the shape.</dd>
       <div style="text-align:center">
-      <img alt="Image" src="https://www.javascripter.co/img/latest/activation.png">
+      <img alt="Image" src="https://www.javascripter.org/img/latest/activation.png">
     </div>
       <br/>
       <dt>Backpropagation</dt>
       <dd>Shorthand for "the backward propagation of errors," since an error is computed at the output and distributed backwards throughout the network’s layers in order for it to learn from mistakes. Error is calculated and then a <ins>gradient descent</ins> optimization algorithm (a differential equation) is used to determine the direction of steepest decline. In order to avoid local minimas, the learning rate should be gradually adjusted higher.</dd>
     <div style="text-align:center">
-      <img alt="Image" src="https://www.javascripter.co/img/latest/gradient_descent.png" width="50%">
+      <img alt="Image" src="https://www.javascripter.org/img/latest/gradient_descent.png" width="50%">
       <figcaption>
 Gradient Descent
       </figcaption>
@@ -111,12 +111,12 @@ Gradient Descent
       <dt>CNN</dt>
       <dd>CNNs have applications in image and video recognition, recommender systems, image classification, medical image analysis, and natural language processing. The input features are taken in batch wise like a filter. This will help the network to remember the images in parts and can compute operations like converting from RGB to grayscale. The changes in the pixel value will help detecting the edges. </dd>
     <div style="text-align:center">
-      <img alt="Image" src="https://www.javascripter.co/img/latest/cnn.gif">
+      <img alt="Image" src="https://www.javascripter.org/img/latest/cnn.gif">
     </div>
       <dt>RNN</dt>
       <dd>RNNs are applicable to tasks such as unsegmented, connected handwriting recognition or speech recognition. A class of artificial neural network where connections between nodes form a directed graph along a sequence. This allows it to exhibit temporal dynamic behavior for a time sequence. Unlike feedforward neural networks (connections between the nodes do not form a cycle), RNNs can use their internal state (memory) to process sequences of inputs. </dd>
       <div style="text-align:center">
-      <img alt="Image" src="https://www.javascripter.co/img/latest/rnn.png">
+      <img alt="Image" src="https://www.javascripter.org/img/latest/rnn.png">
     </div>
       <dt>Unsupervised neural networks</dt>
       <ul>
@@ -131,7 +131,7 @@ Gradient Descent
 </ul>
 </ul>
     <div style="text-align:center">
-      <img alt="Image" src="https://www.javascripter.co/img/latest/nn_list.png">
+      <img alt="Image" src="https://www.javascripter.org/img/latest/nn_list.png">
     </div>
     </dl>
   </div>

@@ -31,7 +31,7 @@ script = 'animation'
       <dd>A set of properties of database transactions intended to guarantee validity even in the event of errors, power failures, etc. <b>Atomicity</b> guarantees that each transaction is treated as a single "unit", which either succeeds completely, or fails completely. <b>Consistency</b> ensures that a transaction can only bring the database from one valid state to another. <b>Isolation</b> ensures that concurrent execution of transactions leaves the database in the same state that would have been obtained if the transactions were executed sequentially. <b>Durability</b> guarantees that once a transaction has been committed, it will remain committed even in the case of a system failure.</dd>
     </dl>
     <div style="text-align:center">
-      <img alt="Image" src="https://www.javascripter.co/img/backend/database_types.jpg">
+      <img alt="Image" src="https://www.javascripter.org/img/backend/database_types.jpg">
     </div>
   </div>
 <div style="text-align:right"> <a href="#top">&#8593; Top</a></div>
@@ -82,13 +82,13 @@ The UNION operator is used to combine multiple similar schema result-sets.</dd><
 <dt>Operators</dt>
 <dd>
     <div style="text-align:center">
-      <img alt="Image" src="https://www.javascripter.co/img/backend/sql_operators.png">
+      <img alt="Image" src="https://www.javascripter.org/img/backend/sql_operators.png">
     </div>
     </dd>
       <dt>Joins</dt>
       <dd>A JOIN clause is used to combine rows from two or more tables, based on a related column between them.</dd>
     <div style="text-align:center">
-      <img alt="Image" src="https://www.javascripter.co/img/backend/sql_joins.png">
+      <img alt="Image" src="https://www.javascripter.org/img/backend/sql_joins.png">
     </div>
     </dl>
   </div>
@@ -103,7 +103,7 @@ The UNION operator is used to combine multiple similar schema result-sets.</dd><
       <dd>Simplicity of design, simpler "horizontal" scaling to clusters of machines (which is a problem for relational databases), and finer control over availability. The data structures used by NoSQL databases (e.g. key-value, wide column, graph, or document) are different from those used by default in relational databases, making some operations faster in NoSQL. Sometimes the data structures used by NoSQL databases are also viewed as "more flexible" than relational database tables due to not having to adhere to previously defined schemas.</dd>
     </dl>
     <div style="text-align:center">
-      <img alt="Image" src="https://www.javascripter.co/img/backend/sql_comparison.png">
+      <img alt="Image" src="https://www.javascripter.org/img/backend/sql_comparison.png">
     </div>
   </div>
 <div style="text-align:right"> <a href="#top">&#8593; Top</a></div>
@@ -128,7 +128,7 @@ The UNION operator is used to combine multiple similar schema result-sets.</dd><
       <dd>Includes fuzzy matching and proximity queries.</dd>
       <dt>Elastic Stack</dt>
     <div style="text-align:center">
-      <img alt="Image" src="https://www.javascripter.co/img/backend/elk.png">
+      <img alt="Image" src="https://www.javascripter.org/img/backend/elk.png">
     </div>
       <dt>Technical notes</dt>
       <dd>Use scripts to import CSV directly into Elasticsearch. Or use Logstash to import, parse, and transform data from various sources (Kafka, Apache Spark, Hadoop, MySQL, S3, etc). Logstash then exports into Elasticsearch. Logstash can scale across many nodes and guarantees at-least-once delivery. </dd>

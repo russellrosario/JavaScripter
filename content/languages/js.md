@@ -56,7 +56,7 @@ script = 'animation'
     </dl>
     <dl>
       <dt>Operators</dt>
-      <dd><img src="https://www.javascripter.co/img/languages/js.png" width="85%"></dd>
+      <dd><img src="https://www.javascripter.org/img/languages/js.png" width="85%"></dd>
     </dl>
   </div>
   <div style="text-align:right"> <a href="#top">&#8593; Top</a></div>
@@ -91,7 +91,7 @@ script = 'animation'
       <dt>Type coercion</dt>
       <dd>The process of converting values from one type to another (such as string to number, object to boolean, and so on). <i>See chart below for examples.</i> Use <mark>===</mark> to check for equality AND type</ins>. Many developers prefer a statically typed language for issues like this. Using <b>TypeScript</b> adds static typing and other useful features before being transcompiled into JavaScript.</dd>
     </dl>
-        <img src="https://www.javascripter.co/img/languages/type_coercion.png">
+        <img src="https://www.javascripter.org/img/languages/type_coercion.png">
   </div>
   <div style="text-align:right"> <a href="#top">&#8593; Top</a></div>
 

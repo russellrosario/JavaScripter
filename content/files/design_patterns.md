@@ -8,7 +8,7 @@ toc = false
 script = 'animation'
 +++
 
-<a href="https://www.javascripter.co/cheatsheets/design_patterns">Link to full explanations</a>
+<a href="https://www.javascripter.org/cheatsheets/design_patterns">Link to full explanations</a>
 
 
 <img alt="Image" src="/img/files/designpatterns1.jpg" width="800">

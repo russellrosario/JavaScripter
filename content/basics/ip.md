@@ -28,7 +28,7 @@ script = 'animation'
     </dl>
     <div style="text-align:center">
       <figure>
-        <img alt="Image" src="https://www.javascripter.co/img/basics/AWS_VPC.png">
+        <img alt="Image" src="https://www.javascripter.org/img/basics/AWS_VPC.png">
         <figcaption>
           An example of a cloud VPN on AWS
         </figcaption>
@@ -120,7 +120,7 @@ X-Pad: avoid browser bug<br/>
 
   <p>DNS resolution occurs by first looking up the name server for the TLD (.com or .net), then the name server for the full domain (medium.com), and lastly the numeric IP of the subdomain with domain (www.medium.com). To reduce the load on the Domain Name System servers, results are cached locally or in intermediate resolver hosts. A time to live (TTL) is included with the cached results, an expiration time after which the results must be discarded or refreshed.</p>
     <div style="text-align:center">
-      <img src="https://www.javascripter.co/img/basics/dns.png">
+      <img src="https://www.javascripter.org/img/basics/dns.png">
     </div>
   </div>
 <div style="text-align:right"> <a href="#top">&#8593; Top</a></div>

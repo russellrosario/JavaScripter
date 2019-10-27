@@ -12,7 +12,7 @@ script = 'animation'
 <div class="example">
   <p><b>HTML</b> should be used for <ins>structure</ins> and <ins>semantics</ins> to order the content and to specify its intended use (e.g. - distinguishing between the main body of an article and the links to other sections)</p>
     <div style="text-align:center">
-      <img src="https://www.javascripter.co/img/languages/html1.PNG">
+      <img src="https://www.javascripter.org/img/languages/html1.PNG">
     </div>
     <div class="row">
       <div class="col col-6">
@@ -27,7 +27,7 @@ script = 'animation'
       </div>
     </div>
     <div style="text-align:center">
-      <img src="https://www.javascripter.co/img/languages/html4.PNG">
+      <img src="https://www.javascripter.org/img/languages/html4.PNG">
     </div>
 </div>
 <div style="text-align:right"> <a href="#top">&#8593; Top</a></div>
@@ -37,7 +37,7 @@ script = 'animation'
   <div class="example">
   <p><b>CSS</b> should be used for <ins>presentation,</ins> ie. to specify what the content should look like to a human user (e.g. - making the title appear red)</p>
     <div style="text-align:center">
-      <img src="https://www.javascripter.co/img/languages/css1.PNG">
+      <img src="https://www.javascripter.org/img/languages/css1.PNG">
     </div>
   </div>
 <div style="text-align:right"> <a href="#top">&#8593; Top</a></div>

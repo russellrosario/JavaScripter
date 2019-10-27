@@ -1,4 +1,4 @@
-## https://www.javascripter.co/
+## https://www.javascripter.org/
 
 ### A compilation of notes during my journey from novice to full stack JavaScript developer by Russell Rosario.
 

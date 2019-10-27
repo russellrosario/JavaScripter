@@ -50,7 +50,7 @@ Note that code written without a test-first approach is often very hard to test!
       <dt>Acceptance testing</dt>
       <dd>A system is tested for acceptability and ready for delivery. </dd><br/>
     <div style="text-align:center">
-      <img alt="Image" src="https://www.javascripter.co/img/devops/testing.svg">
+      <img alt="Image" src="https://www.javascripter.org/img/devops/testing.svg">
     </div>
     <figcaption>
     The V-model of software development identifies testing tasks for each stage of development.

@@ -35,13 +35,13 @@ script = 'animation'
 
 <h3 class="section-head" id="h-Section1"><a href="#h-Section1">Pandas cheat sheet</a></h3>
   <div class="example">
-    <img alt="Image" src="https://www.javascripter.co/img/languages/pandas1.png">
-    <img alt="Image" src="https://www.javascripter.co/img/languages/pandas2.png">
+    <img alt="Image" src="https://www.javascripter.org/img/languages/pandas1.png">
+    <img alt="Image" src="https://www.javascripter.org/img/languages/pandas2.png">
   </div>
 <div style="text-align:right"> <a href="#top">&#8593; Top</a></div>
 
 <h3 class="section-head" id="h-Section2"><a href="#h-Section2">Matplotlib cheat sheet</a></h3>
   <div class="example">
-    <img alt="Image" src="https://www.javascripter.co/img/languages/mpl.png">
+    <img alt="Image" src="https://www.javascripter.org/img/languages/mpl.png">
   </div>
 <div style="text-align:right"> <a href="#top">&#8593; Top</a></div>

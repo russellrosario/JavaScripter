@@ -39,7 +39,7 @@ script = 'animation'
       <dt>Middleware</dt>
       <dd>Middleware functions are functions that have access to the request object (req), the response object (res), and the next middleware function in the application’s request-response cycle. </dd>
       <div style="text-align:center">
-      <img alt="Image" src="https://www.javascripter.co/img/backend/middleware.PNG">
+      <img alt="Image" src="https://www.javascripter.org/img/backend/middleware.PNG">
     </div>
     </dl>
   </div>
@@ -51,7 +51,7 @@ script = 'animation'
       <dt>Hashing and salting</dt>
       <dd>Hashing performs a one-way transformation on a password, turning the password into another string, called the hashed password. Salting is adding random data as an additional input to the hash function. Authentication then relies on comparing the salt + hash of the original password. This protects commonly used passwords or users who use the same password on several sites, by making all salted hash instances for the same password different from each other.</dd>
     <div style="text-align:center">
-      <img alt="Image" src="https://www.javascripter.co/img/backend/salt_hash.png">
+      <img alt="Image" src="https://www.javascripter.org/img/backend/salt_hash.png">
       <figcaption>
       Preventing reverse engineering via brute forcing the hash algorithm
       </figcaption>
@@ -59,7 +59,7 @@ script = 'animation'
       <dt>Cookies vs tokens</dt>
       <dd>Cookie-based authentication is stateful. This means that an authentication record or session must be kept both server and client-side. Token-based authentication is stateless. The server does not keep a record of which users are logged in or which tokens have been issued. Instead, every request to the server is accompanied by a signed token which the server uses to verify the authenticity of the request. Today, most authentication has moved from cookie-based to token-based.</dd>
     <div style="text-align:center">
-      <img alt="Image" src="https://www.javascripter.co/img/backend/cookie_token.png">
+      <img alt="Image" src="https://www.javascripter.org/img/backend/cookie_token.png">
     </div><br/>
       <dt>Authentication libraries</dt>
       <dd><b>Passport</b> -  authentication middleware for Node that provides "strategies" for handling all types of authentication mechanisms. <b>JWT</b> (JSON web tokens) and <b>OAuth</b> (login with Facebook/Google account) are the most common. </dd><br/>
@@ -101,7 +101,7 @@ script = 'animation'
       <dd>In HTTPS, the communication protocol is encrypted using Transport Layer Security (TLS) to encrypt data before it is sent from the client to the server, thus preventing some common hacks (Man in the middle). HTTPS is based on <b>public/private-key cryptography</b>. This means that there is a key pair: The public key is used for encryption and the secret private key is required for decryption. A website certificate is a public key with a label identifying the owner. when your browser connects to an HTTPS server, the server will answer with its certificate. The browser checks if the certificate is valid and signed by a trusted certification authority. After the verification, the browser extracts the public key and uses it to encrypt information it sends back to the server. The server can decrypt it because the server has the matching private key.
 </dd><br/>
     <div style="text-align:center" width="85%">
-      <img alt="Image" src="https://www.javascripter.co/img/backend/key_encryption.png">
+      <img alt="Image" src="https://www.javascripter.org/img/backend/key_encryption.png">
     </div><br/>
       <dt>Set security related HTTP headers</dt>
       <dd><b>Cross-origin resource sharing (CORS)</b> is a mechanism that allows restricted resources on a web page to be requested from another domain outside the domain from which the first resource was served. A web page may freely embed cross-origin images, stylesheets, scripts, iframes, and videos. Certain "cross-domain" requests, notably Ajax requests, are forbidden by default by the same-origin security policy. These have to be set explicitly on the header.</dd><br/>

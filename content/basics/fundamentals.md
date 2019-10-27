@@ -29,7 +29,7 @@ script = 'animation'
       <dd>The glue that connects all components together. It is connected to a power supply and contains expansion slots to allow for additional functionality. For example, a GPU can offload video processing from the CPU. </dd>
     </dl>
     <div style="text-align:center">
-      <img src="https://www.javascripter.co/img/basics/hardware.gif">
+      <img src="https://www.javascripter.org/img/basics/hardware.gif">
     </div>
   </div>
 <div style="text-align:right"> <a href="#top">&#8593; Top</a></div>
@@ -54,7 +54,7 @@ script = 'animation'
       <li><b>Concurrency </b> - Interleaving of processes within one processor, giving the illusion of simultaneous execution.</li>
     </ul>
     <div style="text-align:center">
-      <img src="https://www.javascripter.co/img/basics/threads.png">
+      <img src="https://www.javascripter.org/img/basics/threads.png">
     </div>
   </div>
 
@@ -64,7 +64,7 @@ script = 'animation'
   <div class="example">
     <p>Because a transmitter can only relay on and off, computers use the base-2 (binary) numeral system using only two symbols: "0" and "1".</p>
     <div style="text-align:center">
-      <img src="https://www.javascripter.co/img/basics/binary.png">
+      <img src="https://www.javascripter.org/img/basics/binary.png">
     </div>
     <h5>Bit vs Byte</h5>
     <p>A <b>bit</b> is the basic unit of information representing either 0 or 1. <br/>
@@ -89,6 +89,6 @@ script = 'animation'
   <div class="example">
     <p>The Command line interface (CLI) is a means of interacting with a computer program where the user (or client) issues commands to the program in the form of successive lines of text (command lines). Most users rely upon graphical user interfaces and menu-driven interactions with a mouse. However, many software developers, system administrators and advanced users still rely heavily on command-line interfaces to perform tasks more efficiently, configure their machine, or access programs and program features that are not available through a graphical interface.</p>
     <p>A Unix shell is a command-line interpreter or shell that provides a command line user interface for Unix-like operating systems. Bash is a Unix shell and command language that can be used for executing commands from the CLI. <i> Windows has their own their shell and command language. Install Git Bash on Windows to run these commands.</i></p>
-    <img src="https://www.javascripter.co/img/basics/cli.png">
+    <img src="https://www.javascripter.org/img/basics/cli.png">
   </div>
 <div style="text-align:right"> <a href="#top">&#8593; Top</a></div>

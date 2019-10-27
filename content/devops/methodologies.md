@@ -16,7 +16,7 @@ script = 'animation'
       <dd><i>Below are the CLI commands for Git repositories.</i></dd>
     </dl>
     <div style="text-align:center">
-      <img alt="Image" src="https://www.javascripter.co/img/devops/git.png">
+      <img alt="Image" src="https://www.javascripter.org/img/devops/git.png">
     </div><br/>
   </div>
 <div style="text-align:right"> <a href="#top">&#8593; Top</a></div>
@@ -52,7 +52,7 @@ script = 'animation'
 </dd>
     </dl>
     <div style="text-align:center">
-      <img alt="Image" src="https://www.javascripter.co/img/devops/agile.jpg">
+      <img alt="Image" src="https://www.javascripter.org/img/devops/agile.jpg">
     </div><br/>
   </div>
 <div style="text-align:right"> <a href="#top">&#8593; Top</a></div>
@@ -72,7 +72,7 @@ script = 'animation'
 </ol>
       </dd>
     <div style="text-align:center">
-      <img alt="Image" src="https://www.javascripter.co/img/devops/CI_in_AWS.PNG">
+      <img alt="Image" src="https://www.javascripter.org/img/devops/CI_in_AWS.PNG">
     </div><br/>
     </dl>
   </div>

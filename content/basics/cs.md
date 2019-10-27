@@ -57,10 +57,10 @@ script = 'animation'
       <dd>You fix the robot so that it's loading things correctly. The next day, one of your co-workers plays a prank on you and wires the loading dock robot to the automated printing systems. Every time the robot goes to load an original book, the factory printer makes a duplicate run of all the phonebooks! Fortunately, the robot's bug-detection systems are sophisticated enough that the robot doesn't try printing even more copies when it encounters a duplicate book for loading, but it still has to load every original and duplicate book that's been printed.</dd>
     </dl>
     <div style="text-align:center">
-      <img src="https://www.javascripter.co/img/basics/algos.png">
+      <img src="https://www.javascripter.org/img/basics/algos.png">
     </div>
     <div style="text-align:center;margin-top:55px;">
-      <img src="https://www.javascripter.co/img/basics/sorting.png">
+      <img src="https://www.javascripter.org/img/basics/sorting.png">
     </div>
   </div>
   <div style="text-align:right"> <a href="#top">&#8593; Top</a></div>
@@ -68,12 +68,12 @@ script = 'animation'
 <h3 class="section-head" id="h-Section2"><a href="#h-Section2">Data Structures</a></h3>
   <div class="example">
     <div style="text-align:center">
-      <img src="https://www.javascripter.co/img/basics/data_structures.jpg">
+      <img src="https://www.javascripter.org/img/basics/data_structures.jpg">
     </div>
     <div class="row">
       <div class="col col-6">
         <figure>
-          <img alt="Image" src="https://www.javascripter.co/img/basics/bst.png" width="85%">
+          <img alt="Image" src="https://www.javascripter.org/img/basics/bst.png" width="85%">
           <figcaption>
           Binary search trees keep their keys in sorted order, so that lookup and other operations can use the principle of binary search. This means that each comparison allows the operations to skip about half of the tree, so that each lookup is much better than the linear time required to find items by key in an (unsorted) array, but slower than the corresponding operations on hash tables.
           </figcaption>
@@ -81,7 +81,7 @@ script = 'animation'
       </div>
       <div class="col col-6">
         <figure>
-          <img alt="Image" src="https://www.javascripter.co/img/basics/hash.png">
+          <img alt="Image" src="https://www.javascripter.org/img/basics/hash.png">
           <figcaption>
             Hash functions are used in hash tables, to quickly locate a data record (e.g., a dictionary definition) given its search key. Specifically, the hash function is used to map the search key to a list; the index gives the place in the hash table where the corresponding record should be stored. Typically, the set of possible keys is larger than the number of different table indices, and so it will map several different keys to the same index which could result in collisions. So then, each slot of a hash table is associated with a set of records, often called a bucket.
           </figcaption>
