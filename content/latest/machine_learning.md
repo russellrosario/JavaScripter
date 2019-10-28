@@ -12,26 +12,28 @@ script = 'animation'
   <div class="example">
     <dl>
     <dt>Is true AI possible?</dt>
-    <dd>It is very hard to define a human mind with a such mathematical rigor as it is possible to define a Turing machine. We still do not have a working model of a mouse brain however we have the hardware capable of simulating it. A mouse has around 4 million neurons in the cerebral cortex. A human being has 80-120 billion neurons (19-23 billion neocortical). Thus, you can imagine how much more research will need to be conducted in order to get a working model of a human mind.
+    <dd>It is very hard to define a human mind with the mathematical rigor of a Turing machine (a programmable algorithm). Although we still do not have a working model of a mouse brain, we do have hardware capable of simulating it. A mouse has around 4 million neurons in the cerebral cortex. A human being has 80-120 billion neurons. Thus, you can imagine how much more research will need to be conducted in order to get a working model of a human mind.
 
-You could argue that we only need to do top-down approach and do not need to understand individual workings of every neuron. In that case you might study some non-monotonic logic, abductive reasoning, decision theory, etc. When the new theories come, more exceptions and paradoxes occur. And it seems we are nowhere close to a working model of a human mind.
+Is there any set of rules that can define the entire scope of human expression? You could argue that we only need to do top-down approach and do not need to understand individual workings of every neuron. In that case you might study some non-monotonic logic, abductive reasoning, decision theory, etc. When new theories come, more exceptions and paradoxes occur. Alternatively, how could any simple logic encompass the evolving meaning that humans attribute to words and abstract ideas?
 
-After taking propositional and then predicate calculus I asked my logic professor:
-"Is there any logic that can define the whole set of human language?"
-He said:
-"How would you define the following?
-To see a World in a grain of sand
-And a Heaven in a wild flower,
-Hold Infinity in the palm of your hand
-And Eternity in an hour.
-If you can do it, you will become famous."
+Although in it's early stages, machine learning attempts to solve this dilemma. By enriching a computer with the ability to improve its output through positive and negative feedback loops, it takes another step closer towards true artificial intelligence. But for now these models are merely Pavlovian conditioning on a singularly focused skill set (in this case natural language). <a href="https://en.wikipedia.org/wiki/G_factor_(psychometrics)">General intelligence</a> displayed by humans is a much broader test of intelligence - one that summarizes positive correlations among different cognitive tasks, reflecting the fact that an individual's performance on one type of cognitive task tends to be comparable to that person's performance on other kinds of cognitive tasks.
 
-There have been debates that a human mind might be equivalent to a Turing machine. However, a more interesting result would be for a human mind not to be Turing-equivalent, that it would give a rise to a definition of an algorithm that is not possibly computable by a Turing machine. Then the Church's thesis would not hold and there could possibly be a general algorithm that could solve a halting problem.
+Douglas Hofstadter, in his books Gödel, Escher, Bach and I Am a Strange Loop, cites <a href="http://en.wikipedia.org/wiki/G%C3%B6del%27s_incompleteness_theorems#Minds_and_machines">Gödel's theorems</a> as an example of what he calls a strange loop, a hierarchical, self-referential structure existing within an axiomatic formal system. He argues that this is the same kind of structure which gives rise to consciousness, the sense of "I", in the human mind. While the self-reference in Gödel's theorem comes from the Gödel sentence asserting its own unprovability (ie This sentence is false.), the self-reference in the human mind comes from the way in which the brain abstracts and categorises stimuli into "symbols", or groups of neurons which respond to concepts, in what is effectively also a formal system, eventually giving rise to symbols modelling the concept of the very entity doing the perception. Hofstadter argues that a strange loop in a sufficiently complex formal system can give rise to a "downward" or "upside-down" causality, a situation in which the normal hierarchy of cause-and-effect is flipped upside-down. In the case of Gödel's theorem, this manifests, in short, as the following:
 
-Read more on <ins>Godel's Incompleteness theorem</ins>:
+    "Merely from knowing the formula's meaning, one can infer its truth or falsity without any effort to derive it in the old-fashioned way, which requires one to trudge methodically "upwards" from the axioms. This is not just peculiar; it is astonishing. Normally, one cannot merely look at what a mathematical conjecture says and simply appeal to the content of that statement on its own to deduce whether the statement is true or false."
+    
+For example, calculating Pi for a human would yield π, whereas a computer would only stop calculating after it has run out of memory and crashed. According to Godel's incompleteness theorem, a computer cannot escape the inherent limitations of a formal axiomatic ruleset. In the case of the mind, a far more complex formal system, this "downward causality" manifests, in Hofstadter's view, as the ineffable human instinct that the causality of our minds lies on the high level of desires, concepts, personalities, thoughts and ideas, rather than on the low level of interactions between neurons or even fundamental particles, even though according to physics the latter seems to possess the causal power.
 
-* [Minds and machines](http://en.wikipedia.org/wiki/G%C3%B6del%27s_incompleteness_theorems#Minds_and_machines)
-* [Godelian arguments](http://en.wikipedia.org/wiki/Mechanism_(philosophy)#G.C3.B6delian_arguments)
+    "There is thus a curious upside-downness to our normal human way of perceiving the world: we are built to perceive “big stuff” rather than “small stuff”, even though the domain of the tiny seems to be where the actual motors driving reality reside."
+
+Thus, cognition is a function of how one's own brain categorizes stimuli into a formal system. The presence of free will becomes apparent if these higher level abstractions disagree with the underlying stimuli which gave rise to it.
+
+    Looked at this way, Gödel's proof suggests – though by no means does it prove! – that there could be some high-level way of viewing the mind/brain, involving concepts which do not appear on lower levels, and that this level might have explanatory power that does not exist – not even in principle – on lower levels. It would mean that some facts could be explained on the high level quite easily, but not on lower levels at all. No matter how long and cumbersome a low-level statement were made, it would not explain the phenomena in question.
+    
+    What might such high-level concepts be? It has been proposed for eons, by various holistically or "soulistically" inclined scientists and humanists that consciousness is a phenomenon that escapes explanation in terms of brain components; so here is a candidate at least. There is also the ever-puzzling notion of free will. So perhaps these qualities could be "emergent" in the sense of requiring explanations which cannot be furnished by the physiology alone. 
+
+
+
 </dd>
     <dt>Machine learning vs Statistics</dt>
     <dd>The basic premise of machine learning (ML) is to build algorithms that can receive input data and use statistical analysis to predict an output while updating outputs as new data becomes available. Statistics focuses on quantifying uncertainty by formalizing the relationship between variables and mathematical equations. ML focuses on prediction and classification by using algorithms that learn from data instead of explicity programmed instructions.</dd><br/>
@@ -106,6 +108,20 @@ Read more on <ins>Godel's Incompleteness theorem</ins>:
 Gradient Descent
       </figcaption>
     </div>
+    <dt>Neural network analogy</dt>
+      <dd><b>Input layer</b> = Eyes</dd>
+      <dd><b>Hidden layer</b> = Brain</dd>
+        <div style="margin-left:20px">
+        <dd>Activation function = Neurons passing signals to other neurons in the brain</dd>
+        </div>
+      <dd><b>Output layer</b> = Consciousness (how the brain perceived the stimuli from the eyes)</dd>
+        <div style="margin-left:20px">
+      <dd>Optimization function = Learning by updating the weights/biases based on the accuracy of previous outputs</dd>
+        </div>
+
+
+
+</dd>
     </dl>
     <dl>
       <dt>CNN</dt>
